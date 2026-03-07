@@ -2,14 +2,12 @@
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useDataStore } from '@/stores/data'
-import { useLangStore } from '@/stores/lang'
 import { CATEGORIES } from '@/types'
 import ItemCard from '@/components/ItemCard.vue'
 
 const route = useRoute()
 const router = useRouter()
 const dataStore = useDataStore()
-const langStore = useLangStore()
 
 const query = ref((route.query.q as string) ?? '')
 const activeCategory = ref<string | null>(null)
