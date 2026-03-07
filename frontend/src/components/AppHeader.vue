@@ -27,7 +27,7 @@ function selectLang(code: string) {
 <template>
   <header
     class="sticky top-0 z-50 flex items-center gap-4 px-6 h-14"
-    style="background: #fff; border-bottom: 1px solid var(--color-border); box-shadow: 0 1px 4px rgba(0,0,0,0.06);"
+    style="background: var(--color-surface); border-bottom: 1px solid var(--color-border); box-shadow: 0 1px 3px rgba(0,0,0,0.04);"
   >
     <!-- Logo -->
     <RouterLink
@@ -80,7 +80,7 @@ function selectLang(code: string) {
         <div
           v-if="showLangMenu"
           class="absolute right-0 top-full mt-1.5 py-1 rounded-xl z-50"
-          style="background: #fff; border: 1px solid var(--color-border); min-width: 160px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);"
+          style="background: var(--color-surface); border: 1px solid var(--color-border); min-width: 160px; box-shadow: 0 6px 20px rgba(0,0,0,0.08);"
         >
           <button
             v-for="lang in LANGUAGES"
