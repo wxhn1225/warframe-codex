@@ -108,8 +108,8 @@ jobs:
         working-directory: frontend
         run: npm run build
         env:
-          # GitHub Pages 项目站点的 base path，格式为 /repo-name/
-          VITE_BASE: ${{ vars.VITE_BASE || '/' }}
+          # 自动从仓库名生成 base path，如 /warframe-codex/
+          VITE_BASE: /${{ github.event.repository.name }}/
 
       - name: 上传 Pages 产物
         uses: actions/upload-pages-artifact@v3
