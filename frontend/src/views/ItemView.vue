@@ -143,7 +143,7 @@ watch(() => props.path, load)
           <div
             v-if="iconUrl"
             class="shrink-0 w-16 h-16 rounded-xl flex items-center justify-center overflow-hidden"
-            :style="{ background: (categoryInfo?.color ?? '#0ea5e9') + '12' }"
+            :style="{ background: (categoryInfo?.color ?? '#0ea5e9') + '40', border: `1px solid ${categoryInfo?.color ?? '#0ea5e9'}50` }"
           >
             <img :src="iconUrl" :alt="displayName" class="w-13 h-13 object-contain"
               @error="($event.target as HTMLImageElement).parentElement!.style.display='none'" />

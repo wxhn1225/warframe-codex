@@ -39,7 +39,7 @@ function navigate() {
     <!-- 图标区 -->
     <div
       class="shrink-0 w-11 h-11 rounded-lg flex items-center justify-center overflow-hidden"
-      :style="{ background: categoryColor + '12' }"
+      :style="{ background: categoryColor + '40', border: `1px solid ${categoryColor}50` }"
     >
       <img
         v-if="iconUrl"
