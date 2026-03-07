@@ -101,6 +101,9 @@ jobs:
         working-directory: frontend
         run: npm install
 
+      - name: 配置 GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: 构建前端
         working-directory: frontend
         run: npm run build
@@ -108,9 +111,11 @@ jobs:
           # GitHub Pages 项目站点的 base path，格式为 /repo-name/
           VITE_BASE: ${{ vars.VITE_BASE || '/' }}
 
-      - name: 部署到 GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: 上传 Pages 产物
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./frontend/dist
-          cname: ${{ vars.CUSTOM_DOMAIN || '' }}
+          path: ./frontend/dist
+
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
