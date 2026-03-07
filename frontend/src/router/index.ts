@@ -17,6 +17,12 @@ const router = createRouter({
       props: route => ({ path: route.query.path, category: route.query.category }),
     },
     {
+      path: '/raw',
+      name: 'raw',
+      component: () => import('@/views/RawView.vue'),
+      props: route => ({ path: route.query.path }),
+    },
+    {
       path: '/category/:key',
       name: 'category',
       component: () => import('@/views/CategoryView.vue'),

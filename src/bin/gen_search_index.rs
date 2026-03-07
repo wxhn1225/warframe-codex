@@ -1,5 +1,5 @@
 /// 生成前端用的搜索索引 search-index.json
-/// 格式: [{path, name_zh, name_en, category, sub_category, icon}]
+/// 格式: [{path, name_zh, name_en, category, sub_category, sub_type, icon}]
 /// 约 44k 条，压缩后约 1-2MB
 use std::collections::HashMap;
 use std::path::PathBuf;
@@ -18,6 +18,9 @@ struct SearchEntry {
     category: String,
     #[serde(skip_serializing_if = "String::is_empty")]
     sub_category: String,
+    /// 细分类型：遗物的era、敌人的faction、武器的productCategory
+    #[serde(skip_serializing_if = "Option::is_none")]
+    sub_type: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     icon: Option<String>,
 }
@@ -47,6 +50,15 @@ fn extract_icon(val: &Value) -> Option<String> {
         .or_else(|| val.get("Icon"))
         .and_then(|v| v.as_str())
         .map(|s| s.to_string())
+}
+
+fn extract_sub_type(val: &Value, category: &str) -> Option<String> {
+    match category {
+        "ExportRelics" => val.get("era").and_then(|v| v.as_str()).map(|s| s.to_string()),
+        "ExportEnemies" => val.get("faction").and_then(|v| v.as_str()).map(|s| s.to_string()),
+        "ExportWeapons" => val.get("productCategory").and_then(|v| v.as_str()).map(|s| s.to_string()),
+        _ => None,
+    }
 }
 
 fn main() -> Result<()> {
@@ -109,6 +121,7 @@ fn main() -> Result<()> {
                             name_en: name_key.as_ref().and_then(|k| dict_en.get(k)).cloned(),
                             category: category.clone(),
                             sub_category: cat_or_path.clone(),
+                            sub_type: extract_sub_type(item_data, &category),
                             icon: extract_icon(item_data),
                         });
                     }
@@ -121,6 +134,7 @@ fn main() -> Result<()> {
                         name_en: name_key.as_ref().and_then(|k| dict_en.get(k)).cloned(),
                         category: category.clone(),
                         sub_category: String::new(),
+                        sub_type: extract_sub_type(cat_value, &category),
                         icon: extract_icon(cat_value),
                     });
                 }

@@ -11,15 +11,35 @@ const dataStore = useDataStore()
 
 const query = ref((route.query.q as string) ?? '')
 const activeCategory = ref<string | null>(null)
+const activeSubType = ref<string | null>(null)
+
+const currentCategoryInfo = computed(() =>
+  CATEGORIES.find(c => c.key === activeCategory.value),
+)
+
+/** 当前分类的默认 sub_category 过滤（如 ExportEnemies 只看 avatars） */
+const defaultSubCategory = computed(() =>
+  currentCategoryInfo.value?.defaultSubCategory,
+)
+
+/** 当前分类的可用 sub_type 列表 */
+const availableSubTypes = computed(() => {
+  if (!activeCategory.value) return []
+  const subTypes = dataStore.getSubTypes(activeCategory.value, defaultSubCategory.value ?? undefined)
+  const labels = currentCategoryInfo.value?.subTypeLabels ?? {}
+  return subTypes.map(t => ({ value: t, label: labels[t] ?? t }))
+})
 
 const results = computed(() => {
   if (query.value.trim()) {
-    return dataStore.search(query.value, activeCategory.value ?? undefined)
+    return dataStore.search(query.value, activeCategory.value ?? undefined, activeSubType.value ?? undefined)
   }
   if (activeCategory.value) {
-    const cat = CATEGORIES.find(c => c.key === activeCategory.value)
-    const sub = cat?.subCategories?.[0]
-    return dataStore.getByCategory(activeCategory.value, sub).slice(0, 80)
+    return dataStore.getByCategory(
+      activeCategory.value,
+      defaultSubCategory.value ?? undefined,
+      activeSubType.value ?? undefined,
+    )
   }
   return []
 })
@@ -27,15 +47,26 @@ const results = computed(() => {
 const isSearching = computed(() => query.value.trim().length > 0 || activeCategory.value !== null)
 
 function selectCategory(key: string) {
-  activeCategory.value = activeCategory.value === key ? null : key
+  if (activeCategory.value === key) {
+    activeCategory.value = null
+    activeSubType.value = null
+  } else {
+    activeCategory.value = key
+    activeSubType.value = null
+  }
   query.value = ''
   router.replace({ query: {} })
+}
+
+function selectSubType(val: string) {
+  activeSubType.value = activeSubType.value === val ? null : val
 }
 
 watch(() => route.query.q, (q) => {
   if (q) {
     query.value = q as string
     activeCategory.value = null
+    activeSubType.value = null
   }
 })
 
@@ -47,7 +78,7 @@ onMounted(() => {
 <template>
   <div class="max-w-6xl mx-auto px-4 py-10">
 
-    <!-- Hero 搜索区 -->
+    <!-- Hero 搜索区（未搜索时显示） -->
     <div v-if="!isSearching" class="text-center mb-12">
       <h1 class="text-3xl font-bold mb-2" style="color: var(--color-text);">
         <span style="color: var(--color-primary);">Warframe</span>
@@ -84,14 +115,14 @@ onMounted(() => {
       </div>
     </div>
 
-    <!-- 搜索/分类结果 -->
+    <!-- 搜索/分类结果区 -->
     <template v-else>
       <!-- 顶部导航条 -->
-      <div class="flex items-center gap-3 mb-6 flex-wrap">
+      <div class="flex items-center gap-3 mb-4 flex-wrap">
         <button
-          class="text-sm px-3 py-1.5 rounded-lg transition-colors"
+          class="text-sm px-3 py-1.5 rounded-lg transition-colors shrink-0"
           style="background: var(--color-surface-3); color: var(--color-text-muted);"
-          @click="query = ''; activeCategory = null; router.replace({ query: {} })"
+          @click="query = ''; activeCategory = null; activeSubType = null; router.replace({ query: {} })"
         >
           &larr; 返回
         </button>
@@ -114,13 +145,28 @@ onMounted(() => {
         </div>
       </div>
 
-      <!-- 搜索框（始终可见） -->
-      <div class="mb-6">
-        <input
-          v-model="query"
-          class="input-search max-w-lg"
-          placeholder="继续搜索..."
-        />
+      <!-- 子分类筛选（有 sub_type 时显示） -->
+      <div v-if="availableSubTypes.length > 0" class="flex gap-2 flex-wrap mb-4 pl-1">
+        <span class="text-xs self-center" style="color: var(--color-text-muted);">细分：</span>
+        <button
+          v-for="sub in availableSubTypes"
+          :key="sub.value"
+          class="text-xs px-2.5 py-0.5 rounded-full transition-all"
+          :style="{
+            background: activeSubType === sub.value
+              ? (currentCategoryInfo?.color ?? '#64748b') + '25'
+              : 'var(--color-surface-3)',
+            color: activeSubType === sub.value
+              ? (currentCategoryInfo?.color ?? '#64748b')
+              : 'var(--color-text-muted)',
+            border: activeSubType === sub.value
+              ? `1px solid ${currentCategoryInfo?.color ?? '#64748b'}50`
+              : '1px solid transparent',
+          }"
+          @click="selectSubType(sub.value)"
+        >
+          {{ sub.label }}
+        </button>
       </div>
 
       <!-- 加载提示 -->
@@ -141,7 +187,6 @@ onMounted(() => {
       <!-- 结果数量 -->
       <p v-else-if="results.length > 0" class="text-xs mb-4" style="color: var(--color-text-muted);">
         共 {{ results.length }} 条结果
-        <span v-if="results.length === 100">（显示前 100 条）</span>
       </p>
 
       <!-- 结果列表 -->
