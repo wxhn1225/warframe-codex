@@ -1,0 +1,118 @@
+name: Build and Deploy
+
+on:
+  schedule:
+    # 每天 UTC 4:00 检查上游更新（北京时间 12:00）
+    - cron: '0 4 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout（含子模块）
+        uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: 同步 warframe-public-export-plus 到最新
+        run: |
+          git submodule update --remote warframe-public-export-plus
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          if ! git diff --quiet warframe-public-export-plus; then
+            git add warframe-public-export-plus
+            git commit -m "chore: sync warframe-public-export-plus"
+          fi
+
+      - name: 同步 warframe-languages-bin-data 到最新
+        run: |
+          git submodule update --remote warframe-languages-bin-data
+          if ! git diff --quiet warframe-languages-bin-data; then
+            git add warframe-languages-bin-data
+            git commit -m "chore: sync warframe-languages-bin-data"
+          fi
+
+      - name: 同步 warframe-packages-bin-data 到最新
+        # 仅当子模块存在时执行
+        run: |
+          if git submodule status warframe-packages-bin-data &>/dev/null; then
+            git submodule update --remote warframe-packages-bin-data
+            if ! git diff --quiet warframe-packages-bin-data; then
+              git add warframe-packages-bin-data
+              git commit -m "chore: sync warframe-packages-bin-data"
+            fi
+          fi
+
+      - name: 推送子模块更新
+        run: git push origin main || true
+
+      - name: 安装 Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: 缓存 Rust 依赖
+        uses: Swatinem/rust-cache@v2
+
+      - name: 生成搜索索引
+        run: cargo run --release --bin gen-search-index
+        env:
+          WF_EXPORT_DATA: warframe-public-export-plus
+          WF_LANG_DATA: warframe-languages-bin-data
+          WF_SEARCH_INDEX_OUT: frontend/public/data/search-index.json
+
+      - name: 复制数据文件
+        run: |
+          mkdir -p frontend/public/data/dict
+          mkdir -p frontend/public/data/export
+          # 复制语言字典（来自 warframe-languages-bin-data，文件名已是 zh.json / en.json）
+          cp warframe-languages-bin-data/*.json frontend/public/data/dict/ 2>/dev/null || true
+          # 只保留语言文件（排除非字典文件）
+          for f in frontend/public/data/dict/*.json; do
+            lang=$(basename "$f" .json)
+            if [[ ! "$lang" =~ ^[a-z]{2}$ ]]; then
+              rm "$f"
+            fi
+          done
+          # 复制所有 Export*.json
+          for f in warframe-public-export-plus/Export*.json; do
+            cp "$f" "frontend/public/data/export/$(basename $f)"
+          done
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: 安装前端依赖
+        working-directory: frontend
+        run: npm ci
+
+      - name: 构建前端
+        working-directory: frontend
+        run: npm run build
+        env:
+          # GitHub Pages 项目站点的 base path，格式为 /repo-name/
+          VITE_BASE: ${{ vars.VITE_BASE || '/' }}
+
+      - name: 部署到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend/dist
+          cname: ${{ vars.CUSTOM_DOMAIN || '' }}

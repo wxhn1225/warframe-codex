@@ -4,8 +4,10 @@ use std::path::PathBuf;
 pub struct Config {
     /// warframe-packages-bin-data 根目录
     pub raw_data_root: PathBuf,
-    /// warframe-public-export-plus 目录
+    /// warframe-public-export-plus 目录（Export*.json）
     pub export_root: PathBuf,
+    /// warframe-languages-bin-data 目录（zh.json / en.json 等）
+    pub lang_root: PathBuf,
     /// 输出的 SQLite 数据库路径
     pub db_path: PathBuf,
 }
@@ -18,9 +20,11 @@ impl Config {
 
         let export_root = std::env::var("WF_EXPORT_DATA")
             .map(PathBuf::from)
-            .unwrap_or_else(|_| {
-                raw_data_root.join("warframe-public-export-plus")
-            });
+            .unwrap_or_else(|_| PathBuf::from(r"warframe-public-export-plus"));
+
+        let lang_root = std::env::var("WF_LANG_DATA")
+            .map(PathBuf::from)
+            .unwrap_or_else(|_| PathBuf::from(r"warframe-languages-bin-data"));
 
         let db_path = std::env::var("WF_DB_PATH")
             .map(PathBuf::from)
@@ -29,6 +33,7 @@ impl Config {
         Self {
             raw_data_root,
             export_root,
+            lang_root,
             db_path,
         }
     }
@@ -39,6 +44,9 @@ impl Config {
         }
         if !self.export_root.exists() {
             anyhow::bail!("export_root 不存在: {:?}", self.export_root);
+        }
+        if !self.lang_root.exists() {
+            anyhow::bail!("lang_root 不存在: {:?}", self.lang_root);
         }
         Ok(())
     }

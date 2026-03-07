@@ -1,0 +1,9 @@
+[submodule "warframe-public-export-plus"]
+	path = warframe-public-export-plus
+	url = https://github.com/calamity-inc/warframe-public-export-plus.git
+[submodule "warframe-packages-bin-data"]
+	path = warframe-packages-bin-data
+	url = https://github.com/Sainan/warframe-packages-bin-data.git
+[submodule "warframe-languages-bin-data"]
+	path = warframe-languages-bin-data
+	url = https://github.com/calamity-inc/warframe-languages-bin-data.git

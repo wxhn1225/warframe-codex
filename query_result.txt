@@ -1,0 +1,101 @@
+=== 娴嬭瘯锛氬埄娑︽敹鍓茶€呭渾铔?===
+  璺緞: /Lotus/Upgrades/Skins/Effects/OraxiaEphemera
+  鏉ユ簮: ExportCustoms / default
+  涓枃鍚? 鍦嗚洓骞荤汗
+
+  璺緞: /Lotus/Types/Enemies/Corpus/Vip/Arachnoid/ArachnoidCamperAvatar
+  鏉ユ簮: ExportEnemies / avatars
+  涓枃鍚? 鍒╂鼎鏀跺壊鑰呭渾铔?
+
+  璺緞: /Lotus/Types/Enemies/Corpus/Vip/Arachnoid/ArachnoidCamperTerraAvatar
+  鏉ユ簮: ExportEnemies / avatars
+  涓枃鍚? 鍓ュ墛鑰呭渾铔?
+
+  璺緞: /Lotus/Types/Enemies/Corpus/Vip/Arachnoid/ArachnoidCamperTerraUndergroundAvatar
+  鏉ユ簮: ExportEnemies / avatars
+  涓枃鍚? 鍓ュ墛鑰呭渾铔?
+
+  璺緞: /Lotus/Types/Game/PoseSets/ArachnoidCamperPoseSet
+  鏉ユ簮: ExportFlavour / default
+  涓枃鍚? 鍦嗚洓绔欏Э缁?
+
+  璺緞: /Lotus/Types/Items/ShipDecos/Vignettes/Enemies/ArachnoidCamperAFItem
+  鏉ユ簮: ExportResources / default
+  涓枃鍚? 鍒╂鼎鏀跺壊鑰呭渾铔涘彲鍔ㄥ紡妯″瀷
+
+  璺緞: /Lotus/Types/Items/ShipDecos/Vignettes/Enemies/ArachnoidCamperTerraAFItem
+  鏉ユ簮: ExportResources / default
+  涓枃鍚? 鍓ュ墛鑰呭渾铔涘彲鍔ㄦā鍨?
+
+=== 鍒╂鼎鏀跺壊鑰呭渾铔涚殑鎵€鏈夊叧绯?===
+  [Icon] 鈫?/Lotus/Interface/Icons/StoreIcons/Cosmetics/Ephemera/OraxiaEphemera.pn
+  [Type] 鈫?/Lotus/Fx/PowersuitAbilities/CustomEffects/OraxiaEphemera/OraxiaEpheme
+  [icon] 鈫?/Lotus/Interface/Icons/StoreIcons/Cosmetics/Ephemera/OraxiaEphemera.pn
+  [Icon] 鈫?/Lotus/Interface/Icons/StoreIcons/Cosmetics/Ephemera/OraxiaEphemera.pn
+  [Type] 鈫?/Lotus/Fx/PowersuitAbilities/CustomEffects/OraxiaEphemera/OraxiaEpheme
+  [icon] 鈫?/Lotus/Interface/Icons/StoreIcons/Cosmetics/Ephemera/OraxiaEphemera.pn
+
+=== 澶氳瑷€瀵圭収 ===
+  绠€涓? 鍦嗚洓骞荤汗
+  鑻辨枃: Zygiella Ephemera
+  鏃ユ枃: Zygiella 銈ㄣ儠銈с儭銉?
+  闊╂枃: 歆€旮办棙霛?鞚错帢氅旊澕
+
+  绠€涓? 鍒╂鼎鏀跺壊鑰呭渾铔涘彲鍔ㄥ紡妯″瀷
+  鑻辨枃: Profit-Taker Orb Articula
+  鏃ユ枃: 銉椼儹銉曘偅銉冦儓銉汇儐銈ゃ偒銉?銈兗銉嗐偅銈儵
+  闊╂枃: 頂勲頃?韰岇澊旎?鞓る笇 鞎勴嫲韥橂澕
+
+  绠€涓? 鍦嗚洓绔欏Э缁?
+  鑻辨枃: Orb Pose Set
+  鏃ユ枃: 銈兗銉栥儩銉笺偤銈汇儍銉?
+  闊╂枃: 鞓る笇 韽 靹疙姼
+
+  绠€涓? 鍓ュ墛鑰呭渾铔涘彲鍔ㄦā鍨?
+  鑻辨枃: Exploiter Orb Articula
+  鏃ユ枃: 銈ㄣ偗銈广儣銉偆銈裤兗銈兗銉栥偄銉笺儐銈ｃ偗銉?
+  闊╂枃: 鞚奠姢頂岆鞚错劙 鞓る笇 鞎勴嫲韥橂澕
+
+  绠€涓? 鍒╂鼎鏀跺壊鑰呭渾铔?
+  鑻辨枃: Profit-Taker Orb
+  鏃ユ枃: 銉椼儹銉曘偅銉冦儓銉汇儐銈ゃ偒銉?銈兗銉?
+  闊╂枃: 頂勲頃?韰岇澊旎?鞓る笇
+
+  绠€涓? 鍓ュ墛鑰呭渾铔?
+  鑻辨枃: Exploiter Orb
+  鏃ユ枃: 銈ㄣ偗銈广儣銉偆銈裤兗 銈兗銉?
+  闊╂枃: 鞚奠姢頂岆鞚错劙 鞓る笇
+
+  绠€涓? 鍓ュ墛鑰呭渾铔?
+  鑻辨枃: Exploiter Orb
+  鏃ユ枃: 銈ㄣ偗銈广儣銉偆銈裤兗 銈兗銉?
+  闊╂枃: 鞚奠姢頂岆鞚错劙 鞓る笇
+
+=== 瀹炰綋绫诲瀷鍒嗗竷锛堝墠10锛?==
+  Other: 432,732
+  Blueprint: 4,266
+  Avatar: 2,217
+  Agent: 1,826
+  Ability: 1,607
+  DamageController: 1,016
+  Suit: 911
+  Weapon: 884
+  AnimTree: 866
+  AnimFSM: 320
+
+=== 鍏崇郴绫诲瀷鍒嗗竷锛堝墠15锛?==
+  parent: 718,652
+  ItemType: 138,160
+  Type: 132,234
+  Icon: 97,476
+  Sound: 61,082
+  TypeName: 57,508
+  icon: 51,194
+  Mesh: 39,080
+  mixGroup: 35,554
+  Script: 34,522
+  type: 34,308
+  sound: 29,978
+  Material: 24,232
+  BehaviorDatabase: 18,284
+  OverrideMaterial: 16,144

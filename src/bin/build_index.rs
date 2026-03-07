@@ -69,8 +69,8 @@ fn main() -> Result<()> {
     // 9. 写入全部关系
     db::insert_relations(&conn, &all_relations)?;
 
-    // 10. 加载并写入 15 种语言字典
-    let all_dicts = localizer::load_all_dicts(&config.export_root)?;
+    // 10. 加载并写入 15 种语言字典（来自 warframe-languages-bin-data）
+    let all_dicts = localizer::load_all_dicts(&config.lang_root)?;
     db::insert_localizations(&conn, &all_dicts)?;
 
     info!("=== 构建完成！数据库: {:?} ===", config.db_path);

@@ -8,6 +8,10 @@ description = "A comprehensive knowledge base for Warframe game data"
 name = "build-index"
 path = "src/bin/build_index.rs"
 
+[[bin]]
+name = "gen-search-index"
+path = "src/bin/gen_search_index.rs"
+
 [dependencies]
 # 序列化
 serde = { version = "1", features = ["derive"] }

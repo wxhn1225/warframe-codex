@@ -17,13 +17,14 @@ pub type LangDict = HashMap<String, String>;
 pub type AllDicts = HashMap<String, LangDict>;
 
 /// 并行加载所有语言字典
-pub fn load_all_dicts(export_root: &Path) -> Result<AllDicts> {
+/// lang_root 指向 warframe-languages-bin-data 目录（文件名格式：zh.json / en.json）
+pub fn load_all_dicts(lang_root: &Path) -> Result<AllDicts> {
     info!("加载 {} 种语言字典...", LANG_CODES.len());
 
     let dicts: Vec<(String, LangDict)> = LANG_CODES
         .par_iter()
         .filter_map(|&code| {
-            let path = export_root.join(format!("dict.{}.json", code));
+            let path = lang_root.join(format!("{}.json", code));
             if !path.exists() {
                 return None;
             }
