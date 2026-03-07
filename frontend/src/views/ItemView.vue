@@ -13,6 +13,10 @@ const langStore = useLangStore()
 const entryData = ref<Record<string, unknown> | null>(null)
 const loading = ref(true)
 
+const fields = computed(() =>
+  entryData.value ? groupFields(entryData.value) : { basic: [], refs: [], complex: [] },
+)
+
 // 从搜索索引找到基本信息
 const indexEntry = computed(() =>
   dataStore.searchIndex.find(e => e.path === props.path),
@@ -180,70 +184,55 @@ watch(() => props.path, load)
 
       <!-- 数据字段 -->
       <template v-if="entryData">
-        <div v-if="groupFields(entryData) as { basic: [string, unknown][], refs: [string, unknown][], complex: [string, unknown][] }">
-          <!-- 基础属性 -->
-          <div
-            v-if="groupFields(entryData).basic.length"
-            class="card p-5 mb-4"
-          >
-            <h2 class="text-sm font-semibold mb-4" style="color: var(--color-primary);">基础属性</h2>
-            <dl class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-3">
-              <template v-for="[key, val] in groupFields(entryData).basic" :key="key">
-                <div>
-                  <dt class="text-xs mb-0.5" style="color: var(--color-text-muted);">{{ key }}</dt>
-                  <dd class="text-sm font-medium" style="color: var(--color-text);">
-                    <span v-if="isLangKey(val)" style="color: var(--color-gold);">
-                      {{ langStore.t(val as string) || val }}
-                    </span>
-                    <span v-else>{{ renderValue(val) }}</span>
-                  </dd>
-                </div>
-              </template>
-            </dl>
-          </div>
-
-          <!-- 引用关系 -->
-          <div
-            v-if="groupFields(entryData).refs.length"
-            class="card p-5 mb-4"
-          >
-            <h2 class="text-sm font-semibold mb-4" style="color: var(--color-primary);">关联数据</h2>
-            <dl class="space-y-2">
-              <template v-for="[key, val] in groupFields(entryData).refs" :key="key">
-                <div class="flex items-start gap-3">
-                  <dt class="text-xs w-32 shrink-0 pt-0.5" style="color: var(--color-text-muted);">{{ key }}</dt>
-                  <dd>
-                    <button
-                      v-if="isGamePath(val) && dataStore.searchIndex.find(e => e.path === val)"
-                      class="text-sm text-left transition-colors"
-                      style="color: var(--color-primary);"
-                      @click="navigateTo(val as string)"
-                    >
-                      {{ dataStore.searchIndex.find(e => e.path === val)?.name_zh ?? val }}
-                    </button>
-                    <span v-else class="text-sm font-mono" style="color: var(--color-text-muted); font-size: 0.7rem;">
-                      {{ val }}
-                    </span>
-                  </dd>
-                </div>
-              </template>
-            </dl>
-          </div>
-
-          <!-- 复杂结构（折叠） -->
-          <details
-            v-if="groupFields(entryData).complex.length"
-            class="card p-5"
-          >
-            <summary class="text-sm font-semibold cursor-pointer" style="color: var(--color-primary);">
-              原始数据 ({{ groupFields(entryData).complex.length }} 个字段)
-            </summary>
-            <pre
-              class="mt-4 text-xs overflow-auto p-3 rounded-lg"
-              style="background: var(--color-surface); color: var(--color-text-muted); max-height: 400px;"
-            >{{ JSON.stringify(Object.fromEntries(groupFields(entryData).complex), null, 2) }}</pre>
-          </details>
+        <!-- 基础属性 -->
+        <div v-if="fields.basic.length" class="card p-5 mb-4">
+          <h2 class="text-sm font-semibold mb-4" style="color: var(--color-primary);">基础属性</h2>
+          <dl class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-3">
+            <div v-for="[key, val] in fields.basic" :key="key">
+              <dt class="text-xs mb-0.5" style="color: var(--color-text-muted);">{{ key }}</dt>
+              <dd class="text-sm font-medium" style="color: var(--color-text);">
+                <span v-if="isLangKey(val)" style="color: var(--color-gold);">
+                  {{ langStore.t(val as string) || val }}
+                </span>
+                <span v-else>{{ renderValue(val) }}</span>
+              </dd>
+            </div>
+          </dl>
         </div>
+
+        <!-- 引用关系 -->
+        <div v-if="fields.refs.length" class="card p-5 mb-4">
+          <h2 class="text-sm font-semibold mb-4" style="color: var(--color-primary);">关联数据</h2>
+          <dl class="space-y-2">
+            <div v-for="[key, val] in fields.refs" :key="key" class="flex items-start gap-3">
+              <dt class="text-xs w-32 shrink-0 pt-0.5" style="color: var(--color-text-muted);">{{ key }}</dt>
+              <dd>
+                <button
+                  v-if="isGamePath(val) && dataStore.searchIndex.find(e => e.path === val)"
+                  class="text-sm text-left transition-colors"
+                  style="color: var(--color-primary);"
+                  @click="navigateTo(val as string)"
+                >
+                  {{ dataStore.searchIndex.find(e => e.path === val)?.name_zh ?? val }}
+                </button>
+                <span v-else class="text-sm font-mono" style="color: var(--color-text-muted); font-size: 0.7rem;">
+                  {{ val }}
+                </span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- 复杂结构（折叠） -->
+        <details v-if="fields.complex.length" class="card p-5">
+          <summary class="text-sm font-semibold cursor-pointer" style="color: var(--color-primary);">
+            原始数据 ({{ fields.complex.length }} 个字段)
+          </summary>
+          <pre
+            class="mt-4 text-xs overflow-auto p-3 rounded-lg"
+            style="background: var(--color-surface); color: var(--color-text-muted); max-height: 400px;"
+          >{{ JSON.stringify(Object.fromEntries(fields.complex), null, 2) }}</pre>
+        </details>
       </template>
 
       <div v-else class="text-center py-10" style="color: var(--color-text-muted);">
