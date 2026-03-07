@@ -3,7 +3,7 @@ import { ref, computed, watch, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useDataStore } from '@/stores/data'
 import { useLangStore } from '@/stores/lang'
-import { getIconUrl, getRawFileUrl, CATEGORIES } from '@/types'
+import { getIconUrl, CATEGORIES } from '@/types'
 
 const props = defineProps<{ path: string; category: string }>()
 const router = useRouter()

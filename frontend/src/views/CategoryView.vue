@@ -11,8 +11,8 @@ const dataStore = useDataStore()
 
 const category = computed(() => CATEGORIES.find(c => c.key === props.key))
 const entries = computed(() => {
-  const sub = category.value?.subCategories?.[0]
-  return dataStore.getByCategory(props.key, sub).slice(0, 120)
+  const defaultSub = category.value?.defaultSubCategory
+  return dataStore.getByCategory(props.key, defaultSub ?? undefined)
 })
 </script>
 
