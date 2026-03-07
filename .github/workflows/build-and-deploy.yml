@@ -99,7 +99,9 @@ jobs:
 
       - name: 安装前端依赖
         working-directory: frontend
-        run: npm install
+        run: |
+          npm install
+          chmod +x node_modules/.bin/*
 
       - name: 配置 GitHub Pages
         uses: actions/configure-pages@v5
