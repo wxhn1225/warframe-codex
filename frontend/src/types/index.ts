@@ -109,20 +109,17 @@ export const CATEGORIES: Category[] = [
     color: '#8b5cf6',
     // 遗物时代名称来自 warframe-languages-bin-data /Lotus/Language/Relics/Era_*
     subTypeLangKeys: {
-      Lith: '/Lotus/Language/Relics/Era_LITH',
-      Meso: '/Lotus/Language/Relics/Era_MESO',
-      Neo: '/Lotus/Language/Relics/Era_NEO',
-      Axi: '/Lotus/Language/Relics/Era_AXI',
-      Requiem: '/Lotus/Language/Items/RequiemRelicName',
-    },
-    subTypeFallback: {
-      Requiem: 'Requiem',
-      Vanguard: 'Vanguard',
+      Lith: '/Lotus/Language/Relics/Era_LITH',      // 古纪
+      Meso: '/Lotus/Language/Relics/Era_MESO',      // 前纪
+      Neo: '/Lotus/Language/Relics/Era_NEO',        // 中纪
+      Axi: '/Lotus/Language/Relics/Era_AXI',        // 后纪
+      Requiem: '/Lotus/Language/Relics/Era_REQUIEM', // 安魂
+      Vanguard: '/Lotus/Language/Relics/Era_VANGUARD', // 先锋
     },
   },
   { key: 'ExportCustoms', label: '外观', labelEn: 'Customization', color: '#ec4899' },
   { key: 'ExportArcanes', label: '赋能', labelEn: 'Arcanes', color: '#f59e0b' },
-  { key: 'ExportSentinels', label: '同伴', labelEn: 'Companions', color: '#64748b' },
+  { key: 'ExportSentinels', label: '守护', labelEn: 'Sentinels', color: '#64748b' },
   { key: 'ExportAbilities', label: '技能', labelEn: 'Abilities', color: '#06b6d4' },
   { key: 'ExportRegions', label: '任务', labelEn: 'Missions', color: '#84cc16' },
 ]
