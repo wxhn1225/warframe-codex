@@ -3,7 +3,7 @@ import { ref, computed, watch, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useDataStore } from '@/stores/data'
 import { useLangStore } from '@/stores/lang'
-import { getIconUrl, CATEGORIES } from '@/types'
+import { getIconUrl, CATEGORIES, getSubTypeLabel } from '@/types'
 
 const props = defineProps<{ path: string; category: string }>()
 const router = useRouter()
@@ -252,8 +252,8 @@ watch(() => props.path, load)
               >
                 {{ categoryInfo?.label ?? category }}
               </span>
-              <span v-if="indexEntry?.sub_type" class="tag text-xs" style="color: var(--color-text-muted);">
-                {{ categoryInfo?.subTypeLabels?.[indexEntry.sub_type] ?? indexEntry.sub_type }}
+              <span v-if="indexEntry?.sub_type && categoryInfo" class="tag text-xs" style="color: var(--color-text-muted);">
+                {{ getSubTypeLabel(categoryInfo, indexEntry.sub_type, langStore.t) }}
               </span>
             </div>
             <h1 class="text-2xl font-bold mb-1" style="color: var(--color-text);">

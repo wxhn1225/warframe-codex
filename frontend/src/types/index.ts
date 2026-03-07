@@ -40,8 +40,16 @@ export interface Category {
   color: string
   /** 默认只展示的 sub_category（例如 ExportEnemies 只展示 avatars） */
   defaultSubCategory?: string
-  /** sub_type 的中文显示名（key=sub_type值, value=显示名） */
-  subTypeLabels?: Record<string, string>
+  /**
+   * sub_type值 → 语言键（从 warframe-languages-bin-data 运行时翻译）
+   * 对应 /data/dict/zh.json 等语言文件中的 key
+   */
+  subTypeLangKeys?: Record<string, string>
+  /**
+   * sub_type值 → 回退显示名（无语言键时使用，或语言键查不到时）
+   * 仅用于无对应语言键的分类（如武器 productCategory）
+   */
+  subTypeFallback?: Record<string, string>
 }
 
 export const CATEGORIES: Category[] = [
@@ -51,16 +59,19 @@ export const CATEGORIES: Category[] = [
     label: '武器',
     labelEn: 'Weapons',
     color: '#ff6b35',
-    subTypeLabels: {
-      LongGuns: '主武器',
-      Pistols: '副武器',
-      Melee: '近战',
-      SpaceGuns: '惰空主武',
-      SpaceMelee: '惰空近战',
-      OperatorAmps: '聚能灯',
-      SentinelWeapons: '哨兵武器',
-      DrifterMelee: '漂流者近战',
-      SpecialItems: '特殊',
+    // 武器 productCategory 语言键来自 warframe-languages-bin-data Menu/Loadout_*
+    subTypeLangKeys: {
+      LongGuns: '/Lotus/Language/Menu/Loadout_LongGun',       // 主要武器
+      Pistols: '/Lotus/Language/Menu/Loadout_Pistol',         // 次要武器
+      Melee: '/Lotus/Language/Menu/Loadout_Melee',            // 近战
+      SpaceGuns: '/Lotus/Language/Menu/Loadout_SpaceGun',     // 曲翼枪械
+      SpaceMelee: '/Lotus/Language/Menu/Loadout_SpaceMelee',  // 曲翼近战武器
+      SentinelWeapons: '/Lotus/Language/Menu/Codex_SentinelWeapons', // 守护武器
+    },
+    subTypeFallback: {
+      OperatorAmps: '指挥官增幅器',   // Menu/ItemInventory_SlotsOperatorWeapon 过长，取语义
+      DrifterMelee: '漂泊者近战',
+      SpecialItems: '特殊道具',
     },
   },
   { key: 'ExportUpgrades', label: 'Mod', labelEn: 'Mods', color: '#7b2d8b' },
@@ -70,48 +81,43 @@ export const CATEGORIES: Category[] = [
     labelEn: 'Enemies',
     color: '#e63946',
     defaultSubCategory: 'avatars',
-    subTypeLabels: {
-      Corpus: '星际公司',
-      Grineer: '星裂帝国',
-      Infestation: '感染体',
-      Infested: '感染体',
-      Sentient: '感知体',
-      Orokin: '黄金时代',
-      OrokinEmpire: '黄金时代',
-      'Orokin Empire': '黄金时代',
-      Narmer: '纳尔玛',
-      NarmerVeil: '纳尔玛遮幕',
-      Stalker: '追猎者',
-      Duviri: '杜维里',
-      Scaldra: 'Scaldra',
-      Techrot: 'Techrot',
-      Anarch: 'Anarch',
-      TENNO: '星际战士',
-      Tenno: '星际战士',
-      MITW: 'MITW',
-      ENEMY: '通用敌人',
-      Neutral: '中立',
-      None: '无',
-      Dummy: '测试',
-      Prey: '猎物',
-      'Red Veil': '赤幕',
-      Special: '特殊',
+    // 派系名称来自 warframe-languages-bin-data，运行时从加载的语言字典查询
+    subTypeLangKeys: {
+      Corpus: '/Lotus/Language/Game/Faction_CorpusUC',
+      Grineer: '/Lotus/Language/Game/Faction_GrineerUC',
+      Infestation: '/Lotus/Language/Game/Faction_InfestationUC',
+      Infested: '/Lotus/Language/Game/Faction_InfestationUC',
+      Sentient: '/Lotus/Language/Game/Faction_SentientUC',
+      Orokin: '/Lotus/Language/Game/Faction_OrokinUC',
+      OrokinEmpire: '/Lotus/Language/Game/Faction_OrokinUC',
+      'Orokin Empire': '/Lotus/Language/Game/Faction_OrokinUC',
+      Narmer: '/Lotus/Language/Game/Faction_NarmerUC',
+      NarmerVeil: '/Lotus/Language/Game/Faction_NarmerUC',
+      MITW: '/Lotus/Language/Game/Faction_MITW',
+      Scaldra: '/Lotus/Language/1999/Faction_Scaldra',
+      Techrot: '/Lotus/Language/1999/Faction_Techrot',
+      Duviri: '/Lotus/Language/Duviri/Duviri',
+      'Red Veil': '/Lotus/Language/Game/Faction_RedVeilUC',
     },
   },
   { key: 'ExportResources', label: '资源', labelEn: 'Resources', color: '#2d9c55' },
-  { key: 'ExportRecipes', label: '设计图', labelEn: 'Blueprints', color: '#ffd60a' },
+  { key: 'ExportRecipes', label: '设计图', labelEn: 'Recipes', color: '#ffd60a' },
   {
     key: 'ExportRelics',
     label: '遗物',
     labelEn: 'Relics',
     color: '#8b5cf6',
-    subTypeLabels: {
-      Lith: '铸造',
-      Meso: '中子',
-      Neo: '新纪',
-      Axi: '轴心',
-      Requiem: '安魂',
-      Vanguard: '前锋',
+    // 遗物时代名称来自 warframe-languages-bin-data /Lotus/Language/Relics/Era_*
+    subTypeLangKeys: {
+      Lith: '/Lotus/Language/Relics/Era_LITH',
+      Meso: '/Lotus/Language/Relics/Era_MESO',
+      Neo: '/Lotus/Language/Relics/Era_NEO',
+      Axi: '/Lotus/Language/Relics/Era_AXI',
+      Requiem: '/Lotus/Language/Items/RequiemRelicName',
+    },
+    subTypeFallback: {
+      Requiem: 'Requiem',
+      Vanguard: 'Vanguard',
     },
   },
   { key: 'ExportCustoms', label: '外观', labelEn: 'Customization', color: '#ec4899' },
@@ -120,6 +126,24 @@ export const CATEGORIES: Category[] = [
   { key: 'ExportAbilities', label: '技能', labelEn: 'Abilities', color: '#06b6d4' },
   { key: 'ExportRegions', label: '任务', labelEn: 'Missions', color: '#84cc16' },
 ]
+
+/**
+ * 获取 sub_type 的显示名称。
+ * 优先从 warframe-languages-bin-data 加载的语言字典中查找，
+ * 其次使用 subTypeFallback，最后直接返回原始值。
+ */
+export function getSubTypeLabel(
+  category: Category,
+  subType: string,
+  t: (key: string) => string,
+): string {
+  const langKey = category.subTypeLangKeys?.[subType]
+  if (langKey) {
+    const translated = t(langKey)
+    if (translated) return translated
+  }
+  return category.subTypeFallback?.[subType] ?? subType
+}
 
 export const IMAGE_CDN = 'https://browse.wf'
 

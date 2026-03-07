@@ -1,0 +1,25 @@
+Faction_GrineerUC -> Grineer
+Faction_CorpusUC -> Corpus
+Faction_InfestationUC -> Infestation
+Faction_OrokinUC -> 濂ョ綏閲?
+Faction_SentientUC -> SENTIENT
+Faction_NarmerUC -> 鍚堜竴浼?
+Faction_MITW -> 浣庤鑰?
+Faction_Scaldra -> 鐐借泧鍐?
+Faction_Techrot -> 绉戣厫鑰?
+Duviri -> 鍙岃鐜嬪
+Faction_RedVeilUC -> 琛€鑹查潰绾?
+TierOneProjection -> 鍙ょ邯閬楃墿
+TierTwoProjection -> 鍓嶇邯閬楃墿
+TierThreeProjection -> 涓邯閬楃墿
+TierFourProjection -> 鍚庣邯閬楃墿
+
+/Lotus/Language/Challenges/Challenge_PEVoidTears_Name -> 鎵撳紑 3 涓腑绾櫄绌洪仐鐗?
+/Lotus/Language/Items/TierFourProjection -> 鍚庣邯閬楃墿
+/Lotus/Language/Items/TierOneProjection -> 鍙ょ邯閬楃墿
+/Lotus/Language/Items/TierThreeProjection -> 涓邯閬楃墿
+/Lotus/Language/Items/TierTwoProjection -> 鍓嶇邯閬楃墿
+/Lotus/Language/Relics/Era_AXI -> 鍚庣邯
+/Lotus/Language/Relics/Era_LITH -> 鍙ょ邯
+/Lotus/Language/Relics/Era_MESO -> 鍓嶇邯
+/Lotus/Language/Relics/Era_NEO -> 涓邯

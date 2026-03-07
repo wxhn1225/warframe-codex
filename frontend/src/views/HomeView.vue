@@ -2,12 +2,14 @@
 import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useDataStore } from '@/stores/data'
-import { CATEGORIES } from '@/types'
+import { useLangStore } from '@/stores/lang'
+import { CATEGORIES, getSubTypeLabel } from '@/types'
 import ItemCard from '@/components/ItemCard.vue'
 
 const route = useRoute()
 const router = useRouter()
 const dataStore = useDataStore()
+const langStore = useLangStore()
 
 const query = ref((route.query.q as string) ?? '')
 const activeCategory = ref<string | null>(null)
@@ -22,12 +24,22 @@ const defaultSubCategory = computed(() =>
   currentCategoryInfo.value?.defaultSubCategory,
 )
 
-/** 当前分类的可用 sub_type 列表 */
+/** 当前分类的可用 sub_type 列表（标签从 warframe-languages-bin-data 运行时查询） */
 const availableSubTypes = computed(() => {
   if (!activeCategory.value) return []
   const subTypes = dataStore.getSubTypes(activeCategory.value, defaultSubCategory.value ?? undefined)
-  const labels = currentCategoryInfo.value?.subTypeLabels ?? {}
-  return subTypes.map(t => ({ value: t, label: labels[t] ?? t }))
+  const cat = currentCategoryInfo.value
+  return subTypes
+    .filter(t => {
+      // 过滤掉空字符串回退（如 None、Dummy）
+      if (!cat) return true
+      const label = getSubTypeLabel(cat, t, langStore.t)
+      return label && label !== ''
+    })
+    .map(t => ({
+      value: t,
+      label: cat ? getSubTypeLabel(cat, t, langStore.t) : t,
+    }))
 })
 
 const results = computed(() => {

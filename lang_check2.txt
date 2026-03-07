@@ -1,0 +1,2353 @@
+/EE_Menus/Action_MELEE -> Melee
+/Game/PistolAmmoPickup -> HOLD <PICKUP> FOR AMMO
+/Game/PistolPickup -> HOLD <PICKUP>
+/Lotus/Language/1999/AttackAndMovementSpeedOnCritMeleeDesc -> 杩戞垬鏆村嚮鏈夊嚑鐜囧鍔?5% 鏀诲嚮閫熷害鍜岀Щ鍔ㄩ€熷害锛屾寔缁?10 绉掋€?
+/Lotus/Language/1999/AttackAndMovementSpeedOnCritMeleeHUDDesc -> 澧炲姞 5% 鏀诲嚮鍜岀Щ鍔ㄩ€熷害銆傝繎鎴樻敾鍑婚€犳垚鏆村嚮鏃舵晥鏋滃寮恒€?
+/Lotus/Language/1999/AttackAndMovementSpeedOnCritMeleeName -> 蹇垁鏂╀贡楹?
+/Lotus/Language/1999/MeleeAttackSpeedDesc -> 澧炲姞 25% 杩戞垬鏀诲嚮閫熷害銆?
+/Lotus/Language/1999/MeleeAttackSpeedName -> 姣笉鐣欐儏
+/Lotus/Language/1999/MeleeCritChanceDesc -> 澧炲姞 20% 杩戞垬鏆村嚮鍑犵巼锛堥噸鍑绘椂 x2锛夈€?
+/Lotus/Language/1999/MeleeCritChanceName -> 鐔熻兘鐢熷阀
+/Lotus/Language/1999/MeleeSlideFowardMomentumOnEnemyHitName -> 鏂╃瓔鏂
+/Lotus/Language/1999Challenges/Challenge_CalendarKillEnemiesWithMeleeScaldra_Description -> 浣跨敤杩戞垬姝﹀櫒鍑绘潃 |COUNT| 鍚嶇偨铔囧啗鏁屼汉
+/Lotus/Language/1999Challenges/Challenge_CalendarKillEnemiesWithMeleeScaldra_Name -> 绉佷汉鎭╂€?
+/Lotus/Language/1999Challenges/Challenge_CalendarKillEnemiesWithMeleeTechrot_Description -> 浣跨敤杩戞垬姝﹀櫒鍑绘潃 |COUNT| 鍚嶇鑵愯€呮晫浜恒€?
+/Lotus/Language/1999Challenges/Challenge_CalendarKillEnemiesWithMeleeTechrot_Name -> 鐢靛瓙鍨冨溇澶勭悊
+/Lotus/Language/1999Challenges/Challenge_CalendarKillEnemiesWithMelee_Description -> 浣跨敤杩戞垬姝﹀櫒鍑绘潃 |COUNT| 鍚嶆晫浜恒€?
+/Lotus/Language/1999Challenges/Challenge_CalendarKillEnemiesWithMelee_Name -> 娓稿垉鏈変綑
+/Lotus/Language/1999Demo/LasriaPistolName -> 澶滆鑰?77
+/Lotus/Language/1999Echoes/1999InfSporePistolWeaponName -> 缁堝箷路瀛㈣殌鍙屾灙
+/Lotus/Language/1999PvPvE/PvPvEMeleeDamageBoostDesc -> 灏忛槦澧炲姞杩戞垬浼ゅ 1 鍒嗛挓
+/Lotus/Language/1999PvPvE/PvPvEMeleeDamageBoostName -> 鑷村懡杩戞垬
+/Lotus/Language/1999Quest/DrifterChoiceName -> 婕傛硦鑰?
+/Lotus/Language/1999Quest/TimeCardDrifterCellTime -> 鍙嶅簲鍫嗕簨鏁呭皢鍦?19 灏忔椂 10 鍒嗛挓鍚庡彂鐢?
+/Lotus/Language/Actions/PistolAmmo -> 娆¤姝﹀櫒寮硅嵂
+/Lotus/Language/Actions/PistolAmmoMutated -> <AMMO_MUTATION> 娆¤姝﹀櫒寮硅嵂
+/Lotus/Language/Arcanes/ArmorOnMeleeKillDesc -> |CONDITION|锛殀BONUS|锛屾寔缁?|DURATION| 绉掋€?
+/Lotus/Language/Arcanes/ArmorOnMeleeKillName -> 杩戞垬路鍧氬
+/Lotus/Language/Arcanes/CorrosiveMeleePerAbilityCastName -> 杩戞垬路鏆撮湶
+/Lotus/Language/Arcanes/HealthRegenAndArmorOnMeleeKill -> 璧嬭兘路鏀跺壊
+/Lotus/Language/Arcanes/HeavyCritOnRegularMeleeName -> 杩戞垬路鎲庢伓
+/Lotus/Language/Arcanes/LongGunDamageOnReload -> 璧嬭兘路宕涜捣
+/Lotus/Language/Arcanes/MeleeArcaneProjectileOnJump -> 绁炲▉路瑙︽煋
+/Lotus/Language/Arcanes/MeleeArcaneProjectileOnJumpDesc -> 鍦ㄦ棆韬璺冩垨浜屾璺冲悗锛岀┖涓繎鎴樻敾鍑讳細閲婃斁鍑轰竴閬撳湪纰版挒鏃剁垎鐐哥殑鎰熸煋鑳介噺銆?
+/Lotus/Language/Arcanes/MeleeArcaneShockwaveOnJump -> 绁炲▉路娴佽鐥?
+/Lotus/Language/Arcanes/MeleeDamageForActiveShieldsName -> 杩戞垬路鎶ュ
+/Lotus/Language/Arcanes/MeleeProcsSpreadName -> 杩戞垬路渚垫煋
+/Lotus/Language/Arcanes/OperatorAmmoRegenOnKill -> 姝ｇ洿路绌烘棤
+/Lotus/Language/Arcanes/OperatorAmmoRegenOnKillDesc -> 鍑绘潃鏈変竴瀹氬嚑鐜囧鍔犳寚鎸ュ畼鐨勫骞呭櫒鍜岃櫄绌哄皠绾跨殑鑳介噺鎭㈠閫熺巼銆?
+/Lotus/Language/Arcanes/OperatorHeavyMeleeDamageOnTransference -> 榄斿路渚电暐
+/Lotus/Language/Arcanes/PrimaryDamageOnMeleeKill -> 涓昏路鐔熺粌
+/Lotus/Language/Arcanes/PullEnemiesOnMeleeKillName -> 杩戞垬路婕╂丁
+/Lotus/Language/Arcanes/SecondaryDamageOnMeleeKill -> 娆¤路鐔熺粌
+/Lotus/Language/Archive/MeleeTraining -> 杩涢樁杩戞垬
+/Lotus/Language/Archive/MeleeTrainingPt2 -> 鎷涙灦浠栦滑鐨勬敾鍑?
+
+
+瑁呭杩戞垬姝﹀櫒鏃堕潰鍚戞敾鍑绘潵琚柟鍚戜細鑷姩鏍兼尅銆?
+/Lotus/Language/Archive/SentinelTraining -> 瀹堟姢
+/Lotus/Language/Boons/AreaBlindChanceOnMeleeKill -> 鐪╃洰缁濇潃
+/Lotus/Language/Boons/CorrosiveHitOnHeavyMelee -> 鐩愯殌浼ゅ彛
+/Lotus/Language/Boons/CorrosiveHitOnHeavyMeleeDesc -> 閲嶅嚮浼氶澶栭€犳垚 +|val|% 鑵愯殌浼ゅ涓庡紓甯哥姸鎬併€?
+/Lotus/Language/Boons/CorruptedEnergyCostForHeavyMeleeDamageName -> 鎬掓皵娑堣浆
+/Lotus/Language/Boons/CriticalChanceOnMeleeHit -> 鐨囧涔嬫€?
+/Lotus/Language/Boons/CriticalChanceOnMeleeHitDesc -> 姣忔鎴愬姛鐨勮繎鎴樻敾鍑婚兘浼氱疮璁?|val|% 鏆村嚮鐜囷紝鎸佺画 3 绉掋€?
+/Lotus/Language/Boons/CriticalDamageOnMeleeCritical -> 鏀€鍗囦箣鐥?
+/Lotus/Language/Boons/CriticalDamageOnMeleeCriticalDesc -> 杩戞垬鏆村嚮鍛戒腑鍚?|val|% 鏆村嚮浼ゅ锛屾寔缁?7 绉掋€?
+/Lotus/Language/Boons/FireballOnMeleeAttackDuringGlide -> 濂ラ噾榄囬緳涔嬫伅
+/Lotus/Language/Boons/HeatDamageMelee -> 闃寸噧涓€鍑?
+/Lotus/Language/Boons/HeavyMeleeAttackDamageWave -> 妯壂闇囨尝
+/Lotus/Language/Boons/HeavyMeleeAttackDamageWaveDesc -> 杩戞垬閲嶅嚮浼氫骇鐢熶竴閬撳啿鍑绘尝锛岄€犳垚 |val|% 鐨勪激瀹炽€?
+/Lotus/Language/Boons/MeleeAttackDoubleStrike -> 闆勯湼涓€鍑?
+/Lotus/Language/Boons/MeleeAttackDoubleStrikeDesc -> 杩戞垬鏀诲嚮鍛戒腑涓ゆ銆?
+/Lotus/Language/Boons/MeleeRangeElectricDamageOnFinisher -> 琚菇鐖嗗彂
+/Lotus/Language/Boons/MeleeSpeedBuffOnCritical -> 鏂楀＋绁炲▉
+/Lotus/Language/Boons/MeleeSpeedBuffOnCriticalDesc -> 閫犳垚鏆村嚮鍚庯紝澧炲姞 |val|% 鐨勮繎鎴樻敾鍑婚€熷害锛屾寔缁?3 绉掋€?
+/Lotus/Language/Boons/OverguardOnMeleeKill -> 鏉€鎵嬬殑鑷俊
+/Lotus/Language/Boons/OverguardOnMeleeKillDesc -> 杩戞垬鍑绘潃鏃讹紝鑾峰緱 |val| 瓒呭畯闃叉姢銆傛垬鐢茬殑瓒呭畯闃叉姢鍔犳垚缈诲€嶃€?
+/Lotus/Language/Boons/ToxicEmpoweredMeleeAttack -> 鍓ф瘨涔嬭Е
+/Lotus/Language/Buffs/ArcanePistoleerBuffDesc -> 浣跨敤娆¤姝﹀櫒鐖嗗ご鍑绘潃鍚庯紝鏈夊嚑鐜囧鍔犲脊鑽晥鐜?
+/Lotus/Language/Buffs/ArmorOnMeleeKillBuffDesc -> 杩戞垬鍑绘潃鍚庯紝澧炲姞鎶ょ敳
+/Lotus/Language/Buffs/CorrosiveMeleePerAbilityCastBuffDesc -> 鏂芥斁鎶€鑳藉悗锛岄澶栧鍔?<DT_CORROSIVE>鑵愯殌杩戞垬浼ゅ
+/Lotus/Language/Buffs/CriticalChanceOnMeleeHitBuffDesc -> 杩戞垬鍑讳腑鍚庯紝澧炲姞鏆村嚮鍑犵巼
+/Lotus/Language/Buffs/HeavyCritOnRegularMeleeBuffDesc -> 杩戞垬鍑讳腑鍚庯紝澧炲姞閲嶅嚮鏆村嚮鍑犵巼
+/Lotus/Language/Buffs/MeleeDamageForActiveShieldsBuffDesc -> 鏍规嵁褰撳墠鎶ょ浘鍊煎鍔犺繎鎴樹激瀹?
+/Lotus/Language/Buffs/NightwaveLasSilencedPistolAugmentModBuffDesc -> 澧炲姞 <DT_GAS_COLOR>姣掓皵浼ゅ鍜岃Е鍙戝嚑鐜?
+/Lotus/Language/Buffs/PrimaryDamageIncreaseOnMeleeKillBuffDesc -> 杩戞垬鍑绘潃鍚庯紝澧炲姞涓昏姝﹀櫒浼ゅ
+/Lotus/Language/Buffs/SecondaryDamageIncreaseOnMeleeKillBuffDesc -> 杩戞垬鍑绘潃鍚庯紝澧炲姞娆¤姝﹀櫒浼ゅ
+/Lotus/Language/Buffs/VoidTearMeleeBuff -> 鎵撳紑铏氱┖閬楃墿鍚庯紝澧炲姞杩戞垬浼ゅ
+/Lotus/Language/Buffs/WeaponMeleeStatusChanceSPModBuff -> 杩戞垬鍑绘潃鍚庯紝澧炲姞瑙﹀彂鍑犵巼
+/Lotus/Language/Bundles/EvergreenMeleeRivenPackDesc -> 涓€涓唴鍚?3 寮犺繎鎴樿缃?Mod 鐨勫偍钘忕
+/Lotus/Language/Bundles/EvergreenMeleeRivenPackName -> 杩戞垬瑁傜絽 Mod 鍌ㄨ棌绠?
+/Lotus/Language/Bundles/GardenerSentinelSkinBundleDesc -> [PH] Description
+/Lotus/Language/Bundles/Halloween2023SentinelBundleDesc -> 涓€娆捐浜鸿€屽彲鎬曠殑瀹堟姢閰嶄欢銆?
+/Lotus/Language/Bundles/Halloween2023SentinelBundleName -> 鎭愭礊瀹堟姢缁勫悎鍖?
+/Lotus/Language/Bundles/InfNightwaveSentinelBundleName -> 鍑犱竵璐ㄥ畧鎶ょ粍鍚堝寘
+/Lotus/Language/Bundles/LNY2024SentinelSkinBundleDesc -> 瑁呮壆瀹堟姢锛屽叡鑸炴柊鏄ュ崕绔犮€?
+/Lotus/Language/Bundles/LNY2024SentinelSkinBundleName -> 鑸為緳瀹堟姢澶栬缁勫悎鍖?
+/Lotus/Language/Bundles/OperatorDrifterDexBundleName -> 鎸囨尌瀹樺拰婕傛硦鑰?Dex 濂楁湇
+/Lotus/Language/Bundles/RailjackArmourPistolBundleName -> 涔濋噸澶╄豹鍗庣粍鍚堝寘
+/Lotus/Language/Bundles/RequiemRelicPackDesc -> 4 涓厜杈夊畨榄傞仐鐗╋紝姣忕被鍚勬湁涓€涓細I锛孖I锛孖II 鍜?IV銆?
+/Lotus/Language/Bundles/RequiemRelicPackName -> 鍏夎緣瀹夐瓊閬楃墿缁勫悎鍖?
+/Lotus/Language/Bundles/SentientSentinelBundleName -> 鎬姏浣垮畧鎶ゅ瑙傜粍鍚堝寘
+/Lotus/Language/CapturaScenes/DateMarieDrifterCamp -> 鐜涗附鐨勬紓娉婅€呰惀鍦扮害浼?
+/Lotus/Language/CapturaScenes/PhotoboothDrifterCamp -> 婕傛硦鑰呰惀鍦板満鏅?
+/Lotus/Language/Categories/ARCHWING -> 鏇茬考
+/Lotus/Language/Categories/DRIFTER_MELEE -> 婕傛硦鑰呰繎鎴?
+/Lotus/Language/Categories/MELEE -> 杩戞垬姝﹀櫒
+/Lotus/Language/Categories/SENTINEL -> 鍚屼即
+/Lotus/Language/Challenges/Challenge_Complication_SentinelPresent -> 骞跺甫鏈夊畧鎶?
+/Lotus/Language/Challenges/Challenge_MeleeCombo100_Message -> 姝﹁壓
+/Lotus/Language/Challenges/Challenge_MeleeKill_Description -> 鍙互杩戞垬姝﹀櫒鏉ュ嚮鏉€瀵规墜
+/Lotus/Language/Challenges/Challenge_MeleeKill_Name -> 杩戞垬鍑绘潃
+/Lotus/Language/Challenges/Challenge_MeleeWeaponMastery_Message -> 涓€涓彜鑰佺殑浼犵粺
+/Lotus/Language/Challenges/Challenge_Own1Sentinel_Description -> 鍙栧緱涓€涓畧鎶ゃ€?
+/Lotus/Language/Challenges/Challenge_Own1Sentinel_Name -> 璀︽垝涔嬬溂
+/Lotus/Language/Challenges/Challenge_PVPTimedAffector_SuperMeleeDamage_Desc -> 鎻愬崌杩戞垬鏀诲嚮
+/Lotus/Language/Challenges/Challenge_PVPTimedAffector_SuperMeleeDamage_Name -> 鎴掍弗鏃跺埢
+/Lotus/Language/Challenges/Challenge_PVPTimedAffector_SuperPistolDamage_Desc -> 鎻愬崌娆¤姝﹀櫒鏀诲嚮
+/Lotus/Language/Challenges/Challenge_PVPTimedAffector_SuperPistolDamage_Name -> 缁堟湯瀵瑰喅
+/Lotus/Language/Challenges/Challenge_PVPTimedChallenge_KillsMelee_AtOnce_Desc -> 鍦ㄤ竴鍦烘瘮璧涗腑鎴愬姛浠ヨ繎鎴樺嚮鏉€鏁屼汉 |ScriptParamValue| 娆?
+/Lotus/Language/Challenges/Challenge_PVPTimedChallenge_KillsMelee_AtOnce_Name -> 涓撴敞鐨勮鏂楀＋
+/Lotus/Language/Challenges/Challenge_PVPTimedChallenge_KillsMelee_Desc -> 浠ヨ繎鎴樺嚮鏉€鏁屼汉 |ScriptParamValue| 娆?
+/Lotus/Language/Challenges/Challenge_PVPTimedChallenge_KillsMelee_Name -> 瑙掓枟澹?
+/Lotus/Language/Challenges/Challenge_PistolMaster_Description -> 鍙栧緱 |COUNT| 娆℃墜鏋嚮鏉€
+/Lotus/Language/Challenges/Challenge_PistolMaster_Name -> 鎵嬫灙澶у笀
+/Lotus/Language/Challenges/Challenge_PistolMastery1_Description -> 浠绘剰浜旂鎵嬫灙鎴栧弻鎸佹墜鏋揪鍒癛ank 10銆?
+/Lotus/Language/Challenges/Challenge_PistolMastery1_Name -> 鎵嬫灙澶у笀 I
+/Lotus/Language/Challenges/Challenge_PistolMastery2_Description -> 浠绘剰浜旂鎵嬫灙鎴栧弻鎸佹墜鏋揪鍒癛ank 20銆?
+/Lotus/Language/Challenges/Challenge_PistolMastery2_Name -> 鎵嬫灙澶у笀 II
+/Lotus/Language/Challenges/Challenge_PistolMastery3_Description -> 浠绘剰浜旂鎵嬫灙鎴栧弻鎸佹墜鏋揪鍒癛ank 30銆?
+/Lotus/Language/Challenges/Challenge_PistolMastery3_Name -> 鎵嬫灙澶у笀 III
+/Lotus/Language/Challenges/Challenge_PistolProficiency1_Description -> 浠绘剰鎵嬫灙鎴栧弻鎸佹墜鏋揪鍒癛ank 10銆?
+/Lotus/Language/Challenges/Challenge_PistolProficiency1_Name -> 鎵嬫灙绮鹃€?I
+/Lotus/Language/Challenges/Challenge_PistolProficiency2_Description -> 浠绘剰鎵嬫灙鎴栧弻鎸佹墜鏋揪鍒癛ank 20銆?
+/Lotus/Language/Challenges/Challenge_PistolProficiency2_Name -> 鎵嬫灙绮鹃€?II
+/Lotus/Language/Challenges/Challenge_PistolProficiency3_Description -> 浠绘剰鎵嬫灙鎴栧弻鎸佹墜鏋揪鍒癛ank 30銆?
+/Lotus/Language/Challenges/Challenge_PistolProficiency3_Name -> 鎵嬫灙绮鹃€?III
+/Lotus/Language/Challenges/Challenge_PrimaryWeaponMastery_Message -> 寮哄ぇ鐨勮〃鐜?
+/Lotus/Language/Challenges/Challenge_SecondaryWeaponMastery_Message -> 闅忔椂鍑嗗
+/Lotus/Language/Challenges/Challenge_SentinelMastery1_Description -> 浠绘剰涓夌瀹堟姢杈惧埌Rank 10銆?
+/Lotus/Language/Challenges/Challenge_SentinelMastery1_Name -> 瀹堟姢澶у笀 I
+/Lotus/Language/Challenges/Challenge_SentinelMastery2_Description -> 浠绘剰涓夌瀹堟姢杈惧埌Rank 20銆?
+/Lotus/Language/Challenges/Challenge_SentinelMastery2_Name -> 瀹堟姢澶у笀 II
+/Lotus/Language/Challenges/Challenge_SentinelMastery3_Description -> 浠绘剰涓夌瀹堟姢杈惧埌Rank 30銆?
+/Lotus/Language/Challenges/Challenge_SentinelMastery3_Name -> 瀹堟姢澶у笀 III
+/Lotus/Language/Challenges/Challenge_SentinelProficiency1_Description -> 浠绘剰瀹堟姢杈惧埌Rank 10銆?
+/Lotus/Language/Challenges/Challenge_SentinelProficiency1_Name -> 瀹堟姢绮鹃€?I
+/Lotus/Language/Challenges/Challenge_SentinelProficiency2_Description -> 浠绘剰瀹堟姢杈惧埌Rank 20銆?
+/Lotus/Language/Challenges/Challenge_SentinelProficiency2_Name -> 瀹堟姢绮鹃€?II
+/Lotus/Language/Challenges/Challenge_SentinelProficiency3_Description -> 浠绘剰瀹堟姢杈惧埌Rank 30銆?
+/Lotus/Language/Challenges/Challenge_SentinelProficiency3_Name -> 瀹堟姢绮鹃€?III
+/Lotus/Language/Challenges/Challenge_SustainMeleeComboThree_Description -> 缁存寔 30 绉?6x 鐨勮繎鎴樿繛鍑诲€嶇巼
+/Lotus/Language/Challenges/Challenge_SustainMeleeComboThree_Single_Description -> 缁存寔 30 绉?6x 鐨勮繎鎴樿繛鍑诲€嶇巼
+/Lotus/Language/Challenges/Challenge_XmasScytheMeleeKill_Desc -> 鐢ㄥ啲鑷抽暟鍒€杩涜杩戞垬鍑绘潃
+/Lotus/Language/Challenges/Challenge_XmasScytheMeleeKill_Name -> 閾搁€?
+/Lotus/Language/ClanTech/SpectraCorpusLaserPistolName -> 鍏夎氨鍒囧壊鍣?
+/Lotus/Language/Conquest/Condition_MeleeOnlyEnemies -> 鐭叺鐩告帴
+/Lotus/Language/Conquest/Condition_MeleeOnlyEnemies_Desc -> 鍙嚭鐜拌繎鎴樻敾鍑荤殑鏁屼汉銆?
+/Lotus/Language/CorpusGasCity/GasMeleeName -> 姘旈浘鐩戝伐鑸瑰憳
+/Lotus/Language/CorpusGasCity/PrototypeMeleeName -> 骞跺悎寮х數鐏佃洐
+/Lotus/Language/CorpusRailjack/CrpBoardingMeleeSpacemanAgentDesc -> 鐗瑰寲鍨嬬櫥鑸颁綔鎴樺崟浣嶏紝閰嶆湁涓€鎶婂啿鍑婚敜锛屽彲蹇€熶娇鐩爣鑸拌埞涓婄殑鍏抽敭绯荤粺鐦棯銆?
+/Lotus/Language/CorpusRailjack/CrpBoardingMeleeSpacemanAgentName -> 娉版礇鐙傛毚鑰?
+/Lotus/Language/CorpusRailjack/CrpCrewMeleeAgentName -> 娉版礇璇¤涔嬪垉鑸瑰憳
+/Lotus/Language/CorpusRailjack/DeepSpaceBoardingMeleeSpaceman -> 濂ョ﹩鐙傛毚鑰?
+/Lotus/Language/CorpusRailjack/DeepSpaceCrpCrewMelee -> 濂ョ﹩璇¤涔嬪垉鑸瑰憳
+/Lotus/Language/CorpusRailjack/NeptuneBoardingMeleeSpaceman -> 鑹炬睈鐙傛毚鑰?
+/Lotus/Language/CorpusRailjack/NeptuneCrpCrewMelee -> 鑹炬睈璇¤涔嬪垉鑸瑰憳
+/Lotus/Language/CorpusRailjack/PlutoBoardingMeleeSpaceman -> 娌冩媺鐙傛毚鑰?
+/Lotus/Language/CorpusRailjack/PlutoCrpCrewMelee -> 娌冩媺璇¤涔嬪垉鑸瑰憳
+/Lotus/Language/Cosmetics/AshLeverianLiosPistolSkinName -> 寰风撼鏂墜鏋瑙?
+/Lotus/Language/Cosmetics/BaroInarosMeleeDangleDesc -> 杩欎釜涓庡畨鏅暱妫嶅瑙傛墍鎼厤鐨勫潬楗拌兘澶熺粰浠讳綍杩戞垬姝﹀櫒澧炴坊涓€涓濅紭闆呫€?
+/Lotus/Language/Cosmetics/BaroInarosMeleeDangleName -> 瀹夋櫘鍧犻グ
+/Lotus/Language/Cosmetics/BaroMeleeDangleDesc -> 涓轰綘鏈€鍑鸿壊鐨勬鍣ㄦ墦閫犵殑鏈€绮剧編鐨勫潬楗般€?
+/Lotus/Language/Cosmetics/BaroMeleeDangleName -> Ki'Teer 鍧犻グ
+/Lotus/Language/Cosmetics/ChromaDeluxeMeleeDangleDesc -> Chroma 鐜嬫湞鍙婁粬鐨勫悰鏉冨ぇ鍓戠殑鏍囧織鎬у潬楗般€?
+/Lotus/Language/Cosmetics/ChromaDeluxeMeleeDangleName -> 鏄捐吹鍧犻グ
+/Lotus/Language/Cosmetics/CorpusMeleeDangleDesc -> Corpus 鑱槑鎵嶆櫤鐨勪綋鐜般€?
+/Lotus/Language/Cosmetics/CorpusMeleeDangleName -> 姹傜煡鍧犻グ
+/Lotus/Language/Cosmetics/DrifterAgileAnims -> 婕傛硦鑰呰繀鎹风珯濮?
+/Lotus/Language/Cosmetics/DrifterAgileAnimsDesc -> 婕傛硦鑰呯殑杩呮嵎绔欏Э銆?
+/Lotus/Language/Cosmetics/DrifterNobleAnims -> 婕傛硦鑰呭皧璐电珯濮?
+/Lotus/Language/Cosmetics/DrifterNobleAnimsDesc -> 婕傛硦鑰呯殑灏婅吹绔欏Э銆?
+/Lotus/Language/Cosmetics/ElixisPistolSkinDesc -> 杩欐鍙ら摐鑹茬殑鎵嬫灙澶栬涓轰綘鐨勬墜鏋彁渚涗簡娴撴祿鐨勬€€鏃ч鏍笺€?
+/Lotus/Language/Cosmetics/ElixisPistolSkinName -> 闀€閾滄媺鐗规槀鎵嬫灙澶栬
+/Lotus/Language/Cosmetics/EmbolistMeleeDangleDesc -> 涓€灏忔鑳芥劅鏌撲换浣曡繎鎴樻鍣ㄦ彙鏌勭殑鎭跺績鑲夐』銆?
+/Lotus/Language/Cosmetics/EmbolistMeleeDangleName -> 鍥婇』鍧犻グ
+/Lotus/Language/Cosmetics/EmpyreanSentinelBundleName -> 楣﹂箟铻哄畧鎶ょ粍鍚堝寘
+/Lotus/Language/Cosmetics/EmpyreanSentinelMaskDesc -> 鐒曞彂鐫€鐠€鐠ㄧ敓鏈虹殑楣﹂箟铻虹洃瑙嗙潃鎴樿埌涓婄殑闄╂儏銆?
+/Lotus/Language/Cosmetics/EmpyreanSentinelMaskName -> 楣﹂箟铻哄畧鎶ら潰鍏?
+/Lotus/Language/Cosmetics/EmpyreanSentinelTailDesc -> 鍚庣疆鐨勮櫄绌洪硩鐗囪楣﹂箟铻轰繚鎸佺ǔ瀹氥€?
+/Lotus/Language/Cosmetics/EmpyreanSentinelTailName -> 楣﹂箟铻哄畧鎶ゅ熬閮?
+/Lotus/Language/Cosmetics/EmpyreanSentinelWingsDesc -> 铏氱┖浼樺寲鐨勯缈奸檮浠惰楣﹂箟铻轰繚鎸佹诞鍔涖€?
+/Lotus/Language/Cosmetics/EmpyreanSentinelWingsName -> 楣﹂箟铻哄畧鎶ら缈?
+/Lotus/Language/Cosmetics/ExilisSentinelCosmeticsDesc -> 涓鸿但鍒╀縿鏂姭涓婅繖娆惧彜閾滆壊澶栬锛屽湪璋冩煡鏃跺敖鏄鹃閲囥€?
+/Lotus/Language/Cosmetics/ExilisSentinelSkinName -> 璧埄淇勬柉 闀€閾滃瑙?
+/Lotus/Language/Cosmetics/GrendelArchwingName -> 澶栧泭鏇茬考澶栬
+/Lotus/Language/Cosmetics/GrnQueensMeleeDangleDesc -> 鍙栬嚜浜庢垬璐ヨ丹姣掑畧鍗€呯殑姝﹀櫒銆?
+/Lotus/Language/Cosmetics/GrnQueensMeleeDangleName -> 璧ゆ瘨缁崇粨
+/Lotus/Language/Cosmetics/HarkonarGLAPistolDesc -> 鍝堝簱閭ｉ鏍煎瑙傜殑鐜涚憺鐏灙锛岀敱澶村彿 Grineer 姝﹀櫒鍒堕€犲晢閾搁€犮€?
+/Lotus/Language/Cosmetics/HarkonarGLAPistolName -> 鐜涚憺鐏灙 鍝堝簱閭ｅ瑙?
+/Lotus/Language/Cosmetics/InfestedMeleeDangleName -> 灏鹃鍧犻グ
+/Lotus/Language/Cosmetics/JadeMeleeDangle2Desc -> 杩欎欢涓撳睘鐨勫潬楗颁笂浜ら敊闀跺祵鐫€鍙戝厜鐨勭俊缈犮€?
+/Lotus/Language/Cosmetics/JadeMeleeDangle2Name -> 缈＄繝绂忔礇鍏嬫柉鍧犻グ
+/Lotus/Language/Cosmetics/JadePatikaMeleeDangleDesc -> 涓€涓紭闆呭湴鎶寕鍦?Tenno 涓婂叿鏈変氦閿欑俊缈犲姬鍏夌殑鍧犻グ
+/Lotus/Language/Cosmetics/JadePatikaMeleeDangleName -> 缈＄繝鐞舵彁鍗″潬楗?
+/Lotus/Language/Cosmetics/LNYSnakeMeleeDangleDesc -> 鍦ㄨ繖浠跺潬楗颁腑锛屼紭闆呯殑鐏佃泧濡傚悓绁炲湥鐨勭怀绱㈢洏缁曞湪閲戦グ涓娿€?
+/Lotus/Language/Cosmetics/LNYSnakeMeleeDangleName -> 缂栫怀鍧犻グ
+/Lotus/Language/Cosmetics/NekrosDeluxeMeleeDangleDesc -> Nekros 浼婂崱鎷夌殑鏍囧織鎬у潬楗般€?
+/Lotus/Language/Cosmetics/NekrosDeluxeMeleeDangleName -> 钀ㄩ偅鎵樻柉鍧犻グ
+/Lotus/Language/Cosmetics/ObsidianMeleeDangle2Desc -> 涓€浠惰鏈€钃濈殑钃濊壊鎵€瑕嗙洊鐨勪笓灞炲潬楗般€?
+/Lotus/Language/Cosmetics/ObsidianMeleeDangle2Name -> 榛戞洔鐭充慨閬撻櫌鍧犻グ
+/Lotus/Language/Cosmetics/ObsidianSugatraMeleeDangleDesc -> 涓€涓涓栦唬鐨勫潬楗般€?
+/Lotus/Language/Cosmetics/ObsidianSugatraMeleeDangleName -> 榛戞洔鐭崇ⅶ绌哄潬楗?
+/Lotus/Language/Cosmetics/OpalMeleeDangleDesc -> 涓€浠跺儚閿ゅ瓙涓€鏍风殑涓撳睘鍧犻グ銆?
+/Lotus/Language/Cosmetics/OpalMeleeDangleName -> 铔嬬櫧鐭虫垬閿ゅ潬楗?
+/Lotus/Language/Cosmetics/SentientSentinelMaskName -> 鎬姏浣垮畧鎶ら潰鍏?
+/Lotus/Language/Cosmetics/SentientSentinelSkinName -> 鎬姏浣垮畧鎶ゅ瑙?
+/Lotus/Language/Cosmetics/SentientSentinelTailName -> 鎬姏浣垮畧鎶ゅ熬閮?
+/Lotus/Language/Cosmetics/SentientSentinelWingsName -> 鎬姏浣垮畧鎶ら缈?
+/Lotus/Language/Cosmetics/Sugotchi1999MeleeDangleDesc -> 鐢?1999 骞存渶鐑棬鐨勭帺鍏锋潵瑁呯偣浣犵殑姝﹀櫒銆?
+/Lotus/Language/Cosmetics/Sugotchi1999MeleeDangleName -> 濉斿瀹犵墿鍧犻グ
+/Lotus/Language/Cosmetics/TennoCon2022MeleeDangleDesc -> 鎺堜簣涓€鍚屽弬涓庢搴?TennoCon 2022 鐨勭帺瀹躲€?
+/Lotus/Language/Cosmetics/TennoCon2022MeleeDangleName -> TennoCon 2022 鍧犻グ
+/Lotus/Language/Cosmetics/ThanotechSentinelMaskDesc -> 娈佷笘姊扮伒鍧氭寔閲囩敤鍙よ€佷笖鍙潬鐨勮嫳鎷╄皼鎶€鏈紝鑰屼笉鏄换浣曟洿鍏堣繘鐨勬妧鏈€?
+/Lotus/Language/Cosmetics/ThanotechSentinelMaskName -> 娲涘痉瀹堟姢闈㈠叿
+/Lotus/Language/Cosmetics/ThanotechSentinelTailName -> 娲涘痉瀹堟姢灏鹃儴
+/Lotus/Language/Cosmetics/ThanotechSentinelWingsDesc -> 鎵€鏈夌殑娈佷笘姊扮伒閮借兘浠ュ畬缇庣殑濮挎€佽繘琛屾偓鍋滃拰鏈哄姩銆?
+/Lotus/Language/Cosmetics/ThanotechSentinelWingsName -> 娲涘痉瀹堟姢椋炵考
+/Lotus/Language/Cosmetics/TwitchPrimeMeleeDangleDesc -> 鐢ㄨ繖娆鹃瓍鍔涘洓灏勭殑鍧犻グ鏉ュ惛寮曠溂鐞冦€?
+/Lotus/Language/Cosmetics/TwitchPrimeMeleeDangleName -> 鍗庝附婕斿嚭 Prime 鍧犻グ
+/Lotus/Language/CraftingComponents/AthodaiPistolBarrel -> 闃跨储浠?鏋
+/Lotus/Language/CraftingComponents/AthodaiPistolReceiver -> 闃跨储浠?鏋満
+/Lotus/Language/CraftingComponents/EmpyreanSentinelCarapace -> 楣﹂箟铻?澶栧３
+/Lotus/Language/CraftingComponents/EmpyreanSentinelCerebrum -> 楣﹂箟铻?澶撮儴
+/Lotus/Language/CraftingComponents/EmpyreanSentinelSystems -> 楣﹂箟铻?绯荤粺
+/Lotus/Language/CraftingComponents/LasSilencedPistolBarrel -> 澶滆鑰?77 鏋
+/Lotus/Language/CraftingComponents/LasSilencedPistolReceiver -> 澶滆鑰?77 鏋満
+/Lotus/Language/CraftingComponents/LasSilencedPistolStock -> 澶滆鑰?77 鎻℃焺
+/Lotus/Language/CraftingComponents/NonPrimeSentinelAccessoryCraftingComponentDesc -> 涓€涓畧鎶ょ殑闆朵欢鍒朵綔閮ㄤ欢銆?
+/Lotus/Language/CraftingComponents/NonPrimeSentinelCraftingComponentDesc -> 涓€涓畧鎶ょ殑鍒朵綔閮ㄤ欢銆?
+/Lotus/Language/CraftingComponents/PrimeSentinelAccessoryCraftingComponentDesc -> 涓€涓埗閫?Prime 鍚屼即閰嶄欢鐨勭粍浠躲€?
+/Lotus/Language/CraftingComponents/PrimeSentinelCraftingComponentDesc -> 涓€涓?Prime 瀹堟姢鐨勫埗浣滈儴浠躲€?
+/Lotus/Language/CraftingComponents/ThanotechPistolBarrel -> 杩藉嚮鑰?鏋
+/Lotus/Language/CraftingComponents/ThanotechPistolReceiver -> 杩藉嚮鑰?鏋満
+/Lotus/Language/CraftingComponents/TnYareliPistolBarrel -> 鍗″笗鍘嬪姏鏋?鏋
+/Lotus/Language/CraftingComponents/TnYareliPistolReceiver -> 鍗″笗鍘嬪姏鏋?鏋満
+/Lotus/Language/CrewMemberTraits/PistolCritTraitDesc -> |VAL|% 鎵嬫灙鏆村嚮鍑犵巼
+/Lotus/Language/Dojo/TRADE_ERR_MISSING_ARCHWING_SLOT_BUDDY -> 浜ゆ槗澶辫触锛氫綘鐨勪氦鏄撳璞℃湭鎷ユ湁瓒冲鐨勬洸缈兼鍣ㄦЫ浣嶄互鎺ュ彈浣犳彁渚涚殑姝﹀櫒銆?
+/Lotus/Language/Dojo/TRADE_ERR_MISSING_SENTINEL_SLOT_BUDDY -> 浜ゆ槗澶辫触锛氫綘鐨勪氦鏄撳璞℃湭鎷ユ湁瓒冲鐨勫畧鎶ゆЫ浣嶆潵鎺ュ彈浣犳彁渚涚殑瀹堟姢 / 瀹堟姢姝﹀櫒銆?
+/Lotus/Language/Duviri/ControlsMelee -> MELEE|杩戞垬 / 杩戞垬妯″紡
+/Lotus/Language/Duviri/DrifterBoonReward -> |RARITY|鐜嬩护
+/Lotus/Language/Duviri/DrifterHints/DrifterIntrinsics_0 -> 鍐呮簮涔嬪姏鏄浣犵殑婕傛硦鑰呯殑姘镐箙鎬у崌绾э紝閫傜敤浜庢瘡娆＄殑鍙岃鐜嬪涔嬫梾銆?
+/Lotus/Language/Duviri/DrifterHints/DrifterIntrinsics_2 -> 鍐呮簮涔嬪姏鐐规暟涓€缁忔姇鍏ュ垯鏃犳硶鏇存敼锛岃鎱庨噸閫夋嫨锛?
+/Lotus/Language/Duviri/DrifterHints/DrifterIntrinsics_4 -> 鍙鏁伴噺鏈夊墿浣欙紝瓒呭畯闃叉姢灏变細涓烘紓娉婅€呭拰鎴樼敳鎻愪緵棰濆鐢熷懡鍊肩殑淇濇姢锛屽拰鍑诲€掑厤鐤€?
+/Lotus/Language/Duviri/DrifterHints/DrifterIntrinsics_6 -> 婕傛硦鑰呯殑銆屾仮澶嶈嵂鍓傘€嶆妧鑳藉彲浠ユ仮澶?100 鐢熷懡鍊煎苟娓呴櫎寮傚父鐘舵€併€?
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat -> 鎴樻枟
+/Lotus/Language/Duviri/DrifterIntrinsics/CombatDesc -> 鎻愰珮婕傛硦鑰呯殑鎴樻枟鑳藉姏銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/CombatDesc_1 -> 浣犺幏寰楃殑姣忎釜鐜嬩护鍙彁渚?+10% 鐨勪激瀹炽€?
+/Lotus/Language/Duviri/DrifterIntrinsics/CombatDesc_10 -> 鍦ㄥ弻琛嶇帇澧冧腑锛屼娇鐢ㄦ妧鑳芥椂浼ゅ鎻愰珮 150%锛屾寔缁?3 绉掋€?
+/Lotus/Language/Duviri/DrifterIntrinsics/CombatDesc_2 -> 鍦ㄥ弻琛嶇帇澧冧腑锛岃幏寰楁仮澶嶆晥鏋滄椂绉诲姩閫熷害鎻愰珮锛屾寔缁?5 绉掋€?
+/Lotus/Language/Duviri/DrifterIntrinsics/CombatDesc_4 -> 鍦ㄥ弻琛嶇帇澧冧腑锛屾紓娉婅€呭己鍔涙敾鍑诲喎鍗存椂闂村噺灏?30%銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/CombatDesc_5 -> 鍦ㄥ弻琛嶇帇澧冧腑锛屾紓娉婅€呮妧鑳藉喎鍗存椂闂村噺灏?20%銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/CombatDesc_7 -> 鍦ㄥ弻琛嶇帇澧冧腑锛屾鍣ㄦ毚鍑诲嚑鐜囧鍔?20%锛屾寜鍔犳硶璁＄畻銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/CombatDesc_8 -> 灏嗕紶璇嗘毚娑ㄧ殑鎸佺画鏃堕棿澧炲姞 50%銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/CombatDesc_9 -> 婕傛硦鑰呴€犳垚 +25% 鐨勪激瀹炽€傚湪濮嬫簮鏄熺郴涓紝婕傛硦鑰呭拰鎸囨尌瀹橀兘鍙幏寰楄繖涓姞鎴愩€?
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat_1 -> 鑷村懡鐜嬩护
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat_10 -> 寮哄娍鎶€鑳?
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat_2 -> 鑲句笂鑵虹礌椋欏崌
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat_3 -> 浼犺瘑鍚屾
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat_4 -> 杩呮嵎鎵撳嚮
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat_5 -> 鎬ラ€熸妧鑳?
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat_6 -> 绁炵粡鑴夊啿
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat_7 -> 姝﹀櫒澶у笀
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat_8 -> 浼犺瘑鍗忓悓
+/Lotus/Language/Duviri/DrifterIntrinsics/Combat_9 -> 宸ㄥ姏钃勭Н
+/Lotus/Language/Duviri/DrifterIntrinsics/DrifterIntrinsics -> 婕傛硦鑰呭唴婧愪箣鍔?
+/Lotus/Language/Duviri/DrifterIntrinsics/DrifterIntrinsicsDesc -> 绠＄悊鍐呮簮涔嬪姏
+/Lotus/Language/Duviri/DrifterIntrinsics/DrifterIntrinsicsMaxed -> 宸叉帉鎻℃墍鏈夊唴婧愪箣鍔?
+/Lotus/Language/Duviri/DrifterIntrinsics/DrifterIntrinsicsSkillNeeded -> 鍗囩骇楠戞湳鍐呮簮涔嬪姏浠ヨ幏寰楀彫鍞ょ粷鐏甸鎶€鑳?
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance -> 闊ф€?
+/Lotus/Language/Duviri/DrifterIntrinsics/EnduranceDesc -> 鎻愰珮婕傛硦鑰呯殑鐢熷瓨鑳藉姏銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/EnduranceDesc_1 -> 浣犺幏寰楃殑姣忎釜鐜嬩护閮戒細涓烘紓娉婅€呯殑鏈€澶х敓鍛藉€煎鍔?25銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/EnduranceDesc_10 -> 鍙楀埌鑷村懡浼ゅ鏃朵繚鐣?20% 鐢熷懡鍊煎苟鑾峰緱 3 绉掓棤鏁岋紝鍐峰嵈鏃堕棿 200 绉掋€?
+/Lotus/Language/Duviri/DrifterIntrinsics/EnduranceDesc_2 -> 閫夋嫨鐜嬩护鏃跺畬鍏ㄦ仮澶嶇敓鍛藉€煎拰鑳介噺銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/EnduranceDesc_3 -> 鍦ㄥ弻琛嶇帇澧冧腑鑾峰緱涓€娆￠澶栧娲绘満浼氥€?
+/Lotus/Language/Duviri/DrifterIntrinsics/EnduranceDesc_4 -> 鎷涙灦鍙幏寰?+25 鐢熷懡鍊笺€傜簿纭嫑鏋跺彲鑾峰緱 +50 鐢熷懡鍊笺€?
+/Lotus/Language/Duviri/DrifterIntrinsics/EnduranceDesc_5 -> 婕傛硦鑰呯殑鏈€澶х敓鍛藉€奸澶?+50% 銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/EnduranceDesc_6 -> 鍦ㄧ簿纭嫑鏋舵椂锛岃幏寰楅澶栫殑浼犺瘑鏆存定鍏呰兘銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/EnduranceDesc_7 -> 閫犳垚鐖嗗ご鏃舵瘡绉掓仮澶?10 鐢熷懡鍊硷紝鎸佺画 5 绉掋€?
+/Lotus/Language/Duviri/DrifterIntrinsics/EnduranceDesc_8 -> 鍦ㄥ弻琛嶇帇澧冧腑鑾峰緱涓€娆￠澶栧娲绘満浼氥€?
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance_1 -> 鍥虹浘鐜嬩护
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance_10 -> 璇堟
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance_2 -> 鎭㈠鐜嬩护
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance_3 -> 鍐冲績
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance_4 -> 鐏靛阀闃插尽鑰?
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance_5 -> 澶╃敓骞稿瓨鑰?
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance_6 -> 绮剧‘涔嬪姏
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance_7 -> 绁炴灙鎵嬬殑璧忛噾
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance_8 -> 鎵х潃
+/Lotus/Language/Duviri/DrifterIntrinsics/Endurance_9 -> 鍧氶煣寮烘倣
+/Lotus/Language/Duviri/DrifterIntrinsics/FastTravelRequiresHorse -> 楠戜笂涓€鍖圭粷鐏甸锛屼互渚垮揩閫熺Щ鍔ㄨ嚦宸茶澶囩粷鐏甸鐨勬紓娉婅€呯殑浣嶇疆銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/FastTravelTemporarilyDisabled -> 蹇€熺Щ鍔ㄧ洰鍓嶄笉鍙敤銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/FastTravelToDrifterMarkerLabel -> 婕傛硦鑰?
+/Lotus/Language/Duviri/DrifterIntrinsics/Heroics -> 鑻卞媷鏃犵晱
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity -> 鏈洪亣
+/Lotus/Language/Duviri/DrifterIntrinsics/OpportunityDesc -> 涓烘紓娉婅€呮彁鍗囪繍姘斿苟鎻愪緵鏇村閫夋嫨銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/OpportunityDesc_1 -> 鐜嬩护閫夋嫨涓彁渚涢澶栫殑閫夐」銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/OpportunityDesc_10 -> 涓€涓笉澶彲鑳界殑鐩熷弸鍋跺皵浼氫綔涓轰竴涓彲鐜╂垬鐢插嚭鐜板湪 Teshin 鐨勬礊绌翠腑銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/OpportunityDesc_2 -> 鍦?Teshin 鐨勬礊绌翠腑鑾峰緱涓や釜棰濆鐨勬鍣ㄩ€夋嫨銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/OpportunityDesc_3 -> 褰撲綘杩涘叆鍙岃鐜嬪鏃惰幏寰楀厤璐圭殑鐜嬩护銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/OpportunityDesc_5 -> +50% 鑾峰緱绋€鏈夌帇浠ょ殑鍑犵巼
+/Lotus/Language/Duviri/DrifterIntrinsics/OpportunityDesc_6 -> 鏀惧純鎵€鎻愪緵鐨勭帇浠や互鑾峰緱鍏ㄦ柊鐨勯€夋嫨锛屾瘡娆¤闂弻琛嶇帇澧冩渶澶氬彲浠ユ洿鎹?3 娆°€?
+/Lotus/Language/Duviri/DrifterIntrinsics/OpportunityDesc_7 -> 鍦?Teshin 鐨勬礊绌翠腑鑾峰緱涓や釜棰濆鐨勬鍣ㄩ€夋嫨銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/OpportunityDesc_8 -> 鍦?Teshin 鐨勬礊绌翠腑鑾峰緱涓€涓澶栫殑鎴樼敳閫夋嫨銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/OpportunityDesc_9 -> 瑷€褰曚娇鐨勫晢搴楃幇鍦ㄦ瘡澶╁寘鍚竴涓祴鑳姐€?
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity_1 -> 闄勫姞鐜嬩护
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity_10 -> 闄岀敓榛戣。浜?
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity_2 -> 鎵╁厖鍐涙搴?
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity_3 -> 寮€闂ㄧ孩
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity_4 -> 涓板瘜鎴樼敳
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity_5 -> 瀵诲疂鑰?
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity_6 -> 鏂版墜姘?
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity_7 -> 鏈€澶у寲鍐涙搴?
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity_8 -> 鎴樼敳澶氭牱鎬?
+/Lotus/Language/Duviri/DrifterIntrinsics/Opportunity_9 -> 楂樹环鍊煎晢浜?
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding -> 楠戞湳
+/Lotus/Language/Duviri/DrifterIntrinsics/RidingDesc -> 寮哄寲楠戜箻缁濈伒楠ャ€?
+/Lotus/Language/Duviri/DrifterIntrinsics/RidingDesc_1 -> 鎸変笅 <ACTIVATE_ABILITY_0> 鍙敜浣犵殑缁濈伒楠ャ€?
+/Lotus/Language/Duviri/DrifterIntrinsics/RidingDesc_10 -> 浣跨敤鍦板浘蹇€熷墠寰€鍏朵粬婕傛硦鑰呯殑浣嶇疆銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/RidingDesc_1_Touch -> 鐐瑰嚮 <IOS_DUVIRI_ABILITY_1> 鍙敜浣犵殑缁濈伒楠ャ€?
+/Lotus/Language/Duviri/DrifterIntrinsics/RidingDesc_2 -> 鍙楁晫浜哄奖鍝嶈€屼笅椹殑鎶楁€ф彁鍗囥€?
+/Lotus/Language/Duviri/DrifterIntrinsics/RidingDesc_4 -> 浣跨敤杩涢樁鍦板浘蹇€熺Щ鍔ㄨ嚦鍙岃鐜嬪涓績浣嶇疆鍜屾瘝鐭抽洉鍍?<DUVIRI_TP>
+/Lotus/Language/Duviri/DrifterIntrinsics/RidingDesc_5 -> 褰撲綘楠戠潃缁濈伒楠ユ椂锛屽湴鍥句笂妞嶇墿鍜屽博鐭充細琚爣璁般€?
+/Lotus/Language/Duviri/DrifterIntrinsics/RidingDesc_7 -> 鍑忓皯鍐插埡涔嬮棿鐨勫喎鍗存椂闂淬€?
+/Lotus/Language/Duviri/DrifterIntrinsics/RidingDesc_8 -> 涓轰綘鐨勭粷鐏甸鍛藉悕銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/RidingDesc_9 -> 鑾峰緱鍦ㄥ婧愭槦绯荤殑寮€鏀句笘鐣屼换鍔′腑鍙敜缁濈伒楠ョ殑鑳藉姏銆?
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding_1 -> 鍙敜缁濈伒楠?
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding_10 -> 鑱氶泦绉诲姩
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding_2 -> 楠戝＋姣呭姏
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding_3 -> 閾侀獞閲嶈笍
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding_4 -> 蹇€熺Щ鍔?
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding_5 -> 骞冲潶璺緞
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding_6 -> 绋冲浐钀藉湴
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding_7 -> 鑰愬姏楠戣€?
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding_8 -> 鐙壒韬唤
+/Lotus/Language/Duviri/DrifterIntrinsics/Riding_9 -> 鎰忓康鍚堜竴
+/Lotus/Language/Duviri/DrifterIntrinsics/Skill -> 鎴樻枟鎶€宸?
+/Lotus/Language/Duviri/DrifterIntrinsics/Survivability -> 鐢熷瓨鏈兘
+/Lotus/Language/Duviri/DrifterIntrinsics/VoidAffinity -> 铏氱┖浜插拰
+/Lotus/Language/Duviri/DrifterWeaponPurchaseDragonItem -> |NUM| |ITEM_NAME|
+/Lotus/Language/Duviri/DuviriDaxMeleeDesc -> 
+/Lotus/Language/Duviri/DuviriDaxMeleeName -> 绂佸崼鍓戝＋
+/Lotus/Language/Duviri/DuviriLoadingTips/Callout_Melee -> 鎸変笅 <MELEE>
+/Lotus/Language/Duviri/DuviriLoadingTips/Callout_MeleeAlt -> 鎸変笅 <PRE_ATTACK>
+/Lotus/Language/Duviri/DuviriLoadingTips/Callout_MeleeChannel -> 鎸変笅 <MELEE_CHANNEL>
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialAttack -> |MELEE| 杩涜杩戞垬鏀诲嚮
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialAttackTracker -> 鍑讳腑绂佸崼 |COUNT| 娆?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialBlock -> 鎸変綇 |INPUT| 浠ヨ繘琛屾牸鎸°€?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialBlockTracker -> 鏍兼尅 |COUNT| 娆℃敾鍑?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialCounter -> 鎸変笅 <MELEE> 瀵规牸鎸＄殑鏁屼汉杩涜鍙嶅嚮
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialDefeat -> 鐢ㄤ綘瀛﹀埌鐨勬妧宸ф墦璐ユ晫浜恒€?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialDefeatTracker -> 鍑昏触 |COUNT| 涓鍗?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialDodgeTracker -> 闂伩 |COUNT| 娆℃敾鍑?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialHeal -> 鎸変笅 |INPUT| 浠ユ仮澶嶇敓鍛藉€?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialHealTracker -> 鎭㈠鐢熷懡鍊?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialHeavyAttackTracker -> 鍑荤牬绂佸崼鐨勬牸鎸?|COUNT| 娆?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialHeavy_Controller -> 浣跨敤 <SECONDARY_FIRE> 閲嶅嚮鍑荤牬鏁屼汉鐨勬牸鎸?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialHeavy_KBM -> 浣跨敤 |INPUT| 閲嶅嚮鍑荤牬鏁屼汉鐨勬牸鎸?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialInterruptTracker -> 鎵撴柇 |COUNT| 娆＄壒娈婃妧鑳?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialLockOn -> |INPUT| 閿佸畾涓€涓晫浜?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialLockOnTracker -> 閿佸畾绂佸崼鏁屼汉
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialLockOn_Touch -> 娉ㄨ鏁屼汉骞跺湪鍏跺彲閿佸畾鏃?|INPUT| 浠ラ攣瀹?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialParryTracker -> 鎷涙灦 |COUNT| 娆℃敾鍑?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialRangedParry -> 鍦ㄦ潵琚殑鎶曞皠鐗╁埌杈句箣闄呮寜涓?|INPUT| 浠ュ皢鍏跺弽寮瑰洖鍘汇€?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialRangedParryTracker -> 鍙嶅脊鎶曞皠鐗?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialSpecialAttackTracker -> 浣跨敤寮哄姏鏀诲嚮
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialSwapTarget -> |INPUT| 浠ユ洿鏀瑰凡閿佸畾鐨勭洰鏍囷紝|INPUT_2| 浠ラ攣瀹氫竴涓晫浜恒€?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialSwapTargetTracker -> 鍒囨崲鐩爣 |COUNT| 娆?
+/Lotus/Language/Duviri/DuviriQuest/MeleeTutorialSwapTarget_Touch -> 鍚戜袱渚ф粦鍔ㄤ互鏇存敼宸查攣瀹氱殑鐩爣锛寍INPUT| 浠ラ攣瀹氫竴涓晫浜恒€?
+/Lotus/Language/Duviri/DuviriQuest/StageFourGetMelee -> 鎴樼敳杩戞垬姝﹀櫒
+/Lotus/Language/Duviri/DuviriQuest/StageTwoSelectMeleeObj -> 閫夋嫨杩戞垬姝﹀櫒
+/Lotus/Language/Duviri/DuviriQuest/StageTwoTestMeleeObj -> 璇佹槑浣犲杩戞垬姝﹀櫒鐨勭啛缁冪▼搴?
+/Lotus/Language/Enemies/CCTeamASentinelName -> Sol
+/Lotus/Language/Enemies/EidolonGrineerJetpackMeleeName -> 宸ㄧ墮鎺犲ず鑰?
+/Lotus/Language/Enemies/EidolonGrineerPistol -> 宸ㄧ墮杩借釜鑰?
+/Lotus/Language/Enemies/EidolonGrineerSawmanMelee -> 宸ㄧ墮灞犲か
+/Lotus/Language/Enemies/SentientMeleeGruntAltDesc -> 涓€涓辜骞寸殑闇囪崱浣匡紝瀹冨湪瀹屽叏鎴愰暱濂戒箣鍓嶅氨琚紪鍏ュ啗闃熶簡銆?
+/Lotus/Language/Enemies/SentientMeleeGruntAltName -> 鍒濈骇闇囪崱浣?
+/Lotus/Language/EntratiLab/EntratiGeneral/AlchemyNecramechMelee -> 鍏冪礌寮х姮
+/Lotus/Language/EntratiLab/EntratiGeneral/AlchemyNecramechMeleeCold -> 浣庢俯寮х姮
+/Lotus/Language/EntratiLab/EntratiGeneral/AlchemyNecramechMeleeElectric -> 鐢靛嚮寮х姮
+/Lotus/Language/EntratiLab/EntratiGeneral/AlchemyNecramechMeleeHeat -> 鐑伀寮х姮
+/Lotus/Language/EntratiLab/EntratiGeneral/AlchemyNecramechMeleeToxin -> 鑴撴瘨寮х姮
+/Lotus/Language/EntratiLab/EntratiGeneral/EntratiDoppelgangerMeleeName -> 鍢茶浣庤
+/Lotus/Language/EntratiLab/EntratiGeneral/NecramechMeleeName -> 鏆存埦寮х姮
+/Lotus/Language/Focus/FocusTacticChaosMeleeCritLifeDrainName -> 鍒涚棝鍥炲
+/Lotus/Language/Focus/FocusTacticCloakMeleeCritName -> 铏氱┖鍖胯
+/Lotus/Language/Focus/FocusTacticMeleeComboDesc -> 鑴辩鎴樻枟鍚庢瘡闅斿嚑绉掞紝杩戞垬杩炲嚮鏁拌“鍑?|AMOUNT|锛岃€岄潪瀹屽叏褰掗浂銆?
+/Lotus/Language/Focus/FocusTacticMeleeComboName -> 鍔涢噺婵€澧?
+/Lotus/Language/Focus/FocusTacticMeleeXpDesc -> 杩戞垬鍑绘潃鑾峰緱棰濆 |PERCENT|% 鐨勮繎鎴樻鍣ㄧ粡楠屽€笺€?
+/Lotus/Language/Focus/FocusTacticMeleeXpName -> 缁忛獙婵€澧?
+/Lotus/Language/Focus/FocusTacticResidualMeleeCritDesc -> 蹇冪伒灏栧埡浼氬湪浠诲姟鏈熼棿鍐呭鍔犱綘杩戞垬姝﹀櫒鐨勬毚鍑诲嚑鐜?|CHANCE|% 銆?
+/Lotus/Language/Focus/FocusTacticResidualMeleeCritName -> 鑷村懡鏉€鏈?
+/Lotus/Language/Focus/FocusTacticResidualMeleeXPDesc -> 蹇冪伒灏栧埡浼氬湪浠诲姟鏈熼棿鍐呭鍔犱綘杩戞垬姝﹀櫒鍑绘潃鐨勬晫浜虹粡楠屽€?|PCT|%銆?
+/Lotus/Language/Focus/FocusTacticResidualMeleeXPName -> 鎴樼暐瀹炴柦
+/Lotus/Language/Focus/FocusWardResidualMeleeArmourName -> 寮哄姏涓€鍑?
+/Lotus/Language/Focus/Ward_ReviveTeamSentinelsDesc -> 閲嶇敓浠讳綍鏃犳硶鎴樻枟鐨勫畧鎶?
+/Lotus/Language/Focus/Ward_ReviveTeamSentinelsName -> 瀹堟姢閲嶇敓
+/Lotus/Language/Focus/Warrior_MeleeBuffGreatSwordsDesc -> 宸ㄥ墤姝﹀櫒浼ゅ +50%
+/Lotus/Language/Focus/Warrior_MeleeBuffGreatSwordsName -> 宸ㄥ墤澶у笀
+/Lotus/Language/Focus/Warrior_MeleeBuffHammersAndAxesDesc -> 鎴橀敜涓庢垬鏂ф鍣ㄤ激瀹?+50%
+/Lotus/Language/Focus/Warrior_MeleeBuffHammersAndAxesName -> 鎴橀敜涓庢垬鏂ф椂闂?
+/Lotus/Language/Focus/Warrior_MeleeBuffSwordsDesc -> 闀垮墤姝﹀櫒浼ゅ +50%
+/Lotus/Language/Focus/Warrior_MeleeBuffSwordsName -> 闀垮墤澶у笀
+/Lotus/Language/Focus/Warrior_WeaponAimBonusPistolDesc -> 浠ユ墜鏋瀯鍑嗘椂閫犳垚鏇村浼ゅ銆?
+/Lotus/Language/Focus/Warrior_WeaponAimBonusPistolName -> 鎵嬫灙澶у笀
+/Lotus/Language/Fragments/ArchwingSongName -> 鏇茬考
+/Lotus/Language/Fragments/Sentinels1 -> 瀹堟姢
+/Lotus/Language/Fragments/Sentinels1Flavor -> 瀹堟姢
+/Lotus/Language/Fragments/SongFragDriftersRespite -> 婕傛硦鑰呭皬鎲?
+/Lotus/Language/Fragments/SongFragmentAngelsRequiem -> 澶╀娇瀹夐瓊鏇?
+/Lotus/Language/G1Quests/ArchwingOrokinSabFindArchive -> 鎵惧埌閭ｄ唤濂ョ綏閲戞。妗?
+/Lotus/Language/G1Quests/EarlyGameSentinelInboxTitle -> 澶辫€屽寰楃殑鐩熷弸
+/Lotus/Language/Game/AcolyteMeleeCrawler -> 铏氱┖涔嬪奖
+/Lotus/Language/Game/AcolyteMeleeCrawlerDesc -> 濞佸姏杈冨急鐨勫埄鐖敾鍑?
+/Lotus/Language/Game/ArchwingDefenseArtifact -> 澶┖姊?
+/Lotus/Language/Game/ArchwingDefenseArtifactDesc -> 澶┖姊渶瑕佷繚鎶?
+/Lotus/Language/Game/ArchwingMobDefObjects -> 浜洪€犲崼鏄燂細
+/Lotus/Language/Game/CorpusArtificerSentinel -> 鑷垎鏈?
+/Lotus/Language/Game/CorpusArtificerSentinelDesc -> 褰撹嚜韬彈鍒板▉鑳佹椂浼氬啿鍚戠洰鏍囧苟鑷垎銆?
+/Lotus/Language/Game/EidolonLephantisMeleeHead -> 鍏嶇柅琛€鑳炰綋 Grineer
+/Lotus/Language/Game/FortressGrineerPistol -> 璧ゆ瘨杩借釜鑰?
+/Lotus/Language/Game/FortressGrineerSawmanMelee -> 璧ゆ瘨灞犲か
+/Lotus/Language/Game/GearErrorCannontUseInArchWing -> 鏃犳硶鍦ㄦ洸缈兼ā寮忎腑浣跨敤
+/Lotus/Language/Game/GolemBossMeleeHead -> Grineer 鎰熸煋鑰?
+/Lotus/Language/Game/GrineerArtificerSentinel -> 鑷垎铏?
+/Lotus/Language/Game/GrineerArtificerSentinelDesc -> 褰撹嚜韬彈鍒板▉鑳佹椂浼氬啿鍚戠洰鏍囧苟鑷垎銆?
+/Lotus/Language/Game/GrineerJetpackMelee -> 鏂櫘鎷?
+/Lotus/Language/Game/GrineerJetpackMeleeDesc -> 
+/Lotus/Language/Game/GrineerMarinePistolDesert -> 娌欐紶杩借釜鑰?
+/Lotus/Language/Game/GrineerMarinePistolForest -> 鍓嶇嚎杩借釜鑰?
+/Lotus/Language/Game/GrineerMeleeLeader -> 鐢靛瓙浜?
+/Lotus/Language/Game/GrineerMeleeMarine -> 灞犲か
+/Lotus/Language/Game/GrineerPistol -> 杩借釜鑰?
+/Lotus/Language/Game/GrineerSawmanMelee -> 灞犲か
+/Lotus/Language/Game/GrineerSawmanMeleeDesc -> 鍒€鐮嶈兘閫犳垚鑷村懡浼ゅ
+/Lotus/Language/Game/InfestedMeleeCrawler -> 鐖鑰?
+/Lotus/Language/Game/InfestedMeleeCrawlerDesc -> 濞佸姏杈冨急鐨勫埄鐖敾鍑?
+/Lotus/Language/Game/InfestedMeleeRunner -> 鐤惧啿鑰?
+/Lotus/Language/Game/InfestedMeleeRunnerDesc -> 蹇€燂紝浣跨敤濞佸姏杈冨急鐨勫埄鐖敾鍑?
+/Lotus/Language/Game/KillAllWithMelee -> 浠ヨ繎鎴樻鍣ㄥ嚮鏉€鍏ㄩ儴鐨勬晫浜?
+/Lotus/Language/Game/MELEE_RANGE_BONUS -> 杩戞垬鑼冨洿鍔犳垚锛?锛?
+/Lotus/Language/Game/MELEE_RANGE_BONUS_NO_UNIT -> 杩戞垬鑼冨洿鍔犳垚
+/Lotus/Language/Game/MeleeSpaceMan -> 鐩戝伐鑸瑰憳
+/Lotus/Language/Game/OperatorAbilityMelee -> 铏氱┖鐖嗚
+/Lotus/Language/Game/OperatorMeleeTutorial -> 鎸変笅 <MELEE> 浣跨敤铏氱┖鐖嗚
+/Lotus/Language/Game/Pistol -> 浣犵殑绗竴鎶婃鍣? 鎵嬫灙銆?
+/Lotus/Language/Game/SeaLabGrineerMarinePistol -> 榫欒埌杩借釜鑰?
+/Lotus/Language/Game/SentientMeleeTrooperName -> 闇囪崱浣?
+/Lotus/Language/Game/SentientVoidMeleeName -> 鑵愭溄闇囪崱浣?
+/Lotus/Language/Game/TutorialLonggun -> 浣犵殑绗簩涓鍣? 闀挎灙銆?
+/Lotus/Language/Game/TutorialMelee_PS4 -> 鎸変笅<MELEE> 蹇€熸敾鍑汇€?
+/Lotus/Language/Game/TutorialMelee_PS5 -> 鎸変笅<MELEE> 蹇€熸敾鍑汇€?
+/Lotus/Language/Game/TutorialMelee_Switch -> 鎸変笅<MELEE> 蹇€熸敾鍑汇€?
+/Lotus/Language/Game/TutorialMelee_Windows -> 鎸変笅<MELEE> 蹇€熸敾鍑汇€?
+/Lotus/Language/Game/TutorialMelee_XBone -> 鎸変笅<MELEE> 蹇€熸敾鍑汇€?
+/Lotus/Language/Game/TutorialMelee_XSX -> 鎸変笅<MELEE> 蹇€熸敾鍑汇€?
+/Lotus/Language/Glyphs/RequiemFassGlyphName -> Fass 娴嵃
+/Lotus/Language/Glyphs/RequiemJahuGlyphName -> Jahu 娴嵃
+/Lotus/Language/Glyphs/RequiemKhraGlyphName -> Khra 娴嵃
+/Lotus/Language/Glyphs/RequiemLohkGlyphName -> Lohk 娴嵃
+/Lotus/Language/Glyphs/RequiemNetraGlyphName -> Netra 娴嵃
+/Lotus/Language/Glyphs/RequiemRisGlyphName -> Ris 娴嵃
+/Lotus/Language/Glyphs/RequiemVomeGlyphName -> Vome 娴嵃
+/Lotus/Language/Glyphs/RequiemXataGlyphName -> Xata 娴嵃
+/Lotus/Language/Hints/RespawnMelee -> 鍦ㄤ綘鐨勮繎鎴樻鍣ㄤ笂瀹夎骞跺崌绾у帇杩偣 Mod锛屼互鏄捐憲澧炲己浣犵殑杩戞垬浼ゅ銆?
+/Lotus/Language/HolsterCustomizations/PistolHipsDual -> 鍙屾灙鏍囧噯鏀剁撼濮挎€?
+/Lotus/Language/HolsterCustomizations/PistolHipsDualDesc -> 缁欏弻鏋墍浣跨敤鐨勬爣鍑嗘敹绾冲Э鎬併€?
+/Lotus/Language/HolsterCustomizations/PistolHipsR -> 鎵嬫灙鏍囧噯鏀剁撼濮挎€?
+/Lotus/Language/HolsterCustomizations/PistolHipsRDesc -> 缁欏崟鎸佹墜鏋墍浣跨敤鐨勬爣鍑嗘敹绾冲Э鎬併€?
+/Lotus/Language/InfestedMicroplanet/MeleeAncientMicroPlanetName -> 鎯婃儳杩滃彜骞叉壈鑰?
+/Lotus/Language/InfestedMicroplanet/MeleeMicroPlanetRunnerName -> 鎯婃儳濂旇窇鑰?
+/Lotus/Language/Items/AkimboAutoPistolName -> 鐩楄醇鍙屾灙
+/Lotus/Language/Items/AkimboPistolName -> 鎷夋墭鍙屾灙
+/Lotus/Language/Items/AkimboSomaPistolsDesc -> 锛堣嫳鏂囷細AKSOMATI 锛夋湀绁炴鏋殑寮哄ぇ濞佸姏琚嚌鑱氬湪杩欏浼橀泤鐨勬墜鏋綋涓€?
+/Lotus/Language/Items/AkimboSomaPistolsName -> 杞荤伒鏈堢鍙屾灙
+/Lotus/Language/Items/AkimboViperPistolDesc -> 锛堣嫳鏂囷細TWIN VIPERS锛夋瘡鍙墜鎸佷竴鎶婅澃铔囥€?
+/Lotus/Language/Items/AkimboViperPistolName -> 鍙屽瓙铦拌泧
+/Lotus/Language/Items/ArchHeavyPistolsName -> 浠€闀垮弻鏋?
+/Lotus/Language/Items/ArchWingNavCode -> 濂ョ綏閲戞枃浠?
+/Lotus/Language/Items/ArchWingNavCodeDesc -> 璇︾粏璁板綍鏇茬考绉戞妧闅愯棌鍦扮偣鐨勬。妗?
+/Lotus/Language/Items/Archwing -> 鏇茬考
+/Lotus/Language/Items/ArchwingColdEventMeleeMod -> 鍐峰喕鍖呰
+/Lotus/Language/Items/ArchwingColdEventRifleMod -> 浣庢俯澶栧３
+/Lotus/Language/Items/ArchwingElectricEventMeleeMod -> 绂诲瓙娉ㄥ叆
+/Lotus/Language/Items/ArchwingElectricEventRifleMod -> 甯︾數瀛愬脊
+/Lotus/Language/Items/ArchwingFireEventMeleeMod -> 鐐界噧閽㈤搧
+/Lotus/Language/Items/ArchwingFireEventRifleMod -> 鐔斿博寮硅啗
+/Lotus/Language/Items/ArchwingGun -> 鏇茬考鏋
+/Lotus/Language/Items/ArchwingMelee -> 鏇茬考杩戞垬姝﹀櫒
+/Lotus/Language/Items/ArchwingMeleeCritChanceMod -> 寮哄寲鍒€鐗?
+/Lotus/Language/Items/ArchwingMeleeCritDamageMod -> 琛€鑹插垉缂?
+/Lotus/Language/Items/ArchwingMeleeDamageMod -> 鍒囧壊鍒冪紭
+/Lotus/Language/Items/ArchwingMeleeFireRateMod -> 鐙傛€?
+/Lotus/Language/Items/ArchwingMeleeRangeIncMod -> 寤跺睍
+/Lotus/Language/Items/ArchwingMeleeScanOnKillMod -> 鏄熺晫鍓栬В
+/Lotus/Language/Items/ArchwingMeleeStatusChanceMod -> 鐬棿鍐插嚮
+/Lotus/Language/Items/ArchwingRifleAmmoMaxMod -> 寮归摼
+/Lotus/Language/Items/ArchwingRifleChargeSpeedMod -> 濉脊鍔犻€?
+/Lotus/Language/Items/ArchwingRifleClipMaxMod -> 鎵╁厖寮瑰專
+/Lotus/Language/Items/ArchwingRifleCritChanceMod -> 瑙嗗樊鐬勫叿
+/Lotus/Language/Items/ArchwingRifleCritDamageMod -> 涓┖瀛愬脊
+/Lotus/Language/Items/ArchwingRifleDamageAmountMod -> 绾㈡櫠鏋
+/Lotus/Language/Items/ArchwingRifleFireIterationsMod -> 鍙岄噸寮瑰ご
+/Lotus/Language/Items/ArchwingRifleFireRateMod -> 鑷姩鎵虫満
+/Lotus/Language/Items/ArchwingRiflePunctureMod -> [PH] Spinal Tap
+/Lotus/Language/Items/ArchwingRifleRangeMod -> 寮╃偖娴嬭窛
+/Lotus/Language/Items/ArchwingRifleReloadSpeedMod -> 蹇€熻濉?
+/Lotus/Language/Items/ArchwingRifleStatusChanceMod -> 寮硅嵂鏀硅壇
+/Lotus/Language/Items/ArchwingSuitAbilityDurationMod -> 楂樻晥浼犺緭
+/Lotus/Language/Items/ArchwingSuitAbilityEfficiencyMod -> 绯荤粺閲嶅垝
+/Lotus/Language/Items/ArchwingSuitAbilityRangeMod -> 鑳介噺鎵╂暎
+/Lotus/Language/Items/ArchwingSuitAbilityStrengthMod -> 闈炴櫠鍙樺帇鍣?
+/Lotus/Language/Items/ArchwingSuitAbilityStrengthModExpert -> 闈炴櫠鍙樺帇鍣?Prime
+/Lotus/Language/Items/ArchwingSuitArmourMod -> 姘╂櫠瑁呯敳
+/Lotus/Language/Items/ArchwingSuitHealthMaxMod -> 鑰愪箙寮哄寲
+/Lotus/Language/Items/ArchwingSuitPowerMaxMod -> 杈呭姪鍔ㄥ姏
+/Lotus/Language/Items/ArchwingSuitShieldMaxMod -> 鑳介噺杞寲
+/Lotus/Language/Items/ArchwingSuitShieldMaxModExpert -> 鑳介噺杞寲 Prime
+/Lotus/Language/Items/ArchwingSuitShieldRechargeRateMod -> 鍗撹秺闃插尽
+/Lotus/Language/Items/ArchwingSuitSprintSpeedMod -> 瓒呰秺鎺ㄨ繘
+/Lotus/Language/Items/ArchwingToxinEventMeleeMod -> 浼犳煋鎬ф敞灏?
+/Lotus/Language/Items/ArchwingToxinEventRifleMod -> 姣掓煋濂楃
+/Lotus/Language/Items/ArchwingWeaponElectricityDamageMelee -> 閫氱數鍒€鍒?
+/Lotus/Language/Items/ArchwingWeaponElectricityDamageRifle -> 甯︾數鏋
+/Lotus/Language/Items/ArchwingWeaponFireDamageMelee -> 鐐界儓鍧氬垉
+/Lotus/Language/Items/ArchwingWeaponFireDamageRifle -> 鐕冪儳寮瑰ご
+/Lotus/Language/Items/ArchwingWeaponFreezeDamageMelee -> 鍐板喎鍒冪紭
+/Lotus/Language/Items/ArchwingWeaponFreezeDamageRifle -> 鏋佸湴寮逛粨
+/Lotus/Language/Items/ArchwingWeaponToxicDamageMelee -> 鍓ф瘨铻埡
+/Lotus/Language/Items/ArchwingWeaponToxicDamageRifle -> 鎭舵瘨寮瑰專
+/Lotus/Language/Items/AutoPistolDesc -> 锛堣嫳鏂囷細FURIS锛夌洍璐兼槸涓€鎶婅嚜鍔ㄦ墜鏋紝杩欏皬涓滆タ鎷ユ湁鏋侀珮鐨勫皠閫熴€?
+/Lotus/Language/Items/AutoPistolName -> 鐩楄醇
+/Lotus/Language/Items/AutoPistolPickup -> 鎷惧彇鑷姩鎵嬫灙
+/Lotus/Language/Items/AutoPistolVariantName -> 鐩楄醇 鍙樹綋
+/Lotus/Language/Items/BerserkerMeleeDesc -> 杩欎簺鍒╃埅灏嗕簬 Valkyr 瑙ｆ斁濂圭殑鐙傚寲鐖嗗彂鍔涢噺鏃舵樉鐜般€?
+/Lotus/Language/Items/BerserkerMeleeName -> Valkyr 鐨勫埄鐖?
+/Lotus/Language/Items/BurstLaserPistolStoreItemDesc -> 锛堣嫳鏂囷細BURST LASER锛夌偣灏勪竴灏忔潫婵€鍏夈€?
+/Lotus/Language/Items/BurstLaserPistolStoreItemName -> 婵€鍏夌偣鍙?
+/Lotus/Language/Items/BurstPistolName -> 鏆楁潃鑰?
+/Lotus/Language/Items/BurstPistolPickup -> 鎷惧彇鐐瑰皠鎵嬫灙
+/Lotus/Language/Items/BurstPistolVariantName -> 鏆楁潃鑰?鍙樹綋
+/Lotus/Language/Items/CarrierSentinelName -> 鎼繍鑰?
+/Lotus/Language/Items/ChainTridentMeleeDangleDesc -> 琛ㄧ幇鍑轰娇鐢ㄨ€呯殑姝﹁壓鍙婃妧鈥嬧€嬪阀锛屽反娌欏潬楗板熀浜?Corpus 鐨勮璁°€?
+/Lotus/Language/Items/ChainTridentMeleeDangleName -> 宸存矙鍧犻グ
+/Lotus/Language/Items/ChannelMeleeModFireRate -> 鍔犻€?
+/Lotus/Language/Items/ConflictModDualMeleeDmgAttackSpeed -> 娈嬭檺鍏芥€?
+/Lotus/Language/Items/ConflictModDualPistolDmgFireRate -> 寮瑰ご灏勫嚮
+/Lotus/Language/Items/CorpusLaserPistolName -> 鍏夎氨鍒囧壊鍣?
+/Lotus/Language/Items/CorruptedCritChanceFireRatePistolMod -> 鍖嶅寪闈跺績
+/Lotus/Language/Items/CorruptedFireRateDamagePistolMod -> 涔忚兘杩呮晱
+/Lotus/Language/Items/CrpAirPistolArrayDesc -> 锛堣嫳鏂囷細SONICOR锛変互宸ㄥぇ鐨勫０娉㈣兘閲忛渿椋炵洰鏍囥€備娇鐢ㄦ姤鍛婄殑缁撴灉鏄細闈炲父鐖姐€?
+/Lotus/Language/Items/CrpAirPistolArrayName -> 瓒呴煶娉㈠啿鍑绘灙
+/Lotus/Language/Items/DemolitionArchwingBundleName -> 闉樼繀鏈€鍚庨€氱墥缁勫悎鍖?
+/Lotus/Language/Items/DemolitionArchwingDesc -> 锛堣嫳鏂囷細ELYTRON锛夎繖绉嶉噸鍨嬫洸缈煎彧涓轰簡涓€涓洰鐨勮€岃璁捐鍑烘潵锛氱牬鍧忋€?
+/Lotus/Language/Items/DemolitionArchwingFeaturedDesc -> 涓鸿揪鍒版渶楂樼殑鐮村潖鍔涳紝杩欎釜缁勫悎鍖呮彁渚涗簡鍓嶆墍鏈湁鐨勪竴涓満浼氥€?
+/Lotus/Language/Items/DemolitionArchwingName -> <ARCHWING> 闉樼繀
+/Lotus/Language/Items/DemolitionDefaultArchwingDesc -> 闉樼繀鏇茬考鐨勯粯璁ゅ瑙傘€?
+/Lotus/Language/Items/DemolitionDefaultArchwingName -> 闉樼繀澶栬
+/Lotus/Language/Items/DjinnSentinelDesc -> 浠ャ€岄噸鍑昏€呫€嶅拰銆岃嚧鍛借鎯戙€嶄负棰勮鎸囦护锛屽紩鐏垫槸涓€涓垬鏂楀畧鎶わ紝杩橀厤澶囦簡姣掗晼姝﹀櫒銆?
+/Lotus/Language/Items/DjinnSentinelName -> 寮曠伒
+/Lotus/Language/Items/ElectEventMeleeMod -> 浼忔墦鐢佃兘
+/Lotus/Language/Items/ElectEventPistolMod -> 鐢垫祦闇囧嚮
+/Lotus/Language/Items/EventImpactDamageMeleeMod -> 鍐插嚮宸ㄥ姏
+/Lotus/Language/Items/EventImpactDamagePistolMod -> 寮哄姏鐚涘嚮
+/Lotus/Language/Items/EventPunctureDamageMeleeMod -> 铻洪捇鎵撳嚮
+/Lotus/Language/Items/EventPunctureDamagePistolMod -> 鏋啗
+/Lotus/Language/Items/EventSlashDamageMeleeMod -> 璐ュ叴铏愭潃
+/Lotus/Language/Items/EventSlashDamagePistolMod -> 鑷存畫鏋脊
+/Lotus/Language/Items/FairyArchwingPistols -> Dex 濡栫簿
+/Lotus/Language/Items/FireEventMeleeMod -> 鐖嗚鍒€鍒?
+/Lotus/Language/Items/FireEventPistolMod -> 鐏肩棔鐒︾偣
+/Lotus/Language/Items/GLAPistolDesc -> 锛堣嫳鏂囷細MARELOK锛夌帥鐟炵伀鏋洜涓哄悗鍧愬姏楂樿€岀己涔忓噯搴︺€?
+/Lotus/Language/Items/GLAPistolName -> 鐜涚憺鐏灙
+/Lotus/Language/Items/GenericOperatorDrifterAccessoryDescription -> 缁欐寚鎸ュ畼鎴栨紓娉婅€呬娇鐢ㄧ殑鏃跺皻閰嶄欢銆?
+/Lotus/Language/Items/GrineerAkimboPistolName -> 鍙屽瓙灏忕簿鐏?
+/Lotus/Language/Items/GrineerCordMeleeDangleDesc -> 鐢盙rineer 璁捐鐨勫潶鍥惧潬楗拌兘灞曠幇鍑轰娇鐢ㄨ€呯殑姝︽湳鎶€宸т笌鎶€鏈€?
+/Lotus/Language/Items/GrineerCordMeleeDangleName -> 鍧﹀浘鍧犻グ
+/Lotus/Language/Items/GrineerHeavyPistolName -> 鍖楁捣宸ㄥ
+/Lotus/Language/Items/GrineerLightPistolName -> 铦拌泧
+/Lotus/Language/Items/GrineerMicrowavePistolDesc -> 锛堣嫳鏂囷細NUKOR锛夊垱閫犲苟鑱氱劍涓€涓珮棰戠巼鐨勫井娉㈠満锛屼粠鍐呴儴灏嗙洰鏍囩‘纭疄瀹炲湴鐑ょ啛銆?
+/Lotus/Language/Items/GrineerMicrowavePistolName -> 鍔瘒寰尝鏋?
+/Lotus/Language/Items/GrnMeleeDangleDesc -> 鍞湁鍦ㄦ垬鏂椾腑璇佹槑浜嗚嚜韬疄鍔涚殑 Grineer 鎵嶈兘鎸ヨ垶鐐€€杩欎欢鍧犻グ銆?
+/Lotus/Language/Items/GrnMeleeDangleName -> 鍗″彜椴佸潬楗?
+/Lotus/Language/Items/GrnQueenGuardDualPistolsDesc -> [PH] Description
+/Lotus/Language/Items/GrnQueenGuardDualPistolsName -> [PH] GrnQueenGuardDualPistols
+/Lotus/Language/Items/GrnTorpedoPistolDesc -> 锛堣嫳鏂囷細KULSTAR锛変娇鐢ㄨ繖鎶婃墜鎸侀泦鏉熺伀绠彂灏勫櫒锛屽鏁屼汉鎶曚互鍦扮嫳涔嬬伀銆?
+/Lotus/Language/Items/GrnTorpedoPistolName -> 鏉€鏄?
+/Lotus/Language/Items/GrnWindUpPistolName -> 瀵囨仼闇版満鏋?
+/Lotus/Language/Items/GuaranteedCritOnMeleeChannelKillName -> 璧嬭兘路鎬滄偗
+/Lotus/Language/Items/HarlequinPistolsName -> 鑽掕艾鍙屾灙
+/Lotus/Language/Items/HealCompanionOnSixMeleeKills -> 璧嬭兘路鍗＋
+/Lotus/Language/Items/HealCompanionOnSixMeleeKillsDescription -> 鎭㈠鍚屼即 |HEAL_AMOUNT| 鐢熷懡鍊?
+/Lotus/Language/Items/HeavyPistolDesc -> 锛堣嫳鏂囷細LEX锛夐浄鍏嬫柉鏄ぇ鐏姏鐨勬墜鏋紝灏勯€熷拰寮瑰專瀹归噺閮藉緢浣庯紝浣嗘瘡鍙戜激瀹冲緢楂樸€?
+/Lotus/Language/Items/HeavyPistolName -> 闆峰厠鏂?
+/Lotus/Language/Items/HeavyPistolVariantName -> 闆峰厠鏂?鍙樹綋
+/Lotus/Language/Items/IceEventMeleeMod -> 铓€楠ㄥ瘨闇?
+/Lotus/Language/Items/IceEventPistolMod -> 缁撻湝渚佃殌
+/Lotus/Language/Items/IceMeleeDangleDesc -> 涓€鍏锋惌閰嶈タ浼埄浜氭垬閿ょ殑姘存櫠閰嶄欢銆?
+/Lotus/Language/Items/IceMeleeDangleName -> 鍐版櫠鍧犻グ
+/Lotus/Language/Items/ImpactDamageMeleeMod -> 閲嶅垱
+/Lotus/Language/Items/ImpactDamagePistolMod -> 闇囪崱寮瑰ご
+/Lotus/Language/Items/InfestedDartPistolName -> 鍟愭搏鑰?
+/Lotus/Language/Items/InfestedPistolName -> 瀹夋煆鍕掓柉
+/Lotus/Language/Items/JadeStealthArchwingDesc -> 鍒哄奖鏇茬考鐨勭嫭鐗瑰瑙傘€?
+/Lotus/Language/Items/JadeStealthArchwingName -> 鍒哄奖缈＄繝澶栬
+/Lotus/Language/Items/KubrowColdMeleeMod -> [PH] <DT_FREEZE_COLOR>Cold Damage
+/Lotus/Language/Items/KubrowElectricMeleeMod -> [PH] Electricity Damage
+/Lotus/Language/Items/KubrowFireMeleeMod -> [PH] fire damage
+/Lotus/Language/Items/KubrowPoisonMeleeMod -> 姣掓恫娉ㄥ皠
+/Lotus/Language/Items/LisetSkinStandardArchwingDesc -> 闄ㄨ湏鏇茬考鐨勭嫭鐗瑰瑙傘€?
+/Lotus/Language/Items/LisetSkinStandardArchwingName -> 闄ㄨ湏榛戞洔鐭冲瑙?
+/Lotus/Language/Items/LongGunDamageOnHeadshotName -> 璧嬭兘路鎰ゆ€?
+/Lotus/Language/Items/LongGunSpeedOnCritName -> 璧嬭兘路鍔犻€?
+/Lotus/Language/Items/LotusPointMeleeDangleDesc -> 鑻忕憺鍗″潬楗颁娇鐢ㄤ竴绉嶅彜鑰佺殑 Tenno 绀间織璁捐鏉ュ桨鏄惧叾鏍兼枟鎶€宸т笌甯堣寖鑸殑姝﹁壓銆?
+/Lotus/Language/Items/LotusPointMeleeDangleName -> 鑻忕憺鍗″潬楗?
+/Lotus/Language/Items/Melee -> 杩戞垬
+/Lotus/Language/Items/MeleeCategoryName -> 杩戞垬
+/Lotus/Language/Items/MeleeDamageOnCritName -> 璧嬭兘路鐙傛€?
+/Lotus/Language/Items/MeleeDanglePackDesc -> 鍒╃敤杩欑粍鍧犻グ缁勫悎鍖呰浣犵殑杩戞垬姝﹀櫒鏇村叿鐗硅壊銆?
+/Lotus/Language/Items/MeleeDanglePackName -> 鍧犻グ鍖?
+/Lotus/Language/Items/MeleeDmgOnRifleKill -> 璧嬭兘路鍒€鍒冨厖鑳?
+/Lotus/Language/Items/MeleeModArmorPiercing -> 鐮寸敳
+/Lotus/Language/Items/MeleeModChargeRate -> 澧炲箙绾垮湀
+/Lotus/Language/Items/MeleeModCorruptedDamageSpeed -> 鑵愬潖鎵撳嚮
+/Lotus/Language/Items/MeleeModCorruptedHeavyDamageChargeSpeed -> 閭伓钃勫姏
+/Lotus/Language/Items/MeleeModCritChance -> 鏂╅搧
+/Lotus/Language/Items/MeleeModCritDamage -> 鑲㈣В
+/Lotus/Language/Items/MeleeModCritFireRateBonus -> 鍡滆 鐙傛毚
+/Lotus/Language/Items/MeleeModDamageAmount -> 鍘嬭揩鐐?
+/Lotus/Language/Items/MeleeModDamageAmountExpert -> 鍘嬭揩鐐?Prime
+/Lotus/Language/Items/MeleeModElectricityDamage -> 鐢靛嚮瑙︾偣
+/Lotus/Language/Items/MeleeModFinisherDamage -> 鐢婚緳鐐圭潧
+/Lotus/Language/Items/MeleeModFireDamage -> 鐔斿博鍐插嚮
+/Lotus/Language/Items/MeleeModFireRate -> 鐙傛毚
+/Lotus/Language/Items/MeleeModFocusEnergy -> 鑱氱劍鑳介噺
+/Lotus/Language/Items/MeleeModFreezeDamage -> 鍖楅
+/Lotus/Language/Items/MeleeModGlaiveOnKillBuffSecondary -> 杩炲嚮鐙傛€?
+/Lotus/Language/Items/MeleeModGlaiveOnSixKillsBuffSecondary -> 鍏戒箣鍗拌
+/Lotus/Language/Items/MeleeModGlaivePowerThrow -> 濂嬪姏涓€鎺?
+/Lotus/Language/Items/MeleeModGlaiveReflectionDecrease -> 寮硅烦
+/Lotus/Language/Items/MeleeModGlaiveReflectionIncrease -> 蹇€熸敹鍥?
+/Lotus/Language/Items/MeleeModGlaiveSecondaryHeadshotKillMod -> 杩炲嚮鏉€鎵?
+/Lotus/Language/Items/MeleeModGlaiveSpeedMod -> 鏃嬮
+/Lotus/Language/Items/MeleeModHeavyDamage -> 涓€鍑诲繀鏉€
+/Lotus/Language/Items/MeleeModPowerDmgBonus -> 鑳介噺瀵煎紩
+/Lotus/Language/Items/MeleeModRangeIncrease -> 鍓戦
+/Lotus/Language/Items/MeleeModRendingStrike -> 鎾曡鎵撳嚮
+/Lotus/Language/Items/MeleeModSlamDamage -> 闇囨尝
+/Lotus/Language/Items/MeleeModSlamDamageDesc -> 澧炲姞闇囧湴鏀诲嚮鐨勪激瀹?
+/Lotus/Language/Items/MeleeModStaminaBonus -> 鍐嶈捣
+/Lotus/Language/Items/MeleeModStealthLethal -> 鑷村懡鍖挎潃
+/Lotus/Language/Items/MeleeModStealthLethalDesc -> 闅愮鏀诲嚮鍙€犳垚鑷村懡浼ゅ
+/Lotus/Language/Items/MeleeModStunChance -> 闈炲嚒鎶€宸?
+/Lotus/Language/Items/MeleePetName -> 璧埄淇勬柉
+/Lotus/Language/Items/MeleeProcTimeMod -> 鏈畬涔嬪埡
+/Lotus/Language/Items/MeleeSpeedOnHitName -> 璧嬭兘路閫熸敾
+/Lotus/Language/Items/NextPromoMeleeName -> 鍒嗚鏂╂枾 Prime
+/Lotus/Language/Items/OldWorldRustyBurstPistol -> [PH]Old World Rusty Burst Pistol
+/Lotus/Language/Items/OldWorldRustyPistol -> [PH]Old World Rusty Pistol
+/Lotus/Language/Items/OpenArchwingSummonDesc -> 鍦ㄨ嚜鐢辨极娓镐换鍔′腑鍙敜涓€鏋舵洸缈笺€?
+/Lotus/Language/Items/OpenArchwingSummonName -> 鏇茬考鍙戝皠鍣?
+/Lotus/Language/Items/ParrotCarrierSentinelSkinDesc -> 鎼繍鑰呭畧鎶ょ殑楣﹂箟澶栬
+/Lotus/Language/Items/ParrotCarrierSentinelSkinName -> 楣﹂箟鎼繍鑰?
+/Lotus/Language/Items/PistolBeamDistanceMod -> 姣佺伃鎵╁睍
+/Lotus/Language/Items/PistolCategoryName -> 鎵嬫灙
+/Lotus/Language/Items/PistolDamageOnHeadshotName -> 璧嬭兘路绮剧‘
+/Lotus/Language/Items/PistolDamageOnReloadName -> 璧嬭兘路瑙夐啋
+/Lotus/Language/Items/PistolDesc -> 锛堣嫳鏂囷細LATO锛夋媺鎵樻槸涓€娆捐 Tenno 骞挎硾浣跨敤鐨勯珮绮惧害鎵嬫灙銆?
+/Lotus/Language/Items/PistolHeadshotKillAmmoEfficiency -> 璧嬭兘路鏋偖
+/Lotus/Language/Items/PistolModAmmoMax -> 鎴忔硶澧炲箙
+/Lotus/Language/Items/PistolModArmorPiercing -> 鏈夊幓鏃犲洖
+/Lotus/Language/Items/PistolModClipMax -> 涓茶仈寮瑰專
+/Lotus/Language/Items/PistolModConvertAmmo -> 鎵嬫灙寮硅嵂杞崲
+/Lotus/Language/Items/PistolModConvertAmmoDesc -> 灏嗘嬀鍙栫殑涓昏姝﹀櫒寮硅嵂杞崲涓?|PERCENT|% 寮硅嵂鎷惧彇銆?
+/Lotus/Language/Items/PistolModCorruptedCritDamage -> 绌哄皷寮?
+/Lotus/Language/Items/PistolModCorruptedDamageRecoil -> 閲嶈鐏姏
+/Lotus/Language/Items/PistolModCorruptedMaxClipReloadSpeed -> 鎰熸煋寮瑰專
+/Lotus/Language/Items/PistolModCritChance -> 鎵嬫灙绮鹃€?
+/Lotus/Language/Items/PistolModCritDamage -> 寮辩偣涓撶簿
+/Lotus/Language/Items/PistolModDamageAmount -> 榛勮渹铻埡
+/Lotus/Language/Items/PistolModElectricityDamage -> 鐥夋寷
+/Lotus/Language/Items/PistolModFireDamage -> 鐏劙瑁呭～
+/Lotus/Language/Items/PistolModFireIterations -> 寮瑰ご鎵╂暎
+/Lotus/Language/Items/PistolModFireRate -> 绁炴灙鎵?
+/Lotus/Language/Items/PistolModFreezeDamage -> 娣卞眰鍐峰喕
+/Lotus/Language/Items/PistolModGrinder -> 鑷村懡娲祦
+/Lotus/Language/Items/PistolModIceStorm -> 鍐伴鏆?
+/Lotus/Language/Items/PistolModNoiseReduction -> 娑堥煶
+/Lotus/Language/Items/PistolModPunctureDepth -> 寮瑰ご瀵煎紩
+/Lotus/Language/Items/PistolModRecoilReduction -> 绋冲畾鏋墜
+/Lotus/Language/Items/PistolModReloadSpeed -> 鎸佺画鐏姏
+/Lotus/Language/Items/PistolModStunChance -> 鍑嗙‘灏勬墜
+/Lotus/Language/Items/PistolModStunningSpeed -> 鎱戜汉绁為€?
+/Lotus/Language/Items/PistolModZoomFov -> 闅肩洰
+/Lotus/Language/Items/PistolName -> 鎷夋墭
+/Lotus/Language/Items/PistolNoAoe_Compatibility -> 鎵嬫灙锛堟棤鑼冨洿鏁堟灉锛?
+/Lotus/Language/Items/PistolPackDesc -> 缁欓偅浜涘枩娆娇鐢ㄨ交宸ф鍣ㄧ殑浜恒€傚唴鍚洓娆炬墜鏋€?
+/Lotus/Language/Items/PistolPackName -> 鎵嬫灙鎺у寘
+/Lotus/Language/Items/PistolPickup -> 鎷惧彇鎵嬫灙
+/Lotus/Language/Items/PistolProcTimeMod -> 姘告亽鑻︾棝
+/Lotus/Language/Items/PistolProjectileSpeedMod -> 鑷村懡鍔ㄩ噺
+/Lotus/Language/Items/PistolSpeedOnCritName -> 璧嬭兘路杩呴€?
+/Lotus/Language/Items/PistolVariantName -> 鎷夋墭 鍙樹綋
+/Lotus/Language/Items/PlayerMeleeBuffDesc -> 澧炲姞杩戞垬姝﹀櫒浼ゅ銆?
+/Lotus/Language/Items/PlayerMeleeBuffElectrictyDesc -> 鍦ㄨ繎鎴樻鍣ㄤ笂闄勫姞<DT_ELECTRICITY_COLOR>鐢靛嚮浼ゅ
+/Lotus/Language/Items/PlayerMeleeBuffElectrictyName -> 闆风數鍒€閿?
+/Lotus/Language/Items/PlayerMeleeBuffName -> 閽㈤搧鍏呰兘
+/Lotus/Language/Items/PlayerPistolAmmoBuffDesc -> 澧炲姞鎷捐捣鐨勬墜鏋脊鑽?
+/Lotus/Language/Items/PlayerPistolAmmoBuffName -> 鎵嬫灙寮硅嵂鎼滈泦鑰?
+/Lotus/Language/Items/PlayerPistolDamageBuffDesc -> 鎵嬫灙浼ゅ澧炲姞
+/Lotus/Language/Items/PlayerPistolDamageBuffName -> 鎵嬫灙澧炲箙
+/Lotus/Language/Items/PoisonDamageMeleeMod -> 鐑梾鎵撳嚮
+/Lotus/Language/Items/PoisonDamagePistolMod -> 鐥呭師寮瑰ご
+/Lotus/Language/Items/PoisonEventMeleeMod -> 鍓ф瘨鐏惧
+/Lotus/Language/Items/PoisonEventPistolMod -> 鐦熺柅鎵嬫灙
+/Lotus/Language/Items/PolearmFriendlyMeleeDangleDesc -> 閬靛惊涓€涓綍瑙佺殑濂ョ綏閲戣璁℃潵鍒朵綔鐨勮揪鏇煎潬楗拌兘灞曠幇鍑轰娇鐢ㄨ€呯殑姝︽湳鎶€宸т笌鎶€鏈€?
+/Lotus/Language/Items/PolearmFriendlyMeleeDangleName -> 杈炬浖鍧犻グ
+/Lotus/Language/Items/PrimaryDmgOnMeleeKill -> 璧嬭兘路涓绘鍏呰兘
+/Lotus/Language/Items/PrimeBurstLaserPistolStoreItemDesc -> 闃村奖 Prime 鐨勬爣蹇楁€ф鍣ㄤ細鍙戝皠婵€鍏夋潫銆?
+/Lotus/Language/Items/PrimeBurstLaserPistolStoreItemName -> 婵€鍏夌偣鍙?Prime
+/Lotus/Language/Items/PrimeCarrierSentinelDesc -> 杩欐灦鍗庝附鐨勫畧鎶ゆ槸鍛堢幇濂ョ綏閲戞櫄鏈熷伐鑹轰笌椋庢牸鏋佷匠鐨勮寖渚嬨€?
+/Lotus/Language/Items/PrimeCarrierSentinelName -> 鎼繍鑰?Prime
+/Lotus/Language/Items/PrimeDefaultArchwingDesc -> 闄ㄨ湏 Prime 鏇茬考鐨勯粯璁ゅ瑙傘€?
+/Lotus/Language/Items/PrimeDefaultArchwingName -> 闄ㄨ湏 Prime 澶栬
+/Lotus/Language/Items/PrimeDjinnSentinelName -> 寮曠伒 Prime
+/Lotus/Language/Items/PrimeMeleeModRangeIncrease -> 鍓戦 Prime
+/Lotus/Language/Items/PrimeMeleePetName -> 璧埄淇勬柉 Prime
+/Lotus/Language/Items/PrimePistolModConvertAmmo -> 鎵嬫灙寮硅嵂杞崲 Prime
+/Lotus/Language/Items/PrimePoisonDamageMeleeMod -> 鐑梾鎵撳嚮 Prime
+/Lotus/Language/Items/PrimeSentinelMaskName -> 鑴夋秾 Prime 瀹堟姢闈㈠叿
+/Lotus/Language/Items/PrimeSentinelShotgunName -> 鎵櫎鑰?Prime
+/Lotus/Language/Items/PrimeSentinelTailName -> 鑴夋秾 Prime 瀹堟姢灏鹃儴
+/Lotus/Language/Items/PrimeSentinelWingsName -> 鑴夋秾 Prime 瀹堟姢椋炵考
+/Lotus/Language/Items/PrimedMeleeModFireRate -> 鐙傛毚 Prime
+/Lotus/Language/Items/PrimedPistolModClipMax -> 涓茶仈寮瑰專 Prime
+/Lotus/Language/Items/PrimedPistolModCritChance -> 鎵嬫灙绮鹃€?Prime
+/Lotus/Language/Items/PrimedPistolModCritDamage -> 寮辩偣涓撶簿 Prime
+/Lotus/Language/Items/PrimedPistolModRecoilReduction -> 绋冲畾鏋墜 Prime
+/Lotus/Language/Items/PrismaBurstLaserPistolStoreItemDesc -> 锛堣嫳鏂囷細PRISMA BURST LASER锛夌偣灏勪竴灏忔潫婵€鍏夈€?
+/Lotus/Language/Items/PrismaBurstLaserPistolStoreItemName -> 妫辨櫠 婵€鍏夌偣鍙?
+/Lotus/Language/Items/PrismaSentinelAccessoriesDesc -> 浠ユ姠鐪肩殑妫辨櫠绯诲垪閰嶄欢璁╂櫘閫氱殑瀹堟姢鍙樺緱闈炲嚒鑰€浜恒€?
+/Lotus/Language/Items/PrismaSentinelDesc -> 铏氱┖涓殑涓€绉嶇█鏈夌弽瀹濄€傛€庢湁濡傛缇庝附瀹濈墿绔熸槸涓烘綔琛岄敾閫狅紵
+/Lotus/Language/Items/PrismaSentinelName -> 妫辨櫠 闃村奖
+/Lotus/Language/Items/PvPMeleeStanceDesc -> 涓烘褰㈢浠璁＄殑鎴樻枟褰㈠紡銆?
+/Lotus/Language/Items/RazorMeleeDangleName -> 涔岄瞾鍧犻グ
+/Lotus/Language/Items/SarynDeluxeMeleeDangleDesc -> 杩欎簺浠や汉鐪艰姳缂贡鐨勮姳鍗夊舰寮忚兘闅愯棌鏇存繁灞傜殑鎰忔兜銆?
+/Lotus/Language/Items/SarynDeluxeMeleeDangleName -> 鏍嬩箣鍧犻グ
+/Lotus/Language/Items/SelfPistolAmmoDesc -> 琛ュ厖鍏ㄩ儴鎵嬫灙寮硅嵂銆?
+/Lotus/Language/Items/SelfPistolAmmoName -> 鎵嬫灙寮硅嵂绠?
+/Lotus/Language/Items/Sentinel -> 瀹堟姢
+/Lotus/Language/Items/SentinelBioWeaponName -> 姣掑埡
+/Lotus/Language/Items/SentinelFishTailName -> 閿﹂菠瀹堟姢灏鹃儴
+/Lotus/Language/Items/SentinelHealthRegenPreceptNightwatchModName -> 鍖荤枟灏勭嚎
+/Lotus/Language/Items/SentinelJetWingsName -> 鍠峰皠鍔ㄥ姏瀹堟姢椋炵考
+/Lotus/Language/Items/SentinelMaskDesc -> 瀹堟姢瀹犵墿鐨勯潰鍏烽厤浠躲€?
+/Lotus/Language/Items/SentinelMaskGunheadDesc -> 瀹堟姢瀹犵墿鐨勯潰鍏烽厤浠躲€?
+/Lotus/Language/Items/SentinelMaskGunheadName -> 鏋
+/Lotus/Language/Items/SentinelModArmor -> 閲戝睘绾ょ淮
+/Lotus/Language/Items/SentinelModDropChance -> 娈嬩綑
+/Lotus/Language/Items/SentinelModExplosion -> 鑷垎
+/Lotus/Language/Items/SentinelModHealthMax -> 鏋勯€犲己鍖?
+/Lotus/Language/Items/SentinelModOverheatDamage -> 杩囩儹灏勫嚮
+/Lotus/Language/Items/SentinelModRechargeRate -> 鍔犻€熷厖鑳?
+/Lotus/Language/Items/SentinelModShieldMax -> 绮剧畻钃勮兘
+/Lotus/Language/Items/SentinelShotgunDesc -> 锛堣嫳鏂囷細SWEEPER锛夋惉杩愯€呭畧鎶ょ殑鏍囧噯姝﹀櫒锛屼娇鐢ㄩ湴寮规灙瀛愬脊銆?
+/Lotus/Language/Items/SentinelShotgunName -> 鎵櫎鑰?
+/Lotus/Language/Items/SentinelTailDesc -> 瀹堟姢瀹犵墿鐨勬椂楂﹀熬閮ㄩ厤浠躲€?
+/Lotus/Language/Items/SentinelWingsDesc -> 缁欏畧鎶ゅ疇鐗╃殑涓€瀵归缈笺€?
+/Lotus/Language/Items/ShadeSpriteSentinelSkinDesc -> 闃村奖瀹堟姢鐨勭簿鐏靛瑙傘€?
+/Lotus/Language/Items/ShadeSpriteSentinelSkinName -> 闃村奖绮剧伒
+/Lotus/Language/Items/SlashDamageMeleeMod -> 閿垉
+/Lotus/Language/Items/SlashDamagePistolMod -> 鍓冨垁灏勫嚮
+/Lotus/Language/Items/StandardArchwingDesc -> 锛堣嫳鏂囷細ODONATA锛夎繖缁勬洸缈肩殑绯荤粺鎷ユ湁鍧囪　鐨勬敾闃茶兘鍔涖€?
+/Lotus/Language/Items/StandardArchwingName -> <ARCHWING> 闄ㄨ湏
+/Lotus/Language/Items/StandardDefaultArchwingDesc -> 闄ㄨ湏鏇茬考鐨勯粯璁ゅ瑙傘€?
+/Lotus/Language/Items/StandardDefaultArchwingName -> 闄ㄨ湏澶栬
+/Lotus/Language/Items/StealthArchwingBlinkDesc -> 鍒哄奖鏇茬考鐬Щ涓€灏忔璺濈锛屽敖鏁扮敥寮€閿佸畾浜嗙洰鏍囩殑鏁屼汉銆?
+/Lotus/Language/Items/StealthArchwingBlinkName -> 闂灛
+/Lotus/Language/Items/StealthArchwingBundleName -> 鍒哄奖琚嚮鑰呯粍鍚堝寘
+/Lotus/Language/Items/StealthArchwingCloakingDesc -> 灞曞紑涓€閬撻殣褰㈠姏鍦猴紝浣块潤姝簬鍔涘満涓殑鎴樼敳涓庡弸鍐涢殣鍖胯韪€?
+/Lotus/Language/Items/StealthArchwingCloakingName -> 鍗婂奖灞忚斀
+/Lotus/Language/Items/StealthArchwingDistractionDronesDesc -> 閮ㄧ讲鏁板彴鏃犱汉鎴樻満浜庢垬鐢茶韩鏃佽繘琛屾垬鏂楋紝褰撴棤浜烘垬鏈鸿鐮村潖鏃朵細閫犳垚姣佺伃鎬х殑鐖嗙偢銆?
+/Lotus/Language/Items/StealthArchwingDistractionDronesName -> 鎶ゅ崼鎴樻満
+/Lotus/Language/Items/StealthArchwingGravInstabilityAugmentDesc -> 鏄熶綋闇囪崱寮哄寲锛氶粦娲炲彲浠ュ墛寮辫寖鍥村唴鐨勭儹鑳藉苟瀹屽叏鍐荤粨闄勮繎鐨勬晫浜?|val| 绉掋€?
+/Lotus/Language/Items/StealthArchwingGravInstabilityAugmentName -> 瀵掓祦鏉ヨ
+/Lotus/Language/Items/StealthArchwingGravInstabilityDesc -> 褰㈡垚涓€涓細鍚歌繘闄勮繎鎵€鏈夌墿浣撶殑寰瀷榛戞礊锛屽苟鍦ㄦ渶鍚庣垎瑁傞€犳垚澶ц妯＄殑鍐插嚮闇囨尝銆?
+/Lotus/Language/Items/StealthArchwingGravInstabilityName -> 鏄熶綋闇囪崱
+/Lotus/Language/Items/StealthArchwingName -> <ARCHWING> 鍒哄奖
+/Lotus/Language/Items/StealthArchwingRiplineDesc -> 鍙戝皠涓€閬撻挬绱㈡妸鏁屼汉鎷夎繎锛屾垨鏄妸鎴樼敳鎷夊悜琚叾閽╀綇鐨勪换浣曚竴涓潤姝㈢墿浣撱€?
+/Lotus/Language/Items/StealthArchwingRiplineName -> 鏇茬考閽╃储
+/Lotus/Language/Items/StealthDefaultArchwingDesc -> 鍒哄奖鏇茬考鐨勯粯璁ゅ瑙傘€?
+/Lotus/Language/Items/StealthDefaultArchwingName -> 鍒哄奖澶栬
+/Lotus/Language/Items/SummusPrimeSentinelMaskName -> 鑷充笂 Prime 瀹堟姢闈㈠叿
+/Lotus/Language/Items/SummusPrimeSentinelTailName -> 鑷充笂 Prime 瀹堟姢灏鹃儴
+/Lotus/Language/Items/SummusPrimeSentinelWingsName -> 鑷充笂 Prime 瀹堟姢椋炵考
+/Lotus/Language/Items/SundialMeleeWeaponDesc -> 锛堣嫳鏂囷細ZENISTAR锛変护鏁屼汉鍦ㄧ偨鐑堢殑鎵撳嚮涓剼鐏紝鎴栫敤椋炶鐨勭伀鐩樺皢浠栦滑鐐圭噧銆?
+/Lotus/Language/Items/SundialMeleeWeaponName -> 澶╅《涔嬫槦
+/Lotus/Language/Items/SundialPistolName -> 鏂逛綅瑙?
+/Lotus/Language/Items/SupplyDropPistolAmmoCrateDesc -> [PH] It's an Pistol Ammo Crate
+/Lotus/Language/Items/SupplyDropPistolAmmoCrateName -> [PH]Pistol Ammo Crate
+/Lotus/Language/Items/SupportArchwingDesc -> 锛堣嫳鏂囷細AMESHA锛夊寲韬垚涓€鍚嶉缈煎畧鎶よ€呫€?
+/Lotus/Language/Items/SupportArchwingName -> <ARCHWING> 鍦ｄ娇
+/Lotus/Language/Items/SupportDefaultArchwingDesc -> 鍦ｄ娇鏇茬考鐨勯粯璁ゅ瑙傘€?
+/Lotus/Language/Items/SupportDefaultArchwingName -> 鍦ｄ娇澶栬
+/Lotus/Language/Items/ThrowingMeleeCategoryName -> 鎶曟幏鍨嬭繎鎴?
+/Lotus/Language/Items/TnSentinelCrossName -> 濉斿厠妗?
+/Lotus/Language/Items/TnoBladedPistolsDesc -> 锛堣嫳鏂囷細AKJAGARA锛夎繖缁勯噸鍑诲弻鎵嬫灙鐨勮璁℃槸鏈夋満浣撳拰鍒€鐗囧厓绱犵殑缁撳悎銆?
+/Lotus/Language/Items/TnoBladedPistolsName -> 瑙夐啋鍙屾灙
+/Lotus/Language/Items/TnoMeleeDangleDesc -> 杩欐潯鍧犻グ鍙楀埌浜嗗弬涓庢褰㈢浠殑 Tenno 鍠滅埍锛屽洜涓哄畠鏄洟缁撲笌淇″康鐨勮薄寰併€?
+/Lotus/Language/Items/TnoMeleeDangleName -> 椋炵考鍧犻グ
+/Lotus/Language/Items/VIPPistolName -> 鎷夋墭路鐮村潖鑰?
+/Lotus/Language/Items/VorPistolName -> 棰勮█鑰?
+/Lotus/Language/Items/WarframeModParryMelee -> 鎷涙灦
+/Lotus/Language/KahlChallenges/Challenge_KillEnemiesWithMeleeKahlChallenge_Description -> 杩戞垬鍑绘潃 |COUNT| 鍚嶆晫浜?
+/Lotus/Language/KahlChallenges/Challenge_KillEnemiesWithMeleeKahlChallenge_Name -> 杩戣窛绂诲嚮鏉€
+/Lotus/Language/KahlQuest/QuestObjectiveReturnToDrifterCamp -> 杩斿洖婕傛硦鑰呰惀鍦?
+/Lotus/Language/Kingpins/DefiledRequiemCost -> 姹℃崯鐨勫畨榄?MOD
+/Lotus/Language/Labels/AVATAR_SENTINEL_ARMOUR_LINK -> 鎶ょ敳杩炵粨鍔犳垚
+/Lotus/Language/Labels/AVATAR_SENTINEL_FINISHER_DAMAGE -> 澶勫喅浼ゅ
+/Lotus/Language/Labels/AVATAR_SENTINEL_HEALTH_LINK -> 鐢熷懡鍊艰繛缁撳姞鎴?
+/Lotus/Language/Labels/AVATAR_SENTINEL_MASTER_BLEEDOUT_MODIFIER -> 婵掓鏃堕棿杩炵粨鍔犳垚
+/Lotus/Language/Labels/AVATAR_SENTINEL_PACK_LEADER -> 鐢熷懡鍚稿彇杩炵粨鍔犳垚
+/Lotus/Language/Labels/AVATAR_SENTINEL_PACK_LEADER_OVERGUARD_CAP -> 瓒呭畯闃叉姢涓婇檺
+/Lotus/Language/Labels/AVATAR_SENTINEL_SHIELD_LINK -> 鎶ょ浘杩炵粨鍔犳垚
+/Lotus/Language/Labels/GAMEPLAY_KILL_XP_AMOUNT_LotusMeleeWeapon -> 杩戞垬鍑绘潃缁忛獙
+/Lotus/Language/Labels/GAMEPLAY_KILL_XP_AMOUNT_LotusPistol -> 鎵嬫灙鍑绘潃缁忛獙
+/Lotus/Language/Labels/GAMEPLAY_MELEE_KILL_POWER_AMOUNT -> 杩戞垬鍑绘潃鑳藉姏鍔犳垚鎬诲拰
+/Lotus/Language/Labels/GAMEPLAY_MELEE_KILL_XP_AMOUNT -> 杩戞垬鍑绘潃鎬昏缁忛獙
+/Lotus/Language/Labels/MapLegend_RequiemObelisk -> 瀹夐瓊鏂瑰皷纰?
+/Lotus/Language/Labels/SentientSummonMeleeAvatarLabel -> 闇囪崱浣?
+/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT_LotusMeleeWeapon -> 杩戞垬浼ゅ
+/Lotus/Language/Labels/WEAPON_DAMAGE_AMOUNT_LotusPistol -> 鎵嬫灙浼ゅ
+/Lotus/Language/Labels/WEAPON_MELEE_ARMOR_REDUCTION -> 鎶ょ敳鍑忓厤
+/Lotus/Language/Labels/WEAPON_MELEE_COMBO_DURATION_BONUS -> 杩炲嚮鎸佺画鏃堕棿鍔犳垚
+/Lotus/Language/Labels/WEAPON_MELEE_COMBO_GAIN_EXTRA_CHANCE -> 杩炲嚮鏁板嚑鐜?
+/Lotus/Language/Labels/WEAPON_MELEE_COMBO_HIT_BONUS -> 棰濆鍛戒腑鐨勮繛鍑?
+/Lotus/Language/Labels/WEAPON_MELEE_CRITICAL_CHANCE -> 杩戞垬鏆村嚮鍑犵巼
+/Lotus/Language/Labels/WEAPON_MELEE_DAMAGE -> 杩戞垬浼ゅ
+/Lotus/Language/Labels/WEAPON_MELEE_FINISHER_DAMAGE -> 澶勫喅浼ゅ
+/Lotus/Language/Labels/WEAPON_MELEE_FIRE_RATE -> 鏀诲嚮閫熷害
+/Lotus/Language/Labels/WEAPON_MELEE_HEAVY_CHARGE_SPEED -> 閲嶅嚮鍑嗗鏃堕棿
+/Lotus/Language/Labels/WEAPON_MELEE_SLAM_DAMAGE_BONUS -> 杩戞垬闇囨尝浼ゅ
+/Lotus/Language/Labels/WEAPON_MELEE_STEALTH_LETHAL -> 鑷村懡鍋疯
+/Lotus/Language/Loadout/Archwing_Wings -> 鏇茬考
+/Lotus/Language/Loadout/LoadoutCat_Pistol -> 鎵嬫灙
+/Lotus/Language/Loadout/LoadoutCat_RangedMelee -> 杩滅▼杩戞垬
+/Lotus/Language/Loadout/MapPanel_SentinelEquip -> 瑁呭鍚屼即
+/Lotus/Language/Loadout/MapPanel_SentinelSwap -> 閫夋嫨鍚屼即
+/Lotus/Language/Loadout/TnBayonetMeleeKillName -> 鍒惰儨鑰呭嚩鐚?
+/Lotus/Language/Loadout/TnBayonetMeleeStatusDesc -> 杩戞垬浼ゅ澧炲姞 250%
+/Lotus/Language/Locations/CeresArchwingNode1 -> Vesta
+/Lotus/Language/Locations/EarthArchwingNode1 -> Erpo
+/Lotus/Language/Locations/ErisArchwingNode1 -> Concordia
+/Lotus/Language/Locations/EuropaArchwingNode1 -> Mephesto
+/Lotus/Language/Locations/JupiterArchwingNode1 -> Galilea
+/Lotus/Language/Locations/MarsArchwingNode1 -> Syrtis
+/Lotus/Language/Locations/MercuryArchwingNode1 -> Caduceus
+/Lotus/Language/Locations/NeptuneArchwingNode1 -> Salacia
+/Lotus/Language/Locations/PhobosArchwingNode1 -> Deimos
+/Lotus/Language/Locations/PlutoArchwingNode1 -> Kerberos
+/Lotus/Language/Locations/SaturnArchwingNode1 -> Pandora
+/Lotus/Language/Locations/SednaArchwingNode1 -> Anguta
+/Lotus/Language/Locations/UranusArchwingNode1 -> Caelus
+/Lotus/Language/Locations/VenusArchwingNode1 -> Montes
+/Lotus/Language/MasteryTest/HeavyMeleePrompt -> [PH] HIT <MELEE_HEAVY> WHEN CHARGED
+/Lotus/Language/MasteryTest/HeavyMeleeWaveComplete -> [PH] WAVE COMPLETE
+/Lotus/Language/MasteryTest/HeavyMeleeWaveStart -> [PH] WAVE |COUNT|
+/Lotus/Language/Medals/MOST_MELEE_KILLS -> 杩戞垬鍑绘潃锛殀VALUE|
+/Lotus/Language/Melee/ArchonDualDaggerEquipped -> [PH]Archon Dual Dagger Combo
+/Lotus/Language/Melee/ArchonTridentMeleeSet -> [PH] Archon Trident Combo
+/Lotus/Language/Melee/ArchonWhipMeleeSet -> [PH]Archon Whip Combo
+/Lotus/Language/Melee/AxeBranchADefaults -> 澶╅檷椋為緳
+/Lotus/Language/Melee/AxeBranchBDefaults -> 椋庢毚鎶藉嚮
+/Lotus/Language/Melee/AxeBranchCDefaults -> 鐙傛毚閲庣尓
+/Lotus/Language/Melee/AxeChargeAttacksDefault -> 寮ц椋炵崰
+/Lotus/Language/Melee/AxeChargeComboA -> 澶╂槦娈掕惤
+/Lotus/Language/Melee/AxeEquippedAttacksDefault -> 纰庨鍑?
+/Lotus/Language/Melee/AxeEquippedThreeAttacksBDefault -> 搴勪弗蹇ч儊鏇?
+/Lotus/Language/Melee/AxeEquippedThreeAttacksCDefault -> 鏃犵晱閲嶅
+/Lotus/Language/Melee/AxeEquippedThreeAttacksDefault -> 鍏夎緣瀹夊畞鏇?
+/Lotus/Language/Melee/AxeEquippedTwoAttacksBDefault -> 鍒嗙鍒哄挰
+/Lotus/Language/Melee/AxeEquippedTwoAttacksCDefault -> 婕傜Щ涔嬭笍
+/Lotus/Language/Melee/AxeEquippedTwoAttacksDefault -> 鏂楃墰鐮?
+/Lotus/Language/Melee/AxeGroundHitsDefault -> 鐙肩墮鎺?
+/Lotus/Language/Melee/AxeJumpAttacksDefault -> 娉板北閷?
+/Lotus/Language/Melee/AxeQuickAttacksDefault -> 鏂鎵撳嚮
+/Lotus/Language/Melee/AxeQuickThreeAttacksDefault -> 宕囬珮闊宠皟
+/Lotus/Language/Melee/AxeQuickThreeEquipDefault -> 闆勪紵绾靛
+/Lotus/Language/Melee/AxeSlideAttacksDefault -> 鍦扮嫳娉㈠姩
+/Lotus/Language/Melee/AxeWallrunDefaults -> 鎺犲ず绌哄嚮
+/Lotus/Language/Melee/BaseSwordQuick -> 鐙辩姮鐙傜崰
+/Lotus/Language/Melee/BayonetAerialCombo -> 椋炵繑鐨勯檧铻?
+/Lotus/Language/Melee/BayonetBlockCombo -> 閾佽厱鍗囧嚮
+/Lotus/Language/Melee/BayonetForwardBlockCombo -> 鏃犳儏鐚涙敾
+/Lotus/Language/Melee/BayonetForwardCombo -> 鍒哄嚮绐佽繘
+/Lotus/Language/Melee/BayonetGroundHit -> 绌垮績鐭?
+/Lotus/Language/Melee/BayonetHeavyAttacks -> 閲嶅埡
+/Lotus/Language/Melee/BayonetHeavySetB -> [PH] Bayonet Heavy Attacks B
+/Lotus/Language/Melee/BayonetJumpDefaults -> [PH] Bayonet Jump Attacks
+/Lotus/Language/Melee/BayonetNeutralCombo -> 鍐插埡鏂?
+/Lotus/Language/Melee/BayonetSlideAttacks -> 鎺犲奖绐佸嚮
+/Lotus/Language/Melee/BayonetWallrun -> 浜ゆ垬鍒囨崲
+/Lotus/Language/Melee/BerserkerBasicCombo -> 鎰ゆ€?
+/Lotus/Language/Melee/BerserkerBranchA -> 鐑儏
+/Lotus/Language/Melee/BerserkerBranchB -> 鐤媯
+/Lotus/Language/Melee/BerserkerBranchC -> 璋靛
+/Lotus/Language/Melee/BerserkerJump -> 鐙備贡
+/Lotus/Language/Melee/BerserkerQuickAttacksDefault -> 鐙傚寲鐖嗗彂
+/Lotus/Language/Melee/BerserkerSlide -> 鎭愭厡
+/Lotus/Language/Melee/ClawBranchADefaults -> 鎭朵汉鍒囧壊
+/Lotus/Language/Melee/ClawBranchADefaultsB -> 缁孩椋撻
+/Lotus/Language/Melee/ClawBranchBDefaults -> 澶嶄粐闉瑸
+/Lotus/Language/Melee/ClawBranchBDefaultsB -> 鐤鹃钄疯枃
+/Lotus/Language/Melee/ClawBranchCDefaults -> 鑷村懡鍐叉挒
+/Lotus/Language/Melee/ClawBranchCDefaultsB -> 椴滅孩涔嬮
+/Lotus/Language/Melee/ClawEquippedDefaults -> 閿娇鍒囧彛
+/Lotus/Language/Melee/ClawEquippedDefaultsB -> 娣辩孩寰
+/Lotus/Language/Melee/ClawQuickDefaults -> 鍒囧彛
+/Lotus/Language/Melee/ClawQuickDefaultsB -> 鑵ョ孩鐖
+/Lotus/Language/Melee/ComboAttack -> |OPEN_COLOR||VALUE|%|CLOSE_COLOR| 鏀诲嚮
+/Lotus/Language/Melee/ComboBtnPress -> 鎸?|ACTION|
+/Lotus/Language/Melee/ComboSlam -> |OPEN_COLOR||VALUE|%|CLOSE_COLOR| 闇囧湴鏀诲嚮
+/Lotus/Language/Melee/DaggerBranchABDefaults -> 鍣瓊杩炴柀
+/Lotus/Language/Melee/DaggerBranchADefaults -> 鍒€閿嬫棤鏋?
+/Lotus/Language/Melee/DaggerBranchBDefaults -> 瑙︾洰鐑堥
+/Lotus/Language/Melee/DaggerChargeAttacksDefault -> 铦跺奖鍒€
+/Lotus/Language/Melee/DaggerChargeComboA -> 琛€鑹查鏆?
+/Lotus/Language/Melee/DaggerCmbThreeBranchA -> 鍒囧壊灏栧埡
+/Lotus/Language/Melee/DaggerCmbThreeBranchB -> 绌垮埡缈窘
+/Lotus/Language/Melee/DaggerCmbThreeBranchC -> 鎾曡鑴婂埡
+/Lotus/Language/Melee/DaggerCmbThreeEquippedDefaults -> 鍒洪鐘勮
+/Lotus/Language/Melee/DaggerCmbThreeQuickDefaults -> [PH] Quick Combo
+/Lotus/Language/Melee/DaggerEquippedAttacksADefaults -> 鍒嗚杈圭紭
+/Lotus/Language/Melee/DaggerEquippedAttacksBase -> 缁孩涔嬭垶
+/Lotus/Language/Melee/DaggerEquippedAttacksDefaults -> 杩炵幆鎶藉嚮
+/Lotus/Language/Melee/DaggerGroundHitsDefault -> 鏃犳儏缁堢粨
+/Lotus/Language/Melee/DaggerJumpAttacksDefault -> 姣掕潕闄嶄笘
+/Lotus/Language/Melee/DaggerQuickAttacksDefault -> 姣掕泧鍣?
+/Lotus/Language/Melee/DaggerSlideAttacksDefaults -> 鍒嗚鎺犲姩
+/Lotus/Language/Melee/DaggerWallrunDefaults -> 鏋侀铚?
+/Lotus/Language/Melee/DoomSwordBasicCombo -> 姝ｄ箟浜ら攱
+/Lotus/Language/Melee/DoomSwordBranch1 -> 缇庡痉鏂╁嚮
+/Lotus/Language/Melee/DoomSwordBranch2 -> 娉扮劧鍒囧壊
+/Lotus/Language/Melee/DoomSwordBranch3 -> 鍧囪　鎾曡
+/Lotus/Language/Melee/DoomSwordJumpDefaults -> 闈欒哀鎵撳嚮
+/Lotus/Language/Melee/DoomSwordSlideDefaults -> 鏂粷瀹″垽
+/Lotus/Language/Melee/DualAxeChargeDefaults -> 鍚炲櫖鍐嶈
+/Lotus/Language/Melee/DualDaggerBranchADefaults -> 鐚涚嫯宕涜捣
+/Lotus/Language/Melee/DualDaggerBranchBDefaults -> 闂厜涔辫垶
+/Lotus/Language/Melee/DualDaggerBranchBExtra -> 椤哄娍閽冲嚮
+/Lotus/Language/Melee/DualDaggerChargeComboA -> 閲庤檸
+/Lotus/Language/Melee/DualDaggerChargeDefaults -> 鍓栬吂
+/Lotus/Language/Melee/DualDaggerCmbOneEquipped -> 閲庤惫闉嚮
+/Lotus/Language/Melee/DualDaggerCmbThreeBranchA -> 浣庤璇呭拻
+/Lotus/Language/Melee/DualDaggerCmbThreeBranchB -> 寮傚父浠嬪叆
+/Lotus/Language/Melee/DualDaggerCmbThreeEquipped -> 鐪熷疄涔嬭Е
+/Lotus/Language/Melee/DualDaggerCmbThreeQuickDefaults -> 鏈€缁堝畨鎭?
+/Lotus/Language/Melee/DualDaggerCmbTwoEquipped -> 鐙¤瘓鐚庤惫
+/Lotus/Language/Melee/DualDaggerEquippedDefaults -> 鍒╃埅涔辫垶
+/Lotus/Language/Melee/DualDaggerGroundHitsDefault -> 缁堢粨鎵撳嚮
+/Lotus/Language/Melee/DualDaggerJumpDefaults -> 闆勭嫯鎴樺惣
+/Lotus/Language/Melee/DualDaggerQuickBDefaults -> 鎹疯惫鎵撳嚮
+/Lotus/Language/Melee/DualDaggerQuickDefaults -> 娈嬬媯鐮村潖鑰?
+/Lotus/Language/Melee/DualDaggerSlideDefaults -> 娼滀紡涔嬬溂
+/Lotus/Language/Melee/DualSwordBranchADefaults -> 鐩樻洸榄旂埅
+/Lotus/Language/Melee/DualSwordBranchBDefaults -> 淇啿涔嬬埅
+/Lotus/Language/Melee/DualSwordBranchOneBDefaults -> 鐚庝汉涔嬭垶
+/Lotus/Language/Melee/DualSwordBranchTwoCDefaults -> 鏆楁秾浜屾寮?
+/Lotus/Language/Melee/DualSwordChargeDefaults -> 鍒掔┖椋炶穬
+/Lotus/Language/Melee/DualSwordCmbOne -> 琛€闆ㄦ壂鎺?
+/Lotus/Language/Melee/DualSwordCmbThreeBranchA -> 蹇€熷垏鍏?
+/Lotus/Language/Melee/DualSwordCmbThreeBranchB -> 宸ㄩ鍣挰
+/Lotus/Language/Melee/DualSwordCmbThreeBranchC -> 鎮叉垰姹傚伓
+/Lotus/Language/Melee/DualSwordCmbThreeEquippedDefaults -> 浼忓嚮鎺犻鑰?
+/Lotus/Language/Melee/DualSwordCmbThreeQuickDefaults -> [PH] Description
+/Lotus/Language/Melee/DualSwordCmbTwo -> 涓滃崌瑗胯惤
+/Lotus/Language/Melee/DualSwordCrgCmbA -> 鍖楅琚?
+/Lotus/Language/Melee/DualSwordEquippedDefaults -> 绂诲埆涔嬮浘
+/Lotus/Language/Melee/DualSwordGroundHitsDefault -> 铏氳薄璐埡
+/Lotus/Language/Melee/DualSwordJumpDefaults -> 骞荤孩鐒﹀湡
+/Lotus/Language/Melee/DualSwordQuickDefaults -> 鑷劧娑屾祦
+/Lotus/Language/Melee/DualSwordSlideDefaults -> 椋庡幓妯辫惤
+/Lotus/Language/Melee/FairyQuickDefaults -> 浠欏コ涔嬭垶
+/Lotus/Language/Melee/FistBranchADefaults -> 浜㈤緳鏈夋倲
+/Lotus/Language/Melee/FistBranchADefaultsB -> 琛屼簯娴佹按
+/Lotus/Language/Melee/FistBranchADefaultsC -> 椋㈣崚渚佃殌
+/Lotus/Language/Melee/FistBranchBDefaults -> 鏈棩杩借抗
+/Lotus/Language/Melee/FistBranchBDefaultsC -> 鐩涙€掍簤鎴?
+/Lotus/Language/Melee/FistBranchCDefaultsC -> 姘告亽娈掔伃
+/Lotus/Language/Melee/FistBranchOneCDefaults -> 婊氬姩鐑堥
+/Lotus/Language/Melee/FistBranchTwoBDefaults -> 涔辩煶绐佽
+/Lotus/Language/Melee/FistBranchTwoCDefaults -> 鍠锋秾鐏
+/Lotus/Language/Melee/FistChargeComboA -> 鍐嶄笁鏁欏寲
+/Lotus/Language/Melee/FistChargeDefaults -> 鏈€鍚庢暀鍖?
+/Lotus/Language/Melee/FistComboThreeABranch -> 澶у北涔嬫€?
+/Lotus/Language/Melee/FistComboThreeBBranch -> 娴佹渤涔嬫畤
+/Lotus/Language/Melee/FistComboThreeCBranch -> 妫灄涔嬫偗
+/Lotus/Language/Melee/FistComboThreeDefaults -> 姹磱涔嬮剻
+/Lotus/Language/Melee/FistComboThreeQuickDefaults -> 澶у北涔嬫€?
+/Lotus/Language/Melee/FistEquippedDefaults -> 娣卞眰鎰忎箟
+/Lotus/Language/Melee/FistEquippedDefaultsA -> 鍏堢ぜ鍚庡叺
+/Lotus/Language/Melee/FistEquippedDefaultsB -> 棰ゆ牀闇囪崱
+/Lotus/Language/Melee/FistEquippedDefaultsC -> 鐦熺柅鑲嗙兢
+/Lotus/Language/Melee/FistGroundHitsDefault -> 鐙傚惣鎴樻嫵
+/Lotus/Language/Melee/FistJumpDefaults -> 鐮?
+/Lotus/Language/Melee/FistQuickDefaults -> 娣卞眰鎰忎箟
+/Lotus/Language/Melee/FistSlideDefaults -> 鍗囬緳鎷?
+/Lotus/Language/Melee/FistWallrunDefaults -> 绌块緳鐮?
+/Lotus/Language/Melee/GlaiveBranchADefaults -> 鍒╁垉涔嬪惢
+/Lotus/Language/Melee/GlaiveBranchBDefaults -> 姘存槦鏃嬫丁
+/Lotus/Language/Melee/GlaiveBranchBDefaultsB -> 鍗堝涔屼簯
+/Lotus/Language/Melee/GlaiveBranchCDefaults -> 娴佹槦
+/Lotus/Language/Melee/GlaiveBranchDDefaults -> 鏄庢湀鍒濆崌
+/Lotus/Language/Melee/GlaiveBranchEDefaults -> 鏅ㄦ洣
+/Lotus/Language/Melee/GlaiveChargeDefaults -> 娈掕惤绻佹槦
+/Lotus/Language/Melee/GlaiveEquippedDefaults -> 璐ュ潖
+/Lotus/Language/Melee/GlaiveGroundHitsDefault -> 鍏嬫槦
+/Lotus/Language/Melee/GlaiveJumpDefaults -> 钀芥湀
+/Lotus/Language/Melee/GlaiveQuickDefaults -> 鍙嶅鍒囧壊
+/Lotus/Language/Melee/GlaiveSlideDefaults -> 鐜勬槦
+/Lotus/Language/Melee/GlaiveThrow -> 娈掕惤绻佹槦
+/Lotus/Language/Melee/GunbladeChargeComboA -> 楂樼┖姝荤
+/Lotus/Language/Melee/GunbladeCmbTwoBranchA -> 閲嶇偖鏇兼尝
+/Lotus/Language/Melee/GunbladeCmbTwoBranchB -> 閾呭鎺㈡垐
+/Lotus/Language/Melee/GunbladeCmbTwoBranchC -> 鍏ㄨ嚜鍔ㄤ鸡宸?
+/Lotus/Language/Melee/GunbladeCmbTwoDefaults -> 妗戝反鏃嬪垏
+/Lotus/Language/Melee/GunbladeCmbTwoQuickDefaults -> 寮哄嚮鍏板反杈?
+/Lotus/Language/Melee/GunbladeComboABranch -> 鏈€缁堝鍐?
+/Lotus/Language/Melee/GunbladeComboBBranch -> 浜″緬鐙傜儹
+/Lotus/Language/Melee/GunbladeComboCBranch -> 鎴樻枾鍙屾柀
+/Lotus/Language/Melee/GunbladeEquippedQuickDefaults -> 婕傛硦绐佽
+/Lotus/Language/Melee/GunbladeGroundHeavyDefaults -> 鍏ㄥ彛寰?
+/Lotus/Language/Melee/GunbladeGroundHitsDefault -> 閬楄█
+/Lotus/Language/Melee/GunbladeJumpDefaults -> 浜″懡涔嬭
+/Lotus/Language/Melee/GunbladeQuickDefaults -> 绁炴灙
+/Lotus/Language/Melee/GunbladeSlideDefaults -> 蹇灙
+/Lotus/Language/Melee/GunbladeWallrunDefaults -> 娣变粐
+/Lotus/Language/Melee/HammerBossQuickDefaults -> 鎴樺參鍦版牳
+/Lotus/Language/Melee/HammerCombo2BDefaults -> 鐙傛毚鏃嬮
+/Lotus/Language/Melee/HammerCombo2CDefaults -> 铚胯湌鎬ф儏
+/Lotus/Language/Melee/HammerComboADefaults -> 闆风宕涜捣
+/Lotus/Language/Melee/HammerComboBDefaults -> 绮夌涔嬫€?
+/Lotus/Language/Melee/HammerComboCDefaults -> 鎯╃綒閲嶅嚮
+/Lotus/Language/Melee/HammerComboOneMeleeTree -> 宸ㄧ煶閲嶅嚮
+/Lotus/Language/Melee/HeavyScytheAerialCombo -> 鐤鹃涔嬬墮
+/Lotus/Language/Melee/HeavyScytheComboA -> 闆烽渾涔嬪穮
+/Lotus/Language/Melee/HeavyScytheComboB -> 钀х憻鍔查
+/Lotus/Language/Melee/HeavyScytheComboC -> 椋庢毚姝荤
+/Lotus/Language/Melee/HeavyScytheHeavyAttacks -> 娉板潶绔炴嫨
+/Lotus/Language/Melee/IronPhoenixPart1 -> 鍟勬湪楦?
+/Lotus/Language/Melee/IronPhoenixPart2 -> 鐖嗚鏂╁嚮
+/Lotus/Language/Melee/JetHammerChargeDefaults -> 鍙伴鎴樺惣
+/Lotus/Language/Melee/JetHammerCmboOneMeleeTree -> 鐮寸鏉戣惤
+/Lotus/Language/Melee/JetHammerComboADefaults -> 娼睈涔嬪姏
+/Lotus/Language/Melee/KatanaBranchADefaults -> 鍘嬪埗绠
+/Lotus/Language/Melee/KatanaBranchBDefaults -> 鏃犲彲闈炶
+/Lotus/Language/Melee/KatanaBranchCDefaults -> 鐜溂鍚婇挬
+/Lotus/Language/Melee/KatanaComboThreeABranch -> 寮曢涔嬪厜
+/Lotus/Language/Melee/KatanaComboThreeBBranch -> 鍛煎敜鍝嶅簲
+/Lotus/Language/Melee/KatanaComboThreeCBranch -> 鍛借繍涔嬭矾
+/Lotus/Language/Melee/KatanaComboTwoABranch -> 鍏佽鍒ゅ喅
+/Lotus/Language/Melee/KatanaComboTwoBBranch -> 杩呮嵎鎯╂垝
+/Lotus/Language/Melee/KatanaComboTwoCBranch -> 娌夐粯鐩磋
+/Lotus/Language/Melee/KatanaGroundHitsDefault -> 瀹夋伅涔嬪湴
+/Lotus/Language/Melee/KatanaJumpDefaults -> 澶╅檷鏇欏厜
+/Lotus/Language/Melee/KatanaQuickDefaults -> 鏃犲奖鏂?
+/Lotus/Language/Melee/KatanaSlideDefaults -> 灞呭悎鏂?
+/Lotus/Language/Melee/KatanaThreeQuickDefaults -> 鐩蹭緺淇℃潯
+/Lotus/Language/Melee/KatanaTwoQuickDefaults -> 鏈€缁堣鍐?
+/Lotus/Language/Melee/KatanaWallrunDefaults -> 瀵肩伀绾?
+/Lotus/Language/Melee/LongKatanaBranchADefaults -> 鏂╄胺闄ょ矑
+/Lotus/Language/Melee/LongKatanaBranchBDefaults -> 鎷涢浄鍞ら洦
+/Lotus/Language/Melee/LongKatanaBranchCDefaults -> [PH] Branch C Defaults
+/Lotus/Language/Melee/LongKatanaChargeDefaults -> 鎭嬩汉杈炲埆
+/Lotus/Language/Melee/LongKatanaGroundHitsDefault -> 鎭堕緹璁垝
+/Lotus/Language/Melee/LongKatanaJumpDefaults -> 濂哥嫛鐨尨
+/Lotus/Language/Melee/LongKatanaQuickDefaults -> 蹇嫚涓夋柀
+/Lotus/Language/Melee/LongKatanaSlideDefaults -> 璇¤瘓婊戣泧
+/Lotus/Language/Melee/LongKatanaWallrunDefaults -> 閿愭嵎鐬練
+/Lotus/Language/Melee/MaceChargeDefaults -> 鍏辨尟寮?
+/Lotus/Language/Melee/MaceGroundHitsDefault -> 鏈€鍚庨仐瑷€
+/Lotus/Language/Melee/MacheteChargeComboA -> 鍗锋洸娉㈠姩
+/Lotus/Language/Melee/MacheteChargeDefaults -> 娑屽姩涔嬪姏
+/Lotus/Language/Melee/MacheteComboABranch -> 杩呮祦鐚涘嚮
+/Lotus/Language/Melee/MacheteComboBBranch -> 鏉ュ娍姹规惫
+/Lotus/Language/Melee/MacheteComboCBranch -> 鏆撮洦鐙傛椽
+/Lotus/Language/Melee/MacheteEquippedQuickDefaults -> 鍔胯嫢鎯婃稕
+/Lotus/Language/Melee/MacheteGroundHitsDefault -> 涔橀鐮存氮
+/Lotus/Language/Melee/MacheteQuickDefaults -> 娑熸吉娉㈠姩
+/Lotus/Language/Melee/MacheteSlideDefaults -> 鑷劧娑屾祦
+/Lotus/Language/Melee/MacheteStanceBComboABranch -> 闆烽福涔濆ご铔?
+/Lotus/Language/Melee/MacheteStanceBComboBBranch -> 闂數濉炲，
+/Lotus/Language/Melee/MacheteStanceBComboCBranch -> 鍒╃淮鍧﹂闆?
+/Lotus/Language/Melee/MacheteStanceBDefaults -> 鐙傞娴风
+/Lotus/Language/Melee/MacheteStanceBQuickDefaults -> 椋庢毚鎽╃警
+/Lotus/Language/Melee/MonkeyKingStaffBasicCombo -> 姣佹鏆村緬
+/Lotus/Language/Melee/MonkeyKingStaffBranchA -> 鏃嬬涔嬫妧
+/Lotus/Language/Melee/MonkeyKingStaffBranchB -> 婊氱煶鐤捐
+/Lotus/Language/Melee/MonkeyKingStaffBranchC -> 榫欏嵎鎬掗浄
+/Lotus/Language/Melee/NunchakuBranchADefaults -> 鐔旇瀺鐑祦
+/Lotus/Language/Melee/NunchakuBranchBDefaults -> 鐐界噧娑℃祦
+/Lotus/Language/Melee/NunchakuBranchCDefaults -> 鍦扮嫳婕╂丁
+/Lotus/Language/Melee/NunchakuChargeDefaults -> 鐒版疆
+/Lotus/Language/Melee/NunchakuEquippedDefaults -> 鐏肩儹鏆楁祦
+/Lotus/Language/Melee/NunchakuGroundHitsDefault -> 鐕冪儳娴峰暩
+/Lotus/Language/Melee/NunchakuJumpAttacksDefault -> 鐏劙椋庢毚
+/Lotus/Language/Melee/NunchakuQuickDefaults -> 鐩樻棆鐏劙
+/Lotus/Language/Melee/NunchakuSlideDefault -> 澶х劙娼?
+/Lotus/Language/Melee/NunchakuWallrunDefaults -> 鍒涚伀
+/Lotus/Language/Melee/PacifistBasicCombo -> 鐖朵箣鏁欒
+/Lotus/Language/Melee/PacifistBranchA -> 鎷掔粷渚靛叆
+/Lotus/Language/Melee/PacifistBranchB -> 鏈€缁堥粠鏄?
+/Lotus/Language/Melee/PacifistBranchC -> 鑰愬績鐮寸
+/Lotus/Language/Melee/PacifistJump -> 鍗堝鐚涙敾
+/Lotus/Language/Melee/PacifistSlide -> 鎾掓矙姣掕澃
+/Lotus/Language/Melee/PolearmBranchADefaults -> 鐟熺憻鐑堥
+/Lotus/Language/Melee/PolearmBranchBDefaults -> 閽㈤搧闂姩
+/Lotus/Language/Melee/PolearmChargeComboA -> 鏆撮涔嬬溂
+/Lotus/Language/Melee/PolearmChargeDefaults -> 鑷村懡娓呴
+/Lotus/Language/Melee/PolearmCmbThreeBranchA -> 铻烘棆鏋佺偣
+/Lotus/Language/Melee/PolearmCmbThreeBranchB -> 椤跺嘲绐佸埡
+/Lotus/Language/Melee/PolearmCmbThreeBranchC -> 璺冨崌椤剁偣
+/Lotus/Language/Melee/PolearmCmbThreeEquippedDefaults -> 鑷抽珮灞卞嘲
+/Lotus/Language/Melee/PolearmCmbThreeQuickDefaults -> [PH] Description
+/Lotus/Language/Melee/PolearmEquippedADefaults -> 鐮寸┖鏂?
+/Lotus/Language/Melee/PolearmEquippedBDefaults -> 鏂瓊姘旀伅
+/Lotus/Language/Melee/PolearmEquippedDefaults -> 鐙傜儓鏆撮
+/Lotus/Language/Melee/PolearmQuickDefaults -> 鑷村懡寰幆
+/Lotus/Language/Melee/PolearmSlideDefaults -> 鏃嬮鍑?
+/Lotus/Language/Melee/PunchKickBranchADefaults -> 娆叉湜鐕冪儳
+/Lotus/Language/Melee/PunchKickBranchBDefaults -> 鎬掔伀鐓藉姩
+/Lotus/Language/Melee/PunchKickBranchCDefaults -> 鐏劙鏆村啿
+/Lotus/Language/Melee/PunchKickChargeComboA -> 鐏扮儸閲嶇噧
+/Lotus/Language/Melee/PunchKickChargeDefaults -> 鐏垖
+/Lotus/Language/Melee/PunchKickEquippedDefaults -> 闂€€鍦ｅ厜
+/Lotus/Language/Melee/PunchKickEquippedDefaultsB -> 鍦扮嫳
+/Lotus/Language/Melee/PunchKickQuickDefaults -> 鐢靛厜鐭崇伀
+/Lotus/Language/Melee/PunchKickSlideDefaults -> 婊氬姩鐖嗚
+/Lotus/Language/Melee/PvPDaggerComboA -> 琛岃窛涔嬬偣
+/Lotus/Language/Melee/PvPDaggerComboB -> 鐢靛姬鍒囧墛
+/Lotus/Language/Melee/PvPDaggerComboOne -> 杩呴€熷垏鍓?
+/Lotus/Language/Melee/PvPDualDaggersComboA -> 绐佽繘鍒囧叆
+/Lotus/Language/Melee/PvPDualDaggersComboOne -> 闂儊鍓冨垁
+/Lotus/Language/Melee/PvPDualSwordComboA -> 鑱氭祦涔嬬紭
+/Lotus/Language/Melee/PvPDualSwordComboB -> 缁撳悎鎵撳嚮
+/Lotus/Language/Melee/PvPDualSwordComboOne -> 浜ゅ弶鍒囧墛
+/Lotus/Language/Melee/PvPFistComboA -> 鏃嬭浆鎺屽績
+/Lotus/Language/Melee/PvPFistComboB -> 闄嶈惤鍐插嚮
+/Lotus/Language/Melee/PvPFistComboOne -> 涓夎繛鍑?
+/Lotus/Language/Melee/PvPGlaiveComboA -> 鎵╁紶铻烘棆
+/Lotus/Language/Melee/PvPGlaiveComboB -> 鑷翠激鏀惧皠
+/Lotus/Language/Melee/PvPGlaiveComboOne -> 鏃嬮鎺ヨЕ
+/Lotus/Language/Melee/PvPHammerComboA -> 鎷充笌閿?
+/Lotus/Language/Melee/PvPHeavyBladeComboA -> 鐚涚墰鍐插埡
+/Lotus/Language/Melee/PvPHeavyBladeComboB -> 鐚涘啿鍒冪紭
+/Lotus/Language/Melee/PvPHeavyBladeComboOne -> 纰庨鑰?
+/Lotus/Language/Melee/PvPKatanaComboA -> 鍏堝ご涔嬪垉
+/Lotus/Language/Melee/PvPKatanaComboB -> 绐佽穬
+/Lotus/Language/Melee/PvPKatanaComboOne -> 鐑儏鍒囧壊
+/Lotus/Language/Melee/PvPMacheteComboA -> 杞诲揩娴佷綋
+/Lotus/Language/Melee/PvPMacheteComboB -> 杩繎娼睈
+/Lotus/Language/Melee/PvPMacheteComboOne -> 鍗囪吘涔嬫氮
+/Lotus/Language/Melee/PvPNunchakuComboA -> 鐏肩儹闆洦
+/Lotus/Language/Melee/PvPNunchakuComboB -> 鐐界儹娲祦
+/Lotus/Language/Melee/PvPNunchakuComboOne -> 鐐界儳鏆撮洦
+/Lotus/Language/Melee/PvPPolearmComboA -> 鍛煎暩鏃嬮
+/Lotus/Language/Melee/PvPPolearmComboB -> 灏栧彨涔嬮
+/Lotus/Language/Melee/PvPPolearmComboOne -> 鍓婄爫椋庢毚
+/Lotus/Language/Melee/PvPPunchKickComboA -> 閲庤洰灏嗚嚦
+/Lotus/Language/Melee/PvPPunchKickComboB -> 鍗辨満灏嗕复
+/Lotus/Language/Melee/PvPPunchKickComboOne -> 娈嬮叿閫艰繎
+/Lotus/Language/Melee/PvPRapierComboA -> 閬斀瑕佺偣
+/Lotus/Language/Melee/PvPRapierComboB -> 闅愯斀缂犵粫
+/Lotus/Language/Melee/PvPScytheComboA -> 楠ょ劧鏀跺壊
+/Lotus/Language/Melee/PvPScytheComboB -> 鐏甸瓊涔嬭垶
+/Lotus/Language/Melee/PvPScytheComboOne -> 璧斿伩
+/Lotus/Language/Melee/PvPStavesComboA -> 寮洸鏋濆弶
+/Lotus/Language/Melee/PvPStavesComboB -> 鍧犺惤涔嬪彾
+/Lotus/Language/Melee/PvPStavesComboOne -> 鎵崱鍒囨灊
+/Lotus/Language/Melee/PvPSwordComboA -> 鎷噣鍒€鍒?
+/Lotus/Language/Melee/PvPSwordComboB -> 閿嬪埄鍓嶇紭
+/Lotus/Language/Melee/PvPSwordComboOne -> 鐮嶅妶涓庢柀鍑?
+/Lotus/Language/Melee/PvPSwordWhipComboA -> 浼婅帿鍚変箣蹇?
+/Lotus/Language/Melee/PvPSwordWhipComboB -> 澶╅緳鐛犵墮
+/Lotus/Language/Melee/PvPSwordWipComboOne -> 铔熼緳鍒╃埅
+/Lotus/Language/Melee/PvPSwordandShieldComboA -> 鐩樺洖鎶よ韩
+/Lotus/Language/Melee/PvPSwordandShieldComboB -> 寮鸿鐩炬帹
+/Lotus/Language/Melee/PvPSwordandShieldComboOne -> 澹佸瀿鑸峰
+/Lotus/Language/Melee/PvPTonfaComboA -> 澶╃伨鍥炶崱
+/Lotus/Language/Melee/PvPTonfaComboB -> 鎮叉儴娈掕惤
+/Lotus/Language/Melee/PvPTonfaComboOne -> 鑻︾棝鍜掓€?
+/Lotus/Language/Melee/PvPWhipComboA -> 浣庤鎾曞挰
+/Lotus/Language/Melee/PvPWhipComboB -> 闂峰摷鐐欑噧
+/Lotus/Language/Melee/PvPWhipComboOne -> 灏栧暩骞介瓊
+/Lotus/Language/Melee/PvpClawComboA -> 琛€鑵ヨ惤鍑?
+/Lotus/Language/Melee/PvpClawComboB -> 鏃嬮鍐插埛
+/Lotus/Language/Melee/PvpClawComboOne -> 椴滅孩娴佸奖
+/Lotus/Language/Melee/RapierBranchADefaults -> 鍐虫枟绉樺瘑
+/Lotus/Language/Melee/RapierBranchBDefaults -> 浼鏀诲嚮
+/Lotus/Language/Melee/RapierBranchCDefaults -> 闅愬舰鎸ヨ垶
+/Lotus/Language/Melee/RapierChargeA -> 钂欓潰杩樺嚮
+/Lotus/Language/Melee/RapierQuickA -> 娆鸿瘓鐚涘啿
+/Lotus/Language/Melee/ReaperMeleeAerial -> 鑷村懡椋庢毚
+/Lotus/Language/Melee/ReaperMeleeBranchA -> 鏂涔嬬埅
+/Lotus/Language/Melee/ReaperMeleeBranchB -> 鐏甸瓊鍓ョ
+/Lotus/Language/Melee/ReaperMeleeBranchC -> 铏氱┖娲祦
+/Lotus/Language/Melee/ReaperMeleeBranchD -> 鏀跺壊鏃嬮
+/Lotus/Language/Melee/ReaperMeleeHeavy -> 姝荤涓寸晫
+/Lotus/Language/Melee/ReaperMeleeSlide -> 澶滃箷闄嶄复
+/Lotus/Language/Melee/RegorSwordShieldBranchA -> 閲嶇偖灏嗕复
+/Lotus/Language/Melee/RegorSwordShieldBranchADefaults -> 鏃犻』鍛婅
+/Lotus/Language/Melee/RegorSwordShieldBranchB -> 鍛ㄨ韩绮夌
+/Lotus/Language/Melee/RegorSwordShieldBranchC -> 榛戞殫鍏夎緣
+/Lotus/Language/Melee/RegorSwordShieldQuickA -> 閲庣尓閲嶈笍
+/Lotus/Language/Melee/ScytheBranchA2Defaults -> 姘告亽澶滄洸
+/Lotus/Language/Melee/ScytheBranchADefaults -> 鍦扮嫳杞垉
+/Lotus/Language/Melee/ScytheBranchB2Defaults -> 椋炴帬鏆楀奖
+/Lotus/Language/Melee/ScytheBranchBDefaults -> 鏈€鍚庨仐鎰?
+/Lotus/Language/Melee/ScytheChargeComboA -> 椋為€濇棤鏈?
+/Lotus/Language/Melee/ScytheChargeDefaults -> 瀹侀潤瀹夋伅
+/Lotus/Language/Melee/ScytheEquippedADefaults -> 澶嶄粐
+/Lotus/Language/Melee/ScytheEquippedBDefaults -> 澶у嵏鍏潡
+/Lotus/Language/Melee/ScytheEquippedDefaults -> 鏃犲敖鎬ㄦ仺
+/Lotus/Language/Melee/ScytheQuickDefaults -> 鑰胯€夸簬鎬€
+/Lotus/Language/Melee/StaffBranchADefaults -> 鏁忚嫢鐏电尨
+/Lotus/Language/Melee/StaffBranchBDefaults -> 杩炴秷甯︽墦
+/Lotus/Language/Melee/StaffBranchCDefaults -> 鍧氬喅涔辫垶
+/Lotus/Language/Melee/StaffBranchDDefaults -> 绉嬪彾
+/Lotus/Language/Melee/StaffChargeDefaults -> 閬?
+/Lotus/Language/Melee/StaffEquippedADefaults -> 鑲綋鍥涙暎
+/Lotus/Language/Melee/StaffEquippedBDefaults -> 鏆磋檺椋庢毚
+/Lotus/Language/Melee/StaffEquippedDefaults -> 鏁ｈ惤鍒嗚偄
+/Lotus/Language/Melee/StaffGroundHitsDefault -> 涓€鎵€岀┖
+/Lotus/Language/Melee/StaffJumpDefaults -> 鍘勮繍绁告牴
+/Lotus/Language/Melee/StaffQuickDefaults -> 钀藉彾娌欐矙
+/Lotus/Language/Melee/StaffSlideDefaults -> 鐮寸绐?
+/Lotus/Language/Melee/StaffWallrunDefaults -> 鐐硅矾鏄庣伅
+/Lotus/Language/Melee/StalkerSwordBranchA -> 鎭愭儳杩繎
+/Lotus/Language/Melee/StalkerSwordBranchB -> 鎲庢仺澧炲己
+/Lotus/Language/Melee/StalkerSwordBranchC -> 缁濇湜娣规汉
+/Lotus/Language/Melee/StalkerSwordDefaults -> 瀛ょ嫭澶嶄粐
+/Lotus/Language/Melee/StalkerSwordQuickDefaults -> 瀛ょ嫭澶嶄粐
+/Lotus/Language/Melee/SwordBranchB -> 椋炵嚂涔辫垶
+/Lotus/Language/Melee/SwordChargeA -> 鏃犲弻鏂?
+/Lotus/Language/Melee/SwordChargeComboA -> 缁孩鍓戝奖
+/Lotus/Language/Melee/SwordChargeDefaults -> 鐬棿闈欓粯
+/Lotus/Language/Melee/SwordCmbTwoBranchA -> 绌垮垏鍒╃埅
+/Lotus/Language/Melee/SwordCmbTwoBranchB -> 瀹界考鍒╁垉
+/Lotus/Language/Melee/SwordCmbTwoBranchC -> 鍒╅毤娼滃嚮
+/Lotus/Language/Melee/SwordCmbTwoEquippedDefaults -> 蹇€熻拷鍑?
+/Lotus/Language/Melee/SwordCmbTwoQuickDefaults -> [PH] Description
+/Lotus/Language/Melee/SwordGroundHitsDefault -> 姝讳骸鏍囪
+/Lotus/Language/Melee/SwordJumpDefaults -> 鍒ゅ喅涔嬫棩
+/Lotus/Language/Melee/SwordQuickA -> 浜岃繛鏂?
+/Lotus/Language/Melee/SwordShieldBranchA -> 杞伴浄
+/Lotus/Language/Melee/SwordShieldBranchADefaults -> 鐚涘吔涔嬪櫖
+/Lotus/Language/Melee/SwordShieldBranchB -> 鐮村洿鍧氱浘
+/Lotus/Language/Melee/SwordShieldBranchC -> 瑙佹満琛屽紥
+/Lotus/Language/Melee/SwordShieldChargeDefaults -> 鍦ｅ悕
+/Lotus/Language/Melee/SwordShieldGroundHitsDefault -> 鑳屾按涓€鎴?
+/Lotus/Language/Melee/SwordShieldJumpDefaults -> 閽㈤搧涔嬫嫵
+/Lotus/Language/Melee/SwordShieldQuickA -> 閽熼福
+/Lotus/Language/Melee/SwordShieldSlideDefaults -> 鐮村潖鍜岄煶
+/Lotus/Language/Melee/SwordShieldWallrunDefaults -> 涓寸粓澶╀娇
+/Lotus/Language/Melee/SwordSlideDefault -> 铻烘棆鏂?
+/Lotus/Language/Melee/SwordSpiral -> 锜犻緳涓€鍑?
+/Lotus/Language/Melee/SwordWallrunDefaults -> 韬交濡傜嚂
+/Lotus/Language/Melee/SwordWhipBaseA -> 榫欏吔涔嬬埅
+/Lotus/Language/Melee/SwordWhipBranchA -> 榫欒泧涔嬪績
+/Lotus/Language/Melee/SwordWhipBranchB -> 宸ㄩ緳涔嬬墮
+/Lotus/Language/Melee/SwordWhipBranchC -> 娴烽緳涔嬮瓊
+/Lotus/Language/Melee/SwordWhipGrapple -> 铔熼緳涔嬬考
+/Lotus/Language/Melee/SwordWhipQuickA -> 缈旈緳涔嬪枆
+/Lotus/Language/Melee/TonfaBranchA -> 鎭跺康涔嬬姜
+/Lotus/Language/Melee/TonfaBranchADefaults -> 鍜掕檺鎵板
+/Lotus/Language/Melee/TonfaBranchB -> 椋樻硦澶╃伨
+/Lotus/Language/Melee/TonfaBranchBA -> 渚犵洍娉曞吀
+/Lotus/Language/Melee/TonfaBranchBB -> 鏂ヤ警鎸囦护
+/Lotus/Language/Melee/TonfaBranchBC -> 鎭舵娉曞垯
+/Lotus/Language/Melee/TonfaBranchBDefaults -> 鏃犺禆鎸囩ず
+/Lotus/Language/Melee/TonfaBranchC -> 蹇樻垜铏愭潃
+/Lotus/Language/Melee/TonfaChargeDefaults -> 榫冮緣閽堢粐
+/Lotus/Language/Melee/TonfaGroundHitsDefault -> 鍐疯浠囨潃
+/Lotus/Language/Melee/TonfaJumpDefaults -> 鍗囧崕鍜掓湳
+/Lotus/Language/Melee/TonfaQuickA -> 涓嶆鍜掓€?
+/Lotus/Language/Melee/TonfaQuickB -> 閫愯€呭懡浠?
+/Lotus/Language/Melee/TonfaSlideDefaults -> 鏂椾簤涔嬭
+/Lotus/Language/Melee/TonfaWallrunDefaults -> 鐩告€т箣婧?
+/Lotus/Language/Melee/VorQuickAttacksDefault -> 绠楄涔嬪嚮
+/Lotus/Language/Melee/WarfanCmbOneBranchA -> 鍒囪杈圭窘
+/Lotus/Language/Melee/WarfanCmbOneBranchB -> 姣佷激鍒冪窘
+/Lotus/Language/Melee/WarfanCmbOneBranchC -> 閿娇缇藉啝
+/Lotus/Language/Melee/WarfanCmbOneEquippedDefaults -> 鍓冨垁槌嶇考
+/Lotus/Language/Melee/WarfanCmbTwoBranchA -> 娲楁钉涔嬮┍
+/Lotus/Language/Melee/WarfanCmbTwoBranchB -> 鍙疯鍐插嚮
+/Lotus/Language/Melee/WarfanCmbTwoBranchC -> 鎾曡鎮叉瓕
+/Lotus/Language/Melee/WarfanCmbTwoBranchD -> 蹇忔倲涔嬬キ
+/Lotus/Language/Melee/WhipBranch2ADefaults -> 缈绘粴鐜嬭€?
+/Lotus/Language/Melee/WhipBranchADefaults -> 鐏姳閰峰垜
+/Lotus/Language/Melee/WhipBranchBDefaults -> 寮曢涔嬬埅
+/Lotus/Language/Melee/WhipChargeDefaults -> 闆烽渾涓囬挧
+/Lotus/Language/Melee/WhipEquippedBDefaults -> 鏆村暩鐙傞
+/Lotus/Language/Melee/WhipEquippedDefaults -> 楦ｅ０铚傚埡
+/Lotus/Language/Melee/WhipGroundHitsDefault -> 鎭愭儳涔嬪０
+/Lotus/Language/Melee/WhipQuickDefaults -> 渚濇硶鎯╂不
+/Lotus/Language/Menu/ArchwingFailurePurchase -> 蹇呴』鍏堝畬鎴愩€婃洸缈笺€嬬郴鍒椾换鍔℃墠鑳借喘涔拌繖椤归亾鍏枫€?
+/Lotus/Language/Menu/ArchwingFailureSolo -> 浣犲繀椤诲厛鎷ユ湁鏇茬考骞跺畬鎴愪簡銆婃洸缈笺€嬬郴鍒椾换鍔℃墠鑳借繘琛岃繖椤逛换鍔°€?
+/Lotus/Language/Menu/ArchwingProjectileWarning -> <PROBLEM> 鏁屾柟鏀诲嚮灏嗚嚦 <PROBLEM>
+/Lotus/Language/Menu/Archwing_Weapons -> 鏇茬考姝﹀櫒
+/Lotus/Language/Menu/CategoryArchwing -> 鏇茬考
+/Lotus/Language/Menu/CategoryArchwingPrimary -> 鏇茬考鏋
+/Lotus/Language/Menu/CategoryArchwingSecondary -> 鏇茬考杩戞垬
+/Lotus/Language/Menu/CategoryMeleeStance -> 鏋跺紡
+/Lotus/Language/Menu/CategoryMeleeWeapon -> 杩戞垬
+/Lotus/Language/Menu/CategorySentinel -> 鏈哄櫒
+/Lotus/Language/Menu/Codex_SentinelWeapons -> 瀹堟姢姝﹀櫒
+/Lotus/Language/Menu/Codex_Sentinels -> 鍚屼即
+/Lotus/Language/Menu/Coupon_LongGun -> 涓昏姝﹀櫒浼樻儬鍒?
+/Lotus/Language/Menu/Coupon_Melee -> 杩戞垬姝﹀櫒浼樻儬鍒?
+/Lotus/Language/Menu/Coupon_Pistol -> 娆¤姝﹀櫒浼樻儬鍒?
+/Lotus/Language/Menu/CraftingComponent_ArchHeavyPistolsBarrel -> 浠€闀垮弻鏋?鏋
+/Lotus/Language/Menu/CraftingComponent_ArchHeavyPistolsReceiver -> 浠€闀垮弻鏋?鏋満
+/Lotus/Language/Menu/CraftingComponent_DemolitionArchwingChassisDesc -> 闉樼繀鏇茬考鐨勫鐢茬粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_DemolitionArchwingChassisName -> 闉樼繀 澶栫敳
+/Lotus/Language/Menu/CraftingComponent_DemolitionArchwingSystemsDesc -> 闉樼繀鏇茬考鐨勭郴缁熺粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_DemolitionArchwingSystemsName -> 闉樼繀 绯荤粺
+/Lotus/Language/Menu/CraftingComponent_DemolitionArchwingWingsDesc -> 闉樼繀鏇茬考鐨勬満缈肩粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_DemolitionArchwingWingsName -> 闉樼繀 鏈虹考
+/Lotus/Language/Menu/CraftingComponent_NextPromoMeleeBlade -> 鍒嗚鏂╂枾 Prime 鍒€鍒?
+/Lotus/Language/Menu/CraftingComponent_NextPromoMeleeHandle -> 鍒嗚鏂╂枾 Prime 鎻℃焺
+/Lotus/Language/Menu/CraftingComponent_PrimeArchwingChassisDesc -> 闄ㄨ湏 Prime 鏇茬考鐨勫鐢茬粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_PrimeArchwingChassisName -> 闄ㄨ湏 Prime 澶栫敳
+/Lotus/Language/Menu/CraftingComponent_PrimeArchwingSystemsDesc -> 闄ㄨ湏 Prime 鏇茬考鐨勭郴缁熺粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_PrimeArchwingSystemsName -> 闄ㄨ湏 Prime 绯荤粺
+/Lotus/Language/Menu/CraftingComponent_PrimeArchwingWingsDesc -> 闄ㄨ湏 Prime 鏇茬考鐨勬満缈肩粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_PrimeArchwingWingsName -> 闄ㄨ湏 Prime 鏈虹考
+/Lotus/Language/Menu/CraftingComponent_StandardArchwingChassisDesc -> 闄ㄨ湏鏇茬考鐨勫鐢茬粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_StandardArchwingChassisName -> 闄ㄨ湏 澶栫敳
+/Lotus/Language/Menu/CraftingComponent_StandardArchwingSystemsDesc -> 闄ㄨ湏鏇茬考鐨勭郴缁熺粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_StandardArchwingSystemsName -> 闄ㄨ湏 绯荤粺
+/Lotus/Language/Menu/CraftingComponent_StandardArchwingWingsDesc -> 闄ㄨ湏鏇茬考鐨勬満缈肩粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_StandardArchwingWingsName -> 闄ㄨ湏 鏈虹考
+/Lotus/Language/Menu/CraftingComponent_StealthArchwingChassisDesc -> 鍒哄奖鏇茬考鐨勫鐢茬粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_StealthArchwingChassisName -> 鍒哄奖 澶栫敳
+/Lotus/Language/Menu/CraftingComponent_StealthArchwingSystemsDesc -> 鍒哄奖鏇茬考鐨勭郴缁熺粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_StealthArchwingSystemsName -> 鍒哄奖 绯荤粺
+/Lotus/Language/Menu/CraftingComponent_StealthArchwingWingsDesc -> 鍒哄奖鏇茬考鐨勬満缈肩粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_StealthArchwingWingsName -> 鍒哄奖 鏈虹考
+/Lotus/Language/Menu/CraftingComponent_SupportArchwingChassisDesc -> 鍦ｄ娇鏇茬考鐨勫鐢茬粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_SupportArchwingChassisName -> 鍦ｄ娇 澶栫敳
+/Lotus/Language/Menu/CraftingComponent_SupportArchwingSystemsDesc -> 鍦ｄ娇鏇茬考鐨勭郴缁熺粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_SupportArchwingSystemsName -> 鍦ｄ娇 绯荤粺
+/Lotus/Language/Menu/CraftingComponent_SupportArchwingWingsDesc -> 鍦ｄ娇鏇茬考鐨勬満缈肩粍浠躲€?
+/Lotus/Language/Menu/CraftingComponent_SupportArchwingWingsName -> 鍦ｄ娇 鏈虹考
+/Lotus/Language/Menu/CraftingComponent_VorsPistolBarrel -> 棰勮█鑰?鏋
+/Lotus/Language/Menu/CraftingComponent_VorsPistolReceiver -> 棰勮█鑰?鏋満
+/Lotus/Language/Menu/Global_ProductCategory_Melee -> 杩戞垬姝﹀櫒
+/Lotus/Language/Menu/Global_ProductCategory_Pistol -> 娆¤姝﹀櫒
+/Lotus/Language/Menu/Global_PurchaseWithoutArchwingEnabledConfirm -> 鍦ㄥ畬鎴愩€婃洸缈笺€嬬郴鍒椾换鍔′互鍓嶆棤娉曚娇鐢ㄦ洸缈肩浉鍏抽亾鍏凤紝浠嶈杩涜璐拱鍚楋紵
+/Lotus/Language/Menu/HoldForMeleeMode -> 鎸変綇浠ヨ繘鍏ヨ繎鎴樻ā寮?
+/Lotus/Language/Menu/Input_MELEE -> 杩戞垬鏀诲嚮
+/Lotus/Language/Menu/Input_MELEE_CHANNEL -> 杩戞垬閲嶅嚮
+/Lotus/Language/Menu/Input_MELEE_HEAVY -> 杩戞垬閲嶅嚮
+/Lotus/Language/Menu/Input_MELEE_PARRY -> 杩戞垬鏍兼尅
+/Lotus/Language/Menu/Input_MELEE_SWING -> 杩戞垬鏀诲嚮
+/Lotus/Language/Menu/Input_Melee_AlreadyBound_Error -> 鏃犳硶灏?|BUTTON| 缁戝畾浜庣洰鍓嶄负杩戞垬鏋跺紡鍔ㄤ綔鐨勬寜閿€?
+/Lotus/Language/Menu/Input_Melee_ButtonError -> 杩戞垬閲嶅嚮涓嶈兘璁剧疆鍒颁笉鍚岀殑鎸夐敭涓?
+/Lotus/Language/Menu/ItemInventory_CantSellLastSentinel -> 鏃犳硶鍞嚭鐗╁搧锛涗綘蹇呴』淇濇湁鑷冲皯涓€涓畧鎶ゃ€?
+/Lotus/Language/Menu/ItemInventory_LongGunPlural -> |NUMBER| 鎶婃鏋?
+/Lotus/Language/Menu/ItemInventory_LongGunSingular -> |NUMBER| 鎶婃鏋?
+/Lotus/Language/Menu/ItemInventory_MeleePlural -> |NUMBER| 鎶婅繎鎴樻鍣?
+/Lotus/Language/Menu/ItemInventory_MeleeSingular -> |NUMBER| 鎶婅繎鎴樻鍣?
+/Lotus/Language/Menu/ItemInventory_PistolPlural -> |NUMBER| 鎶婃墜鏋?
+/Lotus/Language/Menu/ItemInventory_PistolSingular -> |NUMBER| 鎶婃墜鏋?
+/Lotus/Language/Menu/Loadout_Archwing -> 鏇茬考
+/Lotus/Language/Menu/Loadout_ChangeMelee -> 鍗曞嚮鏇存敼鎮ㄧ殑杩戞垬姝﹀櫒銆?
+/Lotus/Language/Menu/Loadout_ChangePistol -> 鍗曞嚮鏇存敼鎮ㄧ殑鎵嬫灙銆?
+/Lotus/Language/Menu/Loadout_ChangeSentinel -> 鍗曞嚮鏇存敼鎮ㄧ殑瀹堟姢銆?
+/Lotus/Language/Menu/Loadout_FireModeHeavyMelee -> 閲嶅瀷杩戞垬鏀诲嚮
+/Lotus/Language/Menu/Loadout_FireModeMelee -> 杩戞垬
+/Lotus/Language/Menu/Loadout_LongGun -> 涓昏姝﹀櫒
+/Lotus/Language/Menu/Loadout_Melee -> 杩戞垬
+/Lotus/Language/Menu/Loadout_Pistol -> 娆¤姝﹀櫒
+/Lotus/Language/Menu/Loadout_SentinelWeapon -> 瀹堟姢姝﹀櫒
+/Lotus/Language/Menu/Loadout_SpaceGun -> 鏇茬考鏋
+/Lotus/Language/Menu/Loadout_SpaceMelee -> 鏇茬考杩戞垬姝﹀櫒
+/Lotus/Language/Menu/Loadout_UnequipSentinels -> 灏嗗畧鎶や粠鍐涙搴撲腑绉婚櫎锛堜細鐣欏湪浠撳簱涓絾涓嶄細甯﹁繘浠诲姟锛?
+/Lotus/Language/Menu/Loadout_ViewSentinels -> 鏌ョ湅瀹堟姢
+/Lotus/Language/Menu/Melee -> 杩戞垬鏀诲嚮
+/Lotus/Language/Menu/MeleeComboCharge -> 锛堟殏鏃舵寜浣忥紝鍐嶆斁寮€锛?
+/Lotus/Language/Menu/MeleeComboDownedEnemy -> 锛堝鐫€鍊掑湴鏁屼汉锛?
+/Lotus/Language/Menu/MeleeComboHold -> 鎸変綇
+/Lotus/Language/Menu/MeleeComboJump -> 锛堝湪绌轰腑锛?
+/Lotus/Language/Menu/MeleeComboParry -> 鎷涙灦
+/Lotus/Language/Menu/MeleeComboPause -> 鏆傚仠
+/Lotus/Language/Menu/MeleeComboSlide -> 锛堟粦琛屾椂锛?
+/Lotus/Language/Menu/MeleeComboWallrun -> 锛堝闈㈣宫鍐叉椂锛?
+/Lotus/Language/Menu/MeleeCombos -> 杩炲嚮鎿嶄綔琛?
+/Lotus/Language/Menu/MeleeCombosButtonCombination -> 鎸夐敭缁勫悎
+/Lotus/Language/Menu/MeleeCombosDescription -> 瀛︿範绮鹃€氫綘鐨勮繎鎴樻妧宸?
+/Lotus/Language/Menu/MeleeCombosMove -> 鎷涘紡
+/Lotus/Language/Menu/MeleeUpdateChanges_ThankTitle -> 杩戞垬缈讳慨
+/Lotus/Language/Menu/MissionStats_MeleeKills -> 杩戞垬鍑绘潃
+/Lotus/Language/Menu/NoMeleeArcane -> 浣犲皻鏈嫢鏈変换浣曡繎鎴樻鍣ㄨ祴鑳?
+/Lotus/Language/Menu/NoPistolArcane -> 浣犲皻鏈嫢鏈変换浣曟瑕佹鍣ㄨ祴鑳?
+/Lotus/Language/Menu/Options_Archwing_Airplane_Controls -> 璇曢獙鎬ч琛?
+/Lotus/Language/Menu/Options_Controls_CameraControlsMeleeDirection -> 鏀诲嚮瀵瑰噯闀滃ご鏂瑰悜
+/Lotus/Language/Menu/Options_Controls_CameraTurnsToMeleeTarget -> 闀滃ご閿佸畾杩戞垬鐩爣
+/Lotus/Language/Menu/Options_Controls_MeleeCombos -> 杩戞垬杩炴妧
+/Lotus/Language/Menu/Options_Controls_MeleeWithFire -> 鐢ㄥ皠鍑绘鍣ㄧ殑鎸夐敭杩涜杩戞垬
+/Lotus/Language/Menu/Options_Controls_UseMeleeAssist -> 杩戞垬鑷姩閿佸畾
+/Lotus/Language/Menu/Profile_LongGuns -> 涓昏姝﹀櫒
+/Lotus/Language/Menu/Profile_MeleeWeapons -> 杩戞垬姝﹀櫒
+/Lotus/Language/Menu/Profile_MostUsedLongGun -> 涓昏姝﹀櫒
+/Lotus/Language/Menu/Profile_MostUsedMelee -> 杩戞垬姝﹀櫒
+/Lotus/Language/Menu/Profile_MostUsedSentinel -> 瀹堟姢
+/Lotus/Language/Menu/Profile_MostUsedSentinelWeapon -> 瀹堟姢姝﹀櫒
+/Lotus/Language/Menu/Profile_MostUsedSpaceGun -> 鏇茬考鏋
+/Lotus/Language/Menu/Profile_MostUsedSpaceMelee -> 鏇茬考杩戞垬姝﹀櫒
+/Lotus/Language/Menu/Profile_Pistols -> 娆¤姝﹀櫒
+/Lotus/Language/Menu/Profile_SentinelGameLeaderboard -> 铔熼緳宸¤埅鏈?
+/Lotus/Language/Menu/Profile_SentinelGameScore -> 鍒嗘暟
+/Lotus/Language/Menu/Profile_SentinelGameScoreDesc -> 铔熼緳宸¤埅鏈哄緱鍒?
+/Lotus/Language/Menu/Profile_SentinelWeapons -> 瀹堟姢姝﹀櫒
+/Lotus/Language/Menu/Profile_Sentinels -> 瀹堟姢
+/Lotus/Language/Menu/Raid_ViewArchwingLoadouts -> 鏌ョ湅鏇茬考閰嶇疆
+/Lotus/Language/Menu/SecondaryFireAndMeleeChannel -> 娆¤灏勫嚮/杩戞垬閲嶅嚮
+/Lotus/Language/Menu/SigninRewardPrefix_Melee -> 杩戞垬姝﹀櫒
+/Lotus/Language/Menu/Store_LongGuns -> 姝ユ灙
+/Lotus/Language/Menu/Store_Melee -> 杩戞垬姝﹀櫒
+/Lotus/Language/Menu/Store_Melee_schematics -> 杩戞垬姝﹀櫒钃濆浘
+/Lotus/Language/Menu/Store_Melee_skins -> 杩戞垬姝﹀櫒澶栬
+/Lotus/Language/Menu/Store_Pistols -> 鎵嬫灙
+/Lotus/Language/Menu/Store_Sentinels -> 瀹堟姢
+/Lotus/Language/Menu/Store_Sentinels_schematics -> 瀹堟姢钃濆浘
+/Lotus/Language/Menu/Store_Sentinels_skins -> 瀹堟姢澶栬
+/Lotus/Language/Menu/Store_SuitsAndArchwings -> 鎴樼敳 & 杞藉叿
+/Lotus/Language/Menu/Upgrade_LongGunSentinelWeaponForbidden -> 涓嶈兘鍚屾椂灏哅OD瑁呭湪涓昏姝﹀櫒鍜屽畧鎶ゆ鍣ㄤ笂銆?
+/Lotus/Language/Menu/Upgrade_SentinelPowerSuitForbidden -> 涓嶈兘鍚屾椂鍦ㄦ垬鐢插拰瀹堟姢涓婁娇鐢ㄥ悓涓€涓狹OD
+/Lotus/Language/Menu/WeaponStats_MELEE_JUMP_DOWN_Abbr -> 闇囧湴鏀诲嚮
+/Lotus/Language/Menu/WeaponStats_MELEE_JUMP_DOWN_Full -> 杩戞垬 - 璺充笅
+/Lotus/Language/Menu/WeaponStats_MELEE_SWING_Abbr -> 鎸ヨ垶鏀诲嚮
+/Lotus/Language/Menu/WeaponStats_MELEE_SWING_Full -> 杩戞垬 - 鏀诲嚮
+/Lotus/Language/Menu/WeaponStats_MELEE_SWING_RIGHT_Abbr -> 鍙虫棆鎸ヨ垶鏀诲嚮
+/Lotus/Language/Menu/WeaponStats_MELEE_SWING_RIGHT_Full -> 杩戞垬 - 鍚戝彸鏀诲嚮
+/Lotus/Language/Mobile/Archwing -> 鏇茬考
+/Lotus/Language/Mobile/Automelee_Disabled -> 宸插叧闂嚜鍔ㄨ繎鎴?
+/Lotus/Language/Mobile/Automelee_Enabled -> 宸插惎鐢ㄨ嚜鍔ㄨ繎鎴?
+/Lotus/Language/Mobile/ManualMelee -> 鎵嬪姩杩戞垬
+/Lotus/Language/Mobile/MeleeModeActive -> 宸插紑鍚繎鎴樻ā寮?
+/Lotus/Language/Mobile/Melee_Mode -> 杩戞垬妯″紡
+/Lotus/Language/Mobile/Touch_Options_Automatically_melee_nearby_loot_containers -> 鑷姩杩戞垬鐩爣瀹瑰櫒
+/Lotus/Language/Mobile/Touch_Options_Automatically_melee_nearby_targets -> 鑷姩杩戞垬
+/Lotus/Language/Mobile/Touch_Options_Melee_Mode_Button -> 杩戞垬妯″紡鎸夐挳
+/Lotus/Language/ModTips/PerfectHeavyMelee -> Tenno 姘旇В
+/Lotus/Language/Mods/AccuracyWhileAimingPistolMod -> 瀹氫綅杈呭姪
+/Lotus/Language/Mods/AirborneMeleeAutoTargetBonus -> 绌轰腑姝︽湳
+/Lotus/Language/Mods/AirborneMeleeAutoTargetBonus_desc -> 褰撹澶囪繎鎴樻鍣ㄦ椂锛屽浜庣┖涓椂閿佸畾 |val| 绫冲唴鐨勭洰鏍囥€?
+/Lotus/Language/Mods/AmarMeleeMod -> 娆鸿皨鐙间富涔嬮剻
+/Lotus/Language/Mods/ArchwingCCImmunityifAiming -> 鍧氬喅涓撴敞
+/Lotus/Language/Mods/ArchwingCritChanceDamageAiming -> 鍏抽敭鐒︾偣
+/Lotus/Language/Mods/ArchwingDamageToEnergyMod -> 鍔ㄥ姏杞Щ
+/Lotus/Language/Mods/ArchwingDamageonReload -> 鑷村懡鏁堢巼
+/Lotus/Language/Mods/ArchwingDualStatImpactStatusMeleeMod -> 娴佹槦鎾炲嚮
+/Lotus/Language/Mods/ArchwingDualStatImpactStatusRifleMod -> 褰楁槦鐖嗗彂
+/Lotus/Language/Mods/ArchwingDualStatPunctureStatusMeleeMod -> 鏄熶簯閽诲瓟
+/Lotus/Language/Mods/ArchwingDualStatPunctureStatusRifleMod -> 绫绘槦閽讳綋
+/Lotus/Language/Mods/ArchwingDualStatSlashStatusMeleeMod -> 鏄熶綋鍒囩爫
+/Lotus/Language/Mods/ArchwingDualStatSlashStatusRifleMod -> 榛勯亾纰庤
+/Lotus/Language/Mods/ArchwingHeadshotKillAmmoEfficiency -> 鏇茬考鏋琛屽
+/Lotus/Language/Mods/ArchwingPunchthrough -> 瑕嗗３寮硅嵂
+/Lotus/Language/Mods/ArchwingReconMod -> 绌轰腑渚﹀療
+/Lotus/Language/Mods/ArchwingRifleAmmoMaxModExpert -> 寮归摼 Prime
+/Lotus/Language/Mods/ArchwingRifleDamageAmountModExpert -> 绾㈡櫠鏋 Prime
+/Lotus/Language/Mods/ArchwingRifleFireIterationsModExpert -> 鍙岄噸寮瑰ご Prime
+/Lotus/Language/Mods/ArchwingRifleFireRateModExpert -> 鑷姩鎵虫満 Prime
+/Lotus/Language/Mods/ArchwingStatusChanceAiming -> 鏍囪鐩爣
+/Lotus/Language/Mods/ArchwingWeaponFireDamageModExpert -> 鐕冪儳寮瑰ご Prime
+/Lotus/Language/Mods/ArchwingWeaponToxinDamageModExpert -> 鎭舵瘨寮瑰專 Prime
+/Lotus/Language/Mods/BayonetCmbOneMeleeTreeDesc -> 鎸佺画涓嶆柇鐨勬埑鍒哄拰寮哄姴鏈夊姏鐨勬í鎵紡鍐插埡銆?
+/Lotus/Language/Mods/BayonetCmbOneMeleeTreeName -> 鑳嗗瘨灏栧埡
+/Lotus/Language/Mods/BladeSawMeleeGroundAttack -> 娣卞墛閲嶅垏
+/Lotus/Language/Mods/BladeSawMeleeTreeADesc -> 閲囩敤杩欑绐佸嚮閿灦鍔挎潵鎾曡骞堕敮纰庝綘鐨勬晫浜恒€?
+/Lotus/Language/Mods/BladeSawMeleeTreeAForwardBlockCombo -> 鎾曡纰捐笍
+/Lotus/Language/Mods/BladeSawMeleeTreeAForwardCombo -> 灏搁鎬ョ獊
+/Lotus/Language/Mods/BladeSawMeleeTreeAName -> 灞犳埉鐩涘
+/Lotus/Language/Mods/BladeSawMeleeTreeANeutralBlockCombo -> 寰€澶嶄笉姝?
+/Lotus/Language/Mods/BladeSawMeleeTreeANeutralCombo -> 瑁傚槾涔嬫€?
+/Lotus/Language/Mods/BladeSawMeleeTreeAerialCombo -> 鑴婃煴鍒嗗垏
+/Lotus/Language/Mods/BladeSawMeleeTreeHeavyCombo -> 灏镐綋闆曞埢
+/Lotus/Language/Mods/BladeSawMeleeTreeSlamAttack -> 榻戣韩绮夐
+/Lotus/Language/Mods/BladeSawMeleeTreeSlideAttack -> 纾ㄨ冻鍓婅笣
+/Lotus/Language/Mods/BlockMoreAttackSlowerMeleeMod -> 缁濆寮烘敾
+/Lotus/Language/Mods/BlockMoreAttackSlowerMeleeMod_desc -> |val|% 浼ゅ鏍兼尅
+/Lotus/Language/Mods/BorealMeleeMod -> 璇℃枃鏋富涔嬮剻
+/Lotus/Language/Mods/CovertLethalityMeleeDamage -> 杩戞垬浼ゅ棰濆澧炲姞 |val|锛屾垨澶勫喅鏃堕€犳垚鑷村懡浼ゅ
+/Lotus/Language/Mods/CritChanceWhileAimingPistolMod -> 娑插帇鍑嗗績
+/Lotus/Language/Mods/CritChanceWhileAimingPistolSPMod -> 闀€灞?娑插帇鍑嗗績
+/Lotus/Language/Mods/CritDamageWhileAimingPistolMod -> 灏栭攼瀛愬脊
+/Lotus/Language/Mods/DaggerCmbThreeMeleeTreeDesc -> 甯︽湁寮哄姏鍒哄嚮鐨勫嚩鐚涙尌鐮?
+/Lotus/Language/Mods/DaggerCmbThreeMeleeTreeName -> 铻埡鐙傛
+/Lotus/Language/Mods/DaggerMeleeAutoTargetBonus -> 瑙呭績鐚庢墜
+/Lotus/Language/Mods/DaggerMeleeAutoTargetBonusDesc -> 閿佸畾 |STAT1| 绫冲唴鐨勭洰鏍囷紝浣嗗噺灏戞牸鎸℃晥鐜囥€?
+/Lotus/Language/Mods/DamageBiasAntiImpactMeleeMod -> [PH] Less Impact
+/Lotus/Language/Mods/DamageBiasAntiImpactPistolMod -> [PH] Less Impact
+/Lotus/Language/Mods/DamageBiasAntiPunctureMeleeMod -> [PH] Less Puncture
+/Lotus/Language/Mods/DamageBiasAntiPuncturePistolMod -> [PH] Less Puncture
+/Lotus/Language/Mods/DamageBiasAntiSlashMeleeMod -> [PH] Less Slash
+/Lotus/Language/Mods/DamageBiasAntiSlashPistolMod -> [PH] Less Slash
+/Lotus/Language/Mods/DamageBiasImpactMeleeMod -> 骞宠　閰嶉噸
+/Lotus/Language/Mods/DamageBiasImpactPistolMod -> 娴佹槦寮硅嵂
+/Lotus/Language/Mods/DamageBiasPunctureMeleeMod -> 閿娇杈圭紭
+/Lotus/Language/Mods/DamageBiasPuncturePistolMod -> 绌垮埡寮硅嵂
+/Lotus/Language/Mods/DamageBiasSlashMeleeMod -> 閿愬埄鍒€鍒?
+/Lotus/Language/Mods/DamageBiasSlashPistolMod -> 鍓冨垁寮硅嵂
+/Lotus/Language/Mods/DualKatanaMeleeTreeOneBlockForwardCombo -> 閽㈤搧涔嬭殌
+/Lotus/Language/Mods/DualKatanaMeleeTreeOneBlockNeutralCombo -> 鎸氱埍涔嬫唱
+/Lotus/Language/Mods/DualKatanaMeleeTreeOneDesc -> 鍔ㄤ綔杩呯寷銆佹墦鍑婚潰骞裤€?
+/Lotus/Language/Mods/DualKatanaMeleeTreeOneFowardCombo -> 蹇犺瘹涔嬪垉
+/Lotus/Language/Mods/DualKatanaMeleeTreeOneHeavyCombo -> 绂佸崼鎯╂垝
+/Lotus/Language/Mods/DualKatanaMeleeTreeOneName -> 灞变箣閿嬭姃
+/Lotus/Language/Mods/DualKatanaMeleeTreeOneNeutralCombo -> 璧锋壙杞悎
+/Lotus/Language/Mods/DualSwordCmbThreeMeleeTreeDesc -> 寮哄姏鐨勬柀鍑诲拰蹇€熺殑鎴冲埡锛屼繚鎸佸悜鍓嶇殑鍔ㄩ噺銆?
+/Lotus/Language/Mods/DualSwordCmbThreeMeleeTreeName -> 闆曟柀铻宠瀭
+/Lotus/Language/Mods/EnergyDrainOnMeleeHitPistolMod -> [PH]Martial Conduit
+/Lotus/Language/Mods/ExpertImpactDamageMeleeMod -> 閲嶅垱 Prime
+/Lotus/Language/Mods/ExpertPistolModElectricityDamage -> 鐥夋寷 Prime
+/Lotus/Language/Mods/ExpertPistolModFireDamage -> 鐏劙瑁呭～ Prime
+/Lotus/Language/Mods/ExpertPistolModReloadSpeed -> 鎸佺画鐏姏 Prime
+/Lotus/Language/Mods/ExplodeOnMeleeDeath -> 鐖嗘暎娑堜骸
+/Lotus/Language/Mods/ExplodeOnMeleeDeathDesc -> 琚嚮鏉€鐨勬晫浜轰笉涔呭悗浼氱垎鐐革紝閫犳垚 |STAT1| 浼ゅ銆?
+/Lotus/Language/Mods/FasterBulletJumponHeadshotPistolMod -> 杩呮嵎宸х暐
+/Lotus/Language/Mods/FasterMovementWhileAimingPistolMod -> 杩呮晱瑙嗚
+/Lotus/Language/Mods/FasterPistolRoFOnHitBowMod -> 搴旀€ュ妗?
+/Lotus/Language/Mods/FasterPistolRoFOnHitBowMod_desc -> |val|% 娆¤姝﹀櫒灏勯€?
+/Lotus/Language/Mods/FasterReloadMoreRecoilPistolMod -> 鏉惧紱寮瑰專
+/Lotus/Language/Mods/FasterReloadonKillPistolMod -> 鐬棿缁堢粨
+/Lotus/Language/Mods/FireRateWhileAimingPistolMod -> 澧炲帇寮瑰專
+/Lotus/Language/Mods/GroundingMeleeHit -> 鎶樼（閽╃埅
+/Lotus/Language/Mods/HealthRegenonKillPistolMod -> 鍥炴皵鍐嶈捣
+/Lotus/Language/Mods/HealthRegenonKillPistolMod_desc -> 鍑绘潃鏃讹紝5绉掑唴鑾峰緱 |val| 鐢熷懡鍊煎啀鐢熴€?
+/Lotus/Language/Mods/HigherAirAimFoVMeleeMod -> 楂樼┖鎵
+/Lotus/Language/Mods/HigherAirAimFoVPistolMod -> 绌轰腑渚﹀療
+/Lotus/Language/Mods/HigherVelocityLessAccuratePistolMod -> 鐩茬洰灏勫嚮
+/Lotus/Language/Mods/HolsterSpeedBonusModPistol -> 鍙嶅皠鎷旀灙
+/Lotus/Language/Mods/LargerMagLongerReloadPistolMod -> 鍏呴噺寮瑰
+/Lotus/Language/Mods/LessRecoilSmallerMagPistolMod -> 娑插帇鏋
+/Lotus/Language/Mods/MarkTargetAddDamagePistolMod -> 鎴樻湳鐗瑰伐
+/Lotus/Language/Mods/MarkTargetPistolMod -> 鏆楀杩借抗鑰?
+/Lotus/Language/Mods/MeleeAutoTargetBonus -> 鐙傛毚灏氭
+/Lotus/Language/Mods/MeleeAutoTargetBonusDesc -> 瑁呭杩戞垬姝﹀櫒鍑讳腑鏁屾柟鏃讹紝鎻愬崌 |val|% 鏀诲嚮閫熷害 20 绉?
+/Lotus/Language/Mods/MeleeDamageResistance -> 闃插崼姝︽湳
+/Lotus/Language/Mods/MeleeDamageResistanceDesc -> 鎶垫姉 |val|% 杩戞垬浼ゅ锛?
+/Lotus/Language/Mods/MeleeGladiatorMightModName -> 瑙掓枟澹?濞佺寷
+/Lotus/Language/Mods/MeleeGladiatorRushModName -> 瑙掓枟澹?鐚涚獊
+/Lotus/Language/Mods/MeleeGladiatorSetModName -> 瑙掓枟澹?Mod 缁勫悎鍔犳垚
+/Lotus/Language/Mods/MeleeGladiatorViceModName -> 瑙掓枟澹?閽冲埗
+/Lotus/Language/Mods/MeleeModFactionDamageCorpus -> 姣佺伃 Corpus
+/Lotus/Language/Mods/MeleeModFactionDamageCorpusExpert -> 姣佺伃 Corpus Prime
+/Lotus/Language/Mods/MeleeModFactionDamageCorrupted -> 姣佺伃濂ョ綏閲?
+/Lotus/Language/Mods/MeleeModFactionDamageCorruptedExpert -> 姣佺伃濂ョ綏閲?Prime
+/Lotus/Language/Mods/MeleeModFactionDamageGrineer -> 姣佺伃 Grineer
+/Lotus/Language/Mods/MeleeModFactionDamageGrineerExpert -> 姣佺伃 Grineer Prime
+/Lotus/Language/Mods/MeleeModFactionDamageInfested -> 姣佺伃 Infested
+/Lotus/Language/Mods/MeleeModFactionDamageInfestedExpert -> 姣佺伃 Infested Prime
+/Lotus/Language/Mods/MeleeModFactionDamageMurmurs -> 姣佺伃浣庤鑰?
+/Lotus/Language/Mods/MeleeSacrificeModAName -> 鐗虹壊 鍘嬭揩鐐?
+/Lotus/Language/Mods/MeleeSacrificeModBName -> 鐗虹壊 鏂╅搧
+/Lotus/Language/Mods/MeleeStrainInfectionMod -> 鑿屾牚 鎰熸煋
+/Lotus/Language/Mods/MeleeTekGravityMod -> 鎶€娉?寮曞姏
+/Lotus/Language/Mods/MeleeVictimStaminaDrain -> 娈嬮叿鎵撳嚮
+/Lotus/Language/Mods/MeleeVictimStaminaDrainDesc -> 瑁呭杩戞垬姝﹀櫒閫犳垚鍑绘潃鏃讹紝鎻愬崌 |val|% 鏀诲嚮閫熷害 10 绉?
+/Lotus/Language/Mods/MoaMeleeMod -> 浠ョ‖纰扮‖
+/Lotus/Language/Mods/NightwaveLasSilencedPistolAugmentModName -> 姣掓皵閾呭脊
+/Lotus/Language/Mods/NightwaveTnJetTurbinePistolAugmentModBuffDesc -> 鍑讳腑寮辩偣鏃堕€犳垚棰濆浼ゅ
+/Lotus/Language/Mods/NightwaveTnJetTurbinePistolAugmentModConditionDesc -> 涓昏灏勫嚮鍑讳腑寮辩偣鏃?
+/Lotus/Language/Mods/NightwaveTnJetTurbinePistolAugmentModName -> 鐥涚偣
+/Lotus/Language/Mods/NiraMeleeMod -> 娣锋矊铔囦富涔嬮剻
+/Lotus/Language/Mods/PassiveReloadPistolMod -> 寮瑰專缃崲
+/Lotus/Language/Mods/PistolModFactionDamageCorpus -> 椹遍€?Corpus
+/Lotus/Language/Mods/PistolModFactionDamageCorpusExpert -> 椹遍€?Corpus Prime
+/Lotus/Language/Mods/PistolModFactionDamageCorrupted -> 椹遍€愬ゥ缃楅噾
+/Lotus/Language/Mods/PistolModFactionDamageCorruptedExpert -> 椹遍€愬ゥ缃楅噾 Prime
+/Lotus/Language/Mods/PistolModFactionDamageGrineer -> 椹遍€?Grineer
+/Lotus/Language/Mods/PistolModFactionDamageGrineerExpert -> 椹遍€?Grineer Prime
+/Lotus/Language/Mods/PistolModFactionDamageInfested -> 椹遍€?Infested
+/Lotus/Language/Mods/PistolModFactionDamageInfestedExpert -> 椹遍€?Infested Prime
+/Lotus/Language/Mods/PistolModFactionDamageMurmurs -> 椹遍€愪綆璇€?
+/Lotus/Language/Mods/PistolSynthChargeMod -> 鍚堟垚 鍏呰兘
+/Lotus/Language/Mods/PolearmCmbThreeMeleeTreeDesc -> 澶ц寖鍥寸殑鎵墦涓庣簿鍑嗘墦鍑荤殑娣峰悎銆?
+/Lotus/Language/Mods/PolearmCmbThreeMeleeTreeName -> 鍥炶浆灏栧嘲
+/Lotus/Language/Mods/PrimedArchwingDamageOnReloadMod -> 鑷村懡鏁堢巼 Prime
+/Lotus/Language/Mods/PrimedArchwingDamageOnReloadModDesc -> |val|% 浼ゅ
+/Lotus/Language/Mods/PrimedArchwingRifleFireIterationsMod -> 鍙岄噸寮瑰ご Prime
+/Lotus/Language/Mods/PrimedArchwingRifleFireIterationsModDesc -> |val|% 澶氶噸灏勫嚮
+/Lotus/Language/Mods/PrimedMeleeModFactionDamageMurmurs -> 姣佺伃浣庤鑰?Prime
+/Lotus/Language/Mods/PrimedPistolModFactionDamageMurmurs -> 椹遍€愪綆璇€?Prime
+/Lotus/Language/Mods/RestoreHealthOnKillPistolMod -> 澶嶅厓
+/Lotus/Language/Mods/RestoreShieldsOnKillPistolMod -> 绠楄璧㈠
+/Lotus/Language/Mods/SecondaryWeaponDamageOnMeleeKillName -> 鎴樼暐 榛勮渹铻埡
+/Lotus/Language/Mods/SecondaryWeaponStatusChanceSPMod -> 闀€灞?鍑嗙‘灏勬墜
+/Lotus/Language/Mods/SentinelAttackMod -> 绐佸嚮妯″紡
+/Lotus/Language/Mods/SentinelRepairKitMod -> 淇ˉ濂椾欢
+/Lotus/Language/Mods/SentinelShieldAuraMod -> [PH] Sentinel Shield Aura
+/Lotus/Language/Mods/SentinelSynthDeconstructMod -> 鍚堟垚 瑙ｆ瀯
+/Lotus/Language/Mods/SentinelSynthFibersMod -> 鍚堟垚 绾ょ淮
+/Lotus/Language/Mods/SentinelWeaknessScanPrecept -> 寮辩偣渚︽祴
+/Lotus/Language/Mods/SentinelWeaknessScanPreceptDesc -> 鍦ㄥ鏁屼汉瀹屾垚鐮旂┒鍚庯紝鍚庣画鎵弿灏嗘毚闇插嚭浠栦滑鐨勫急鐐广€?
+/Lotus/Language/Mods/ShootPickupPistolModName -> 鍏呮矝灏勫嚮
+/Lotus/Language/Mods/ShotgunDamageOnMeleeKillName -> 鎴樼暐 鎶佃繎灏勫嚮
+/Lotus/Language/Mods/StatusProcWhileAimingPistolMod -> 鍐呯疆瑙﹀獟
+/Lotus/Language/Mods/SwordCmbTwoMeleeTreeDesc -> 鏃嬭浆绐佸埡涓殑蹇€熸柀鍑汇€?
+/Lotus/Language/Mods/SwordCmbTwoMeleeTreeName -> 鐚庨拱淇嚮
+/Lotus/Language/Mods/TnPriestPistolInnateMod -> 姝荤涓ч挓
+/Lotus/Language/Mods/WarfanCmbOneMeleeTreeDesc -> 鏃嬭浆銆佹潅鎶€鑸殑鎸ョ爫锛岄厤鍚堢潃绮惧鐨勭偣鐫涙嫑寮忋€?
+/Lotus/Language/Mods/WarfanCmbOneMeleeTreeName -> 鍓茶缇界考
+/Lotus/Language/Mods/WarfanCmbTwoMeleeTreeDesc -> 绮剧‘銆侀泦涓殑寮у垏锛屼笉甯︿竴涓濇€滄偗銆?
+/Lotus/Language/Mods/WarfanCmbTwoMeleeTreeName -> 鍩嬮鐚涘嚮
+/Lotus/Language/Mods/WeaponBleedOnImpactPistolModName -> 澶辫
+/Lotus/Language/Mods/WeaponDamageOnMeleeKillName -> 鎴樼暐 鑶涚嚎
+/Lotus/Language/Mods/WeaponDamageOnNoMeleeName -> [PH] Ballistic Serration
+/Lotus/Language/Mods/WeaponMeleeArmorShatterMod -> 纰庤鍐插嚮
+/Lotus/Language/Mods/WeaponMeleeArmorShatterModDesc -> <DT_IMPACT_COLOR>鍐插嚮浼ゅ灏嗗噺灏戞晫浜?|STAT1| 鐐规姢鐢层€?
+/Lotus/Language/Mods/WeaponMeleeComboChanceFromDot -> 娈嬮叿缁勫悎
+/Lotus/Language/Mods/WeaponMeleeExposedWeaknessMod -> [PH] Exposed Melee
+/Lotus/Language/Mods/WeaponMeleePressAdvantageMod -> [PH] Advantage Melee
+/Lotus/Language/Mods/WeaponMeleeStatusChanceSPMod -> 闀€灞?鍏冪礌甯?
+/Lotus/Language/Mods/WeaponMeleeVampireMod -> [PH] Vampire Melee
+/Lotus/Language/Mods/WeaponPistolDamageOnNoMeleeName -> [PH] Ballistic Hornet Strike
+/Lotus/Language/Mods/WeaponPistolFireIterationsSPMod -> 闀€灞?寮瑰ご鎵╂暎
+/Lotus/Language/Mods/WeaponShotgunDamageOnNoMeleeName -> [PH] Ballistic Point Blank
+/Lotus/Language/Mods/WeaponStatOverrideMeleeModA -> [PH] Weapon Stat Melee
+/Lotus/Language/Mods/WeaponStatOverridePistolModA -> [PH] Weapon Stat Pistol
+/Lotus/Language/Mods/WeaponStatOverridePistolModB -> [PH] Golden Gun
+/Lotus/Language/Mods/WeaponWeakpointCriticalChancePistolMod -> 鏁忛攼鎵嬫灙
+/Lotus/Language/Mods/ZarimanPistolAltFireChargeEvo -> 鐏靛寲鏁堢巼
+/Lotus/Language/Mods/ZarimanPistolAltFireUnlockEvo -> 鐏靛寲褰㈡€?
+/Lotus/Language/Mods/ZarimanPistolAmmoEffOnHeadshotEvo -> 姝荤涔嬭
+/Lotus/Language/Mods/ZarimanPistolDamageOnNoCritAndNotProcEvo -> 寮鸿鎹熻€?
+/Lotus/Language/Mods/ZarimanPistolDamageOnNoCritHitsEvo -> 鍘嬪埗鎹熻€?
+/Lotus/Language/Mods/ZarimanPistolFireRateEvo -> 鏋侀€熶箣鎬?
+/Lotus/Language/Mods/ZarimanPistolGlidingSlidingAmmoEffEvo -> 姝ｄ箟涔嬬窘
+/Lotus/Language/Mods/ZarimanPistolHeadshotDamageEvo -> 姝讳骸棣栫骇
+/Lotus/Language/Mods/ZarimanPistolHolsterReloadEvo -> 瑙夐啋澶囨垬
+/Lotus/Language/Mods/ZarimanPistolMoreStatLessCritEvo -> 鍏冪礌瓒呴噺
+/Lotus/Language/Mods/ZarimanPistolMovementWhileAimingEvo -> 鐚涚杩介€?
+/Lotus/Language/Mods/ZarimanPistolRecoilEvo -> 鍠勫皠涔嬫墜
+/Lotus/Language/Mods/ZarimanPistolReloadSpeedOnHeadshotEvo -> 鑷村懡閲嶈
+/Lotus/Language/ModularArchwing/AmmoLinkAbility -> [PH] Ammo Link
+/Lotus/Language/ModularArchwing/AmmoLinkAbilityDesc -> [PH] Ammo Link Desc
+/Lotus/Language/ModularArchwing/MatchFlightAbility -> [PH] Match Flight
+/Lotus/Language/ModularArchwing/MatchFlightAbilityDesc -> [PH] Match Flight Desc
+/Lotus/Language/ModularArchwing/ModularAWCrafting_Desc -> [PH] Archwing crafted with three parts
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineA -> [PH] Engine A
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineADesc -> [PH] ENGINE A Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineB -> [PH] Engine B
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineBDesc -> [PH] ENGINE B Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineC -> [PH] Engine C
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineCDesc -> [PH] ENGINE C Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineD -> [PH] Engine D
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineDDesc -> [PH] ENGINE D Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineE -> [PH] Engine E
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineEDesc -> [PH] ENGINE E Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineF -> [PH] Engine F
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineFDesc -> [PH] ENGINE F Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineG -> [PH] Engine G
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EngineGDesc -> [PH] ENGINE G Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_EntitleDesc -> [PH] Name your Archwing
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorA -> [PH] Generator A
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorADesc -> [PH] GENERATOR A Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorB -> [PH] Generator B
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorBDesc -> [PH] GENERATOR B Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorC -> [PH] Generator C
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorCDesc -> [PH] GENERATOR C Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorD -> [PH] Generator D
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorDDesc -> [PH] GENERATOR D Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorE -> [PH] Generator E
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorEDesc -> [PH] GENERATOR E Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorF -> [PH] Generator F
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorFDesc -> [PH] GENERATOR F Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorG -> [PH] Generator G
+/Lotus/Language/ModularArchwing/ModularAWCrafting_GeneratorGDesc -> [PH] GENERATOR GDescription
+/Lotus/Language/ModularArchwing/ModularAWCrafting_Name -> [PH] Name Your Aw
+/Lotus/Language/ModularArchwing/ModularAWCrafting_PartEngine -> [PH] Engine
+/Lotus/Language/ModularArchwing/ModularAWCrafting_PartGenerator -> [PH] Generator
+/Lotus/Language/ModularArchwing/ModularAWCrafting_PartWing -> [PH] Wings
+/Lotus/Language/ModularArchwing/ModularAWCrafting_PartsTitle -> [PH] Aw Configuration
+/Lotus/Language/ModularArchwing/ModularAWCrafting_Rename -> [PH] Rename Your Aw
+/Lotus/Language/ModularArchwing/ModularAWCrafting_SelectTitle -> [PH] Choose A Modular Archwing
+/Lotus/Language/ModularArchwing/ModularAWCrafting_TypePlural -> [PH] Modular AWs
+/Lotus/Language/ModularArchwing/ModularAWCrafting_TypeSingular -> [PH] <ARCHWING> Modular AW
+/Lotus/Language/ModularArchwing/ModularAWCrafting_Vendor -> [PH] Aw Vendor
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WeaponOfTheDayTitle -> [PH] Daily Special Aw
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingA -> [PH] Wing A
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingADesc -> [PH] WING A Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingB -> [PH] Wing B
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingBDesc -> [PH] WING B Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingC -> [PH] Wing C
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingCDesc -> [PH] WING C Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingD -> [PH] Wing D
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingDDesc -> [PH] WING D Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingE -> [PH] Wing E
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingEDesc -> [PH] WING E Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingF -> [PH] Wing F
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingFDesc -> [PH] WING F Description
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingG -> [PH] Wing G
+/Lotus/Language/ModularArchwing/ModularAWCrafting_WingGDesc -> [PH] WING G Description
+/Lotus/Language/ModularArchwing/ModularAW_Title -> [PH] Modular AW Vendor
+/Lotus/Language/Narmer/NarmerMarinePistol -> 鍚堜竴浼楄拷韪€?
+/Lotus/Language/Necromech/MechNecroTechMeleeDesc -> 娈佷笘鏈虹敳鐨勬姄閽冲彲浠ユ彁渚涘己鍔涚寷鍑汇€?
+/Lotus/Language/Necromech/MechNecroTechMeleeName -> 瑙掑姏鎷冲
+/Lotus/Language/Necromech/NecromechMeleeColdProcMod -> 娈佷笘鏈虹敳 瀵掓剰
+/Lotus/Language/Necromech/NecromechMeleeDamageMod -> 娈佷笘鏈虹敳 鍘嬭揩鐐?
+/Lotus/Language/Necromech/NecromechMeleeElectricProcMod -> 娈佷笘鏈虹敳 鐢靛嚮
+/Lotus/Language/Necromech/NecromechMeleeHeatProcMod -> 娈佷笘鏈虹敳 鐕冪儳
+/Lotus/Language/Necromech/NecromechMeleeKillStaminaBuffMod -> 娈佷笘鏈虹敳 妯啿鐩存挒
+/Lotus/Language/Necromech/NecromechMeleeRangeMod -> 娈佷笘鏈虹敳 鍓戦
+/Lotus/Language/Necromech/NecromechMeleeSpeedMod -> 娈佷笘鏈虹敳 鐙傛毚
+/Lotus/Language/Necromech/NecromechMeleeToxinProcMod -> 娈佷笘鏈虹敳 姣掑寲
+/Lotus/Language/NewWar/DrifterHeal -> 鎭㈠鑽墏
+/Lotus/Language/NewWar/DrifterPistolHint_Controller -> 鍦ㄥ噯鏄熺獥鍙ｄ腑鐐瑰嚮 <USE> 鏉ヨ繘琛岃秴杞藉厖鑳斤紒
+/Lotus/Language/NewWar/DrifterPistolHint_KBM -> 鍦ㄥ噯鏄熺獥鍙ｄ腑鐐瑰嚮 <RELOAD> 鏉ヨ繘琛岃秴杞藉厖鑳斤紒
+/Lotus/Language/NewWar/DrifterPistolHint_Touch -> 鍦ㄥ噯鏄熺獥鍙ｄ腑鐐瑰嚮 <RELOAD> 鏉ヨ繘琛岃秴杞藉厖鑳斤紒
+/Lotus/Language/NewWar/DrifterRadar -> 鐩爣闆疯揪
+/Lotus/Language/NewWar/DrifterSmoke -> 鐑熷箷
+/Lotus/Language/NewWar/NewWarP2DrifterCamp -> 婕傛硦鑰呰惀鍦?
+/Lotus/Language/NewWar/P3M1ChooseDrifter -> 婕傛硦鑰?
+/Lotus/Language/NewWar/P3M1ConfirmDrifter -> 纭閫夋嫨婕傛硦鑰?
+/Lotus/Language/NightwaveChallenges/Challenge_SeasonDailyCompleteMissionMelee_Description -> 浠呰澶囪繎鎴樻鍣ㄦ潵瀹屾垚涓€鍦轰换鍔?
+/Lotus/Language/NightwaveChallenges/Challenge_SeasonDailyCompleteMissionMelee_Name -> 鍓戝
+/Lotus/Language/NightwaveChallenges/Challenge_SeasonDailyKillEnemiesWithMelee_Description -> 浣跨敤杩戞垬姝﹀櫒鍑绘潃 |COUNT| 鍚嶆晫浜恒€?
+/Lotus/Language/NightwaveChallenges/Challenge_SeasonDailyKillEnemiesWithMelee_Name -> 鍓戣垶
+/Lotus/Language/NightwaveChallenges/Challenge_SeasonDailyKillEnemiesWithMelee_Tip -> 鍙湁浣犱翰鑷娇鐢ㄨ繎鎴樻鍣ㄥ嚮鏉€鐨勬晫浜烘墠浼氳璁″叆銆?
+/Lotus/Language/NightwaveChallenges/Challenge_SeasonDailyRequiemTotem_Description -> 鍦ㄧ伀鍗簩婵€娲讳竴搴у畨榄傛柟灏栫銆?
+/Lotus/Language/NightwaveChallenges/Challenge_SeasonDailyRequiemTotem_Name -> 杩滃彜鏂瑰皷纰?
+/Lotus/Language/NightwaveChallenges/Challenge_SeasonDailyRequiemTotem_Tip -> 鍙互鍦ㄩ瓟鑳庝箣澧冩壘鍒扮牬纰庣殑鏂瑰皷纰戙€備娇鐢ㄦ寚鎸ュ畼鐨勮櫄绌鸿兘閲忔潵涓烘柟灏栫鐨勬牳蹇冨厖鑳姐€?
+/Lotus/Language/NightwaveChallenges/Challenge_SeasonWeeklyRequiemTotem_Description -> 鍦ㄧ伀鍗簩婵€娲?3 搴у畨榄傛柟灏栫銆?
+/Lotus/Language/NightwaveChallenges/Challenge_SeasonWeeklyRequiemTotem_Name -> 杩滃彜鏂瑰皷纰?
+/Lotus/Language/NokkoColony/NokkoInfMeleeHeavyAgent -> 鏈旀湜杞诲瀷鎺樻矡鑰?
+/Lotus/Language/NokkoColony/NokkoInfMeleeHeavyAgentDesc -> 鍙楀埌鏈旀湜鑳介噺褰卞搷鐨勫崟浣嶏紝鎸佸弻鍐伴敟锛屽彲杩涜椋炶鍐查攱鏀诲嚮銆傛浜℃椂浼氱垎鐐搞€?
+/Lotus/Language/NokkoColony/NokkoLabMeleeHeavyAgent -> 楝ｇ尓閲嶅叺
+/Lotus/Language/NokkoColony/NokkoLabMeleeHeavyAgentDesc -> 绉诲姩杩呴€熺殑鍗曚綅锛岄€氳繃鐩剧墝鍐查攱缂╃煭涓庣洰鏍囩殑璺濈锛岀劧鍚庣敤閿ゅ瓙杩涜鏀诲嚮銆?
+/Lotus/Language/NokkoColony/NokkoMeleeHeavyAgent -> 楝ｇ尓閲嶅瀷鎺樻矡鑰?
+/Lotus/Language/NokkoColony/NokkoMeleeHeavyAgentDesc -> 宸ㄦ枾鍜岄鎵戝啿閿嬫敾鍑讳娇杩欎釜閲嶅瀷鍗曚綅鎴愪负寮哄姴鐨勬晫浜恒€?
+/Lotus/Language/NokkoColony/NokkoMeleeLightAgent -> 楝ｇ尓杞诲瀷鎺樻矡鑰?
+/Lotus/Language/NokkoColony/NokkoMeleeLightAgentDesc -> 鍙屾寔纰庡啺閿ュ拰椋炴墤鍐查攱鏀诲嚮浣胯繖涓交鍨嬪崟浣嶆垚涓哄己鍔茬殑鏁屼汉銆?
+/Lotus/Language/NokkoColony/NokkoPlantMeleeHeavyAgent -> 楝ｇ尓琛€鑺辫洓褰㈡満
+/Lotus/Language/NokkoColony/NokkoPlantMeleeHeavyAgentDesc -> 杩欑涓瀷铔涘舰鏈轰細浠庡泭涓悙鍑哄浐瀹氭恫浣擄紝鐒跺悗鐢ㄦ姄閽╂姄浣忕寧鐗┿€?
+/Lotus/Language/Objectives/ArchwingRaceGo -> 鍑哄彂
+/Lotus/Language/Objectives/MobDefArchwingDefend -> 闃插尽鍗槦
+/Lotus/Language/Objectives/MobDefArchwingGoTo -> 鍓嶅線鍗槦浣嶇疆
+/Lotus/Language/Omega/MeleeComboGainBonusPrefix -> laci
+/Lotus/Language/Omega/MeleeComboGainBonusSuffix -> nus
+/Lotus/Language/Omega/MeleeComboHeavyEfficiencyPrefix -> forti
+/Lotus/Language/Omega/MeleeComboHeavyEfficiencySuffix -> us
+/Lotus/Language/Omega/MeleeComboInitialBonusPrefix -> para
+/Lotus/Language/Omega/MeleeComboInitialBonusSuffix -> um
+/Lotus/Language/Omega/MeleeFinisherDamagePrefix -> exi
+/Lotus/Language/Omega/MeleeFinisherDamageSuffix -> cta
+/Lotus/Language/Omega/OmegaMeleeMod -> 杩戞垬瑁傜絽 Mod
+/Lotus/Language/Omega/OmegaMeleeMod_Sentinel -> 鍚屼即姝﹀櫒瑁傜絽 Mod
+/Lotus/Language/Omega/OmegaPistolMod -> 鎵嬫灙瑁傜絽 Mod
+/Lotus/Language/Omega/OmegaPistolMod_Sentinel -> 鍚屼即姝﹀櫒瑁傜絽 Mod
+/Lotus/Language/Omega/OmegaRifleMod_Sentinel -> 鍚屼即姝﹀櫒瑁傜絽 Mod
+/Lotus/Language/Omega/OmegaSentinelWeaponMod -> 鍚屼即姝﹀櫒瑁傜絽 Mod
+/Lotus/Language/Omega/OmegaSentinelWeaponModDesc -> 涓庢満姊板紡鍚屼即鎵€浣跨敤鐨勬鍣ㄧ浉瀹圭殑涓€寮犺缃?Mod
+/Lotus/Language/Omega/OmegaShotgunMod_Sentinel -> 鍚屼即姝﹀櫒瑁傜絽 Mod
+/Lotus/Language/Operator/BodyOperatorDrifterArabicName -> 鎸囨尌瀹樺潬娌欏鏈?
+/Lotus/Language/Operator/BodyOperatorDrifterDexName -> 鎸囨尌瀹?Dex 濂楁湇
+/Lotus/Language/Operator/BodySuitAdultDrifterBName -> 婕傛硦鑰呭嚡鍕掑鏈?
+/Lotus/Language/Operator/BodySuitDrifterArabicName -> 婕傛硦鑰呭潬娌欏鏈?
+/Lotus/Language/Operator/BodySuitDrifterAthleticName -> 杩愬姩椋庝笂琛?
+/Lotus/Language/Operator/BodySuitDrifterDemonframeName -> 鎬诲徃浠よ兏鐢?
+/Lotus/Language/Operator/BodySuitDrifterDexName -> 婕傛硦鑰?Dex 濂楁湇
+/Lotus/Language/Operator/BodySuitDrifterGothName -> 鍝ョ壒椋庡す鍏?
+/Lotus/Language/Operator/BodySuitDrifterGrungeName -> 棰撳簾椋庡す鍏?
+/Lotus/Language/Operator/BodySuitDrifterLasrianAName -> 椋庤澶瑰厠
+/Lotus/Language/Operator/BodySuitDrifterLasrianBName -> 绉樼偧甯堝埗鏈?
+/Lotus/Language/Operator/BodySuitOperatorDrifterBName -> 鎸囨尌瀹樺嚡鍕掑鏈?
+/Lotus/Language/Operator/DaxABodyDrifterDesc -> 韬姭鍐涚鎶ょ敳濂楄鏉ョ鎵?Teshin 鍜岀鍗簿閿愮殑浼犵粺銆?
+/Lotus/Language/Operator/DaxABodyDrifterName -> 楣颁箣鍐涚鑳哥敳
+/Lotus/Language/Operator/DaxAHoodDrifterDesc -> 韬姭鍐涚鎶ょ敳濂楄鏉ョ鎵?Teshin 鍜岀鍗簿閿愮殑浼犵粺銆?
+/Lotus/Language/Operator/DaxAHoodDrifterName -> 楣颁箣鍐涚澶寸洈
+/Lotus/Language/Operator/DaxALeggingsDrifterDesc -> 韬姭鍐涚鎶ょ敳濂楄鏉ョ鎵?Teshin 鍜岀鍗簿閿愮殑浼犵粺銆?
+/Lotus/Language/Operator/DaxALeggingsDrifterName -> 楣颁箣鍐涚鎶よ儷
+/Lotus/Language/Operator/DaxASkirtDrifterDesc -> 韬姭鍐涚鎶ょ敳濂楄鏉ョ鎵?Teshin 鍜岀鍗簿閿愮殑浼犵粺銆?
+/Lotus/Language/Operator/DaxASkirtDrifterName -> 楣颁箣鍐涚瑁呭
+/Lotus/Language/Operator/DaxASleevesDrifterDesc -> 韬姭鍐涚鎶ょ敳濂楄鏉ョ鎵?Teshin 鍜岀鍗簿閿愮殑浼犵粺銆?
+/Lotus/Language/Operator/DaxASleevesDrifterName -> 楣颁箣鍐涚鎶よ偐
+/Lotus/Language/Operator/DaxBBodyDrifterDesc -> 韬姭鍐涚鎶ょ敳濂楄鏉ョ鎵?Teshin 鍜岀鍗簿閿愮殑浼犵粺銆?
+/Lotus/Language/Operator/DaxBBodyDrifterName -> 闆€涔嬪啗绁炶兏鐢?
+/Lotus/Language/Operator/DaxBHoodDrifterDesc -> 韬姭鍐涚鎶ょ敳濂楄鏉ョ鎵?Teshin 鍜岀鍗簿閿愮殑浼犵粺銆?
+/Lotus/Language/Operator/DaxBHoodDrifterName -> 闆€涔嬪啗绁炲ご鐩?
+/Lotus/Language/Operator/DaxBLeggingsDrifterDesc -> 韬姭鍐涚鎶ょ敳濂楄鏉ョ鎵?Teshin 鍜岀鍗簿閿愮殑浼犵粺銆?
+/Lotus/Language/Operator/DaxBLeggingsDrifterName -> 闆€涔嬪啗绁炴姢鑳?
+/Lotus/Language/Operator/DaxBSkirtDrifterDesc -> 韬姭鍐涚鎶ょ敳濂楄鏉ョ鎵?Teshin 鍜岀鍗簿閿愮殑浼犵粺銆?
+/Lotus/Language/Operator/DaxBSkirtDrifterName -> 闆€涔嬪啗绁炶澶?
+/Lotus/Language/Operator/DaxBSleevesDrifterDesc -> 韬姭鍐涚鎶ょ敳濂楄鏉ョ鎵?Teshin 鍜岀鍗簿閿愮殑浼犵粺銆?
+/Lotus/Language/Operator/DaxBSleevesDrifterName -> 闆€涔嬪啗绁炴姢鑲?
+/Lotus/Language/Operator/DrifterAmpSkinDesc -> 璁╂寚鎸ュ畼鐨勫骞呭櫒鎷ユ湁婕傛硦鑰呰丹椋庢墜鏋殑绮楃姺澶栬銆?
+/Lotus/Language/Operator/DrifterAmpSkinName -> 璧ら澧炲箙鍣ㄥ瑙?
+/Lotus/Language/Operator/DrifterArabicDesc -> 涓烘縺鐑堢殑鎴樻枟鍋氬ソ鍑嗗銆傞€傜敤浜庢紓娉婅€呭拰鎸囨尌瀹樸€?
+/Lotus/Language/Operator/DrifterAthleticDesc -> 绌夸笂杩欎竴绯诲垪浠ヨ繍鍔ㄩ涓虹伒鎰熺殑鏈嶉グ锛屾潵灞曠幇浣犵殑鏈€浣崇姸鎬併€?
+/Lotus/Language/Operator/DrifterBeardDesc -> 婕傛硦鑰呯殑鑳￠』銆?
+/Lotus/Language/Operator/DrifterBodySuitPrimeA -> 璧涘 Prime 濂楁湇
+/Lotus/Language/Operator/DrifterCustomization_Open -> <USE> 澶栬
+/Lotus/Language/Operator/DrifterDemonframeDesc -> 涓€濂椾笓涓烘紓娉婅€呰璁＄殑濂楁湇锛屽畬缇庝綋鐜颁簡鏋佽嚧鐨勫ゥ缃楅噾椋庢牸鍜屽ア鍗庛€?
+/Lotus/Language/Operator/DrifterGothDesc -> 绌夸笂杩欎簺鍝ョ壒椋庢牸鐨勬湇楗帮紝鍦ㄦ殫澶勮瀵熸垨涓庝骸鑰呭叡鑸炪€?
+/Lotus/Language/Operator/DrifterGrungeDesc -> 绌夸笂鐏垫劅鏉ユ簮浜庨搴熼鏍肩殑绠€绾︿綆璋冭澶存湇楗帮紝淇濇寔琛楀ご椋庣殑鐪熷疄鎰熴€?
+/Lotus/Language/Operator/DrifterHoodDesc -> 涓€椤跺睘浜庢紓娉婅€呭瑁呯殑澶村銆?
+/Lotus/Language/Operator/DrifterHoodPrimeA -> 璧涘 Prime 澶寸僵
+/Lotus/Language/Operator/DrifterLasrianADesc -> 绌夸笂閭ｄ簺绁炵绮捐嫳鎸囨尌瀹樼殑鍐涙湇锛屼綋鐜扮偨铔囧啗浠や汉鐢熺晱鐨勫啗闃熼鏍笺€?
+/Lotus/Language/Operator/DrifterLasrianBDesc -> 鐐借泧鍐涚殑绉樺瘑鑹惧紬鏃鸿捀棣忓巶鐨勭绉樻妧甯堜滑鎷ユ湁浠栦滑鑷繁鐨勯鏍笺€?
+/Lotus/Language/Operator/DrifterLeggingsDesc -> 婕傛硦鑰呭瑁呯殑缁戣吙銆?
+/Lotus/Language/Operator/DrifterLeggingsPrimeA -> 璧涘 Prime 缁戣吙
+/Lotus/Language/Operator/DrifterPistolSkinName -> 璧ら鎵嬫灙澶栬
+/Lotus/Language/Operator/DrifterSleevesDesc -> 婕傛硦鑰呭瑁呯殑琚栦欢銆?
+/Lotus/Language/Operator/DrifterSleevesPrimeA -> 璧涘 Prime 琚栦欢
+/Lotus/Language/Operator/DrifterSuitDesc -> 涓€浠舵紓娉婅€呭瑁呯殑濂楁湇銆?
+/Lotus/Language/Operator/DrifterTattooADesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooAName -> 鐏甸瓊
+/Lotus/Language/Operator/DrifterTattooBDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooBName -> 绫宠€舵彁
+/Lotus/Language/Operator/DrifterTattooCDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooCName -> 鐖棔
+/Lotus/Language/Operator/DrifterTattooCorpusADesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooCorpusAName -> 姘旈椄
+/Lotus/Language/Operator/DrifterTattooCorpusBDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooCorpusBName -> 鑸硅
+/Lotus/Language/Operator/DrifterTattooCorpusCDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooCorpusCName -> 鎶垫娂
+/Lotus/Language/Operator/DrifterTattooCorpusDDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooCorpusDName -> 鏈熻揣
+/Lotus/Language/Operator/DrifterTattooCorpusEDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooCorpusEName -> 绾㈠埄
+/Lotus/Language/Operator/DrifterTattooDDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooDName -> 缃楀绉?
+/Lotus/Language/Operator/DrifterTattooDuviriADesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooDuviriAName -> 缁撮瞾鎷?
+/Lotus/Language/Operator/DrifterTattooDuviriBDesc -> 浣跨敤韬綋鑹烘湳琛ㄧ幇鏄粈涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooDuviriBName -> 绁炲皠鎵?
+/Lotus/Language/Operator/DrifterTattooDuviriCDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooDuviriCName -> 瀛﹂櫌
+/Lotus/Language/Operator/DrifterTattooDuviriDDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooDuviriDName -> 姘斿悎
+/Lotus/Language/Operator/DrifterTattooDuviriEDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooDuviriEName -> 鏃犲敖鍥炲粖
+/Lotus/Language/Operator/DrifterTattooDuviriFDesc -> 浣跨敤韬綋鑹烘湳琛ㄧ幇鏄粈涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooDuviriFName -> 鐚涘姏閲嶅嚮鑰?
+/Lotus/Language/Operator/DrifterTattooDuviriGDesc -> 浣跨敤韬綋鑹烘湳琛ㄧ幇鏄粈涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooDuviriGName -> 瀹濈煶
+/Lotus/Language/Operator/DrifterTattooEDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooEName -> 鐑熷箷
+/Lotus/Language/Operator/DrifterTattooGenericDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooGeodeBlackDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooGeodeBlackName -> 鐗囬夯宀?
+/Lotus/Language/Operator/DrifterTattooGeodeDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooGeodeGreyDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooGeodeGreyName -> 娣″僵鐗囬夯宀?
+/Lotus/Language/Operator/DrifterTattooGeodeName -> 涓僵鐗囬夯宀?
+/Lotus/Language/Operator/DrifterTattooGrineerADesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooGrineerAName -> 鍫″瀿
+/Lotus/Language/Operator/DrifterTattooGrineerBDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooGrineerBName -> 澶栨樉瀛?
+/Lotus/Language/Operator/DrifterTattooGrineerCDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooGrineerCName -> 鐚庝汉
+/Lotus/Language/Operator/DrifterTattooGrineerDDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooGrineerDName -> 鏀诲煄
+/Lotus/Language/Operator/DrifterTattooGrineerEDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooGrineerEName -> 铻烘棆
+/Lotus/Language/Operator/DrifterTattooLoveFlowerBDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooLoveFlowerBName -> 娴撳僵椋庢儏涔嬭姳
+/Lotus/Language/Operator/DrifterTattooLoveFlowerDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooLoveFlowerName -> 椋庢儏涔嬭姳
+/Lotus/Language/Operator/DrifterTattooLoveHeartDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooLoveHeartName -> 鐖辩绉嬫尝
+/Lotus/Language/Operator/DrifterTattooLoveRoseDesc -> 浣跨敤韬綋鑹烘湳鏉ヨ〃鐜版槸浠€涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooLoveRoseName -> 鐖辨剰
+/Lotus/Language/Operator/DrifterTattooLoveWingsDesc -> 浣跨敤韬綋鑹烘湳琛ㄧ幇鏄粈涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooLoveWingsName -> 灏忓ぉ浣?
+/Lotus/Language/Operator/DrifterTattooNightwaveCommandoDesc -> 浠ュ媷澹噯澶囨垬鏂椾负鐏垫劅鐨勯潰閮ㄧ汗韬ⅷ姘淬€傞€傜敤浜庢紓娉婅€呫€?
+/Lotus/Language/Operator/DrifterTattooNightwaveCommandoName -> 鎴樺惣
+/Lotus/Language/Operator/DrifterTattooTennoAName -> 鐜涘€?
+/Lotus/Language/Operator/DrifterTattooTennoBName -> 绔嬪彜寮?
+/Lotus/Language/Operator/DrifterTattooTennoCName -> 鐢卞笇涔?
+/Lotus/Language/Operator/DrifterTattooTennoDName -> 绫宠€舵彁
+/Lotus/Language/Operator/DrifterTattooTennoEDesc -> 浣跨敤韬綋鑹烘湳琛ㄧ幇鏄粈涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooTennoEName -> 缃楀绉?
+/Lotus/Language/Operator/DrifterTattooTennoFName -> 瀵岀背铏?
+/Lotus/Language/Operator/DrifterTattooTennoGDesc -> 浣跨敤韬綋鑹烘湳琛ㄧ幇鏄粈涔堝湪骞抽潤鎴栨槸椹卞姩浣犵殑鍐呭績銆?
+/Lotus/Language/Operator/DrifterTattooTennoGName -> 瀛樺湪
+/Lotus/Language/Operator/DrifterTattooTennoHDesc -> 浣╂埓杩欐绾硅韩澧ㄦ按锛岃薄寰佺潃瀵广€屽緛鏈嶇檶鐥囨椿鍔ㄣ€嶇殑鏀寔銆?
+/Lotus/Language/Operator/DrifterTattooTennoHName -> 寰佹湇妯辨鏍戝ⅷ姘?
+/Lotus/Language/Operator/DrifterTattooTennoIDesc -> 浣╂埓杩欐绾硅韩澧ㄦ按锛岃薄寰佺潃瀵广€屽緛鏈嶇檶鐥囨椿鍔ㄣ€嶇殑鏀寔銆?
+/Lotus/Language/Operator/DrifterTattooTennoIName -> 寰佹湇鏈ㄥ叞鏍戝ⅷ姘?
+/Lotus/Language/Operator/HipDrifterDemonframeName -> 鎬诲徃浠ょぜ鏈?
+/Lotus/Language/Operator/HipDrifterLasrianBName -> 绉樼偧甯堟湇楗?
+/Lotus/Language/Operator/HoodAdultDrifterBName -> 婕傛硦鑰呭嚡鍕掑ご缃?
+/Lotus/Language/Operator/HoodDrifterArabicName -> 婕傛硦鑰呭潬娌欏ご缃?
+/Lotus/Language/Operator/HoodDrifterDemonframeName -> 鎬诲徃浠ゅご缃?
+/Lotus/Language/Operator/HoodDrifterDexName -> 婕傛硦鑰?Dex 澶寸僵
+/Lotus/Language/Operator/HoodDrifterGothName -> 鍝ョ壒椋庡ご缃?
+/Lotus/Language/Operator/HoodDrifterGrungeName -> 棰撳簾椋庡ご缃?
+/Lotus/Language/Operator/HoodDrifterLasrianAName -> 椋庤闈㈠叿
+/Lotus/Language/Operator/HoodDrifterLasrianBName -> 绉樼偧甯堥潰鍏?
+/Lotus/Language/Operator/LeggingsAdultDrifterBName -> 婕傛硦鑰呭嚡鍕掕￥瑁?
+/Lotus/Language/Operator/LeggingsDrifterArabicName -> 婕傛硦鑰呭潬娌欒￥瑁?
+/Lotus/Language/Operator/LeggingsDrifterAthleticName -> 杩愬姩椋庣粦鑵?
+/Lotus/Language/Operator/LeggingsDrifterDemonframeName -> 鎬诲徃浠ゆ姢鑳?
+/Lotus/Language/Operator/LeggingsDrifterDexName -> 婕傛硦鑰?Dex 瑁よ
+/Lotus/Language/Operator/LeggingsDrifterGothName -> 鍝ョ壒椋庣粦鑵?
+/Lotus/Language/Operator/LeggingsDrifterGrungeName -> 棰撳簾椋庣粦鑵?
+/Lotus/Language/Operator/LeggingsDrifterLasrianAName -> 椋庤瑁ら澊
+/Lotus/Language/Operator/LeggingsDrifterLasrianBName -> 绉樼偧甯堥澊瀛?
+/Lotus/Language/Operator/SkirtDrifterArabicName -> 婕傛硦鑰呭潬娌欒澶?
+/Lotus/Language/Operator/SkirtDrifterAthleticName -> 杩愬姩椋庡厜鐩樻挱鏀惧櫒鍜屾瘺宸?
+/Lotus/Language/Operator/SkirtDrifterDexName -> 婕傛硦鑰?Dex 瑁呭
+/Lotus/Language/Operator/SkirtDrifterGrungeName -> 棰撳簾椋庤瀛?
+/Lotus/Language/Operator/SleevesAdultDrifterBName -> 婕傛硦鑰呭嚡鍕掕浠?
+/Lotus/Language/Operator/SleevesDrifterArabicName -> 婕傛硦鑰呭潬娌欒浠?
+/Lotus/Language/Operator/SleevesDrifterAthleticName -> 杩愬姩椋庤浠?
+/Lotus/Language/Operator/SleevesDrifterDemonframeName -> 鎬诲徃浠よ浠?
+/Lotus/Language/Operator/SleevesDrifterDexName -> 婕傛硦鑰?Dex 琚栦欢
+/Lotus/Language/Operator/SleevesDrifterGothName -> 鍝ョ壒椋庤浠?
+/Lotus/Language/Operator/SleevesDrifterGrungeName -> 棰撳簾椋庤浠?
+/Lotus/Language/Operator/SleevesDrifterLasrianAName -> 椋庤鎵嬪
+/Lotus/Language/Operator/SleevesDrifterLasrianBName -> 绉樼偧甯堟墜濂?
+/Lotus/Language/Operator/TennoCustomization_DrifterBeardName -> 婕傛硦鑰呰儭椤?|INDEX|
+/Lotus/Language/Operator/TennoCustomization_DrifterFaceDesc -> 鏃㈠彲鍗曠嫭浣跨敤锛屼篃鍙笌鍏朵粬闈㈠铻嶅悎浣跨敤銆?
+/Lotus/Language/Operator/TennoCustomization_DrifterFaceName -> 婕傛硦鑰呴潰閮?|INDEX|
+/Lotus/Language/Operator/TennoCustomization_DrifterHairName -> 婕傛硦鑰呭彂鍨?|INDEX|
+/Lotus/Language/OstronCrafting/MeleeBalanceCrit -> 鐡﹀悏鐗?
+/Lotus/Language/OstronCrafting/MeleeBalanceCritOneDamageOne -> 鐡﹀悏鐗?濡傛澀
+/Lotus/Language/OstronCrafting/MeleeBalanceCritOneDamageOneDesc -> 鐢ㄤ簬 Zaw 绫绘鍣ㄧ殑鐜帴閮紝浠ラ檷浣庨€熷害銆佽Е鍙戝嚑鐜囦负浠ｄ环鏉ュ鍔犱激瀹充笌鏆村嚮鍑犵巼銆?
+/Lotus/Language/OstronCrafting/MeleeBalanceCritOneDamageTwo -> 鐡﹀悏鐗?濡傛澀 II
+/Lotus/Language/OstronCrafting/MeleeBalanceCritTwo -> 鐡﹀悏鐗?II
+/Lotus/Language/OstronCrafting/MeleeBalanceCritTwoDamageOne -> 鐡﹀悏鐗?II 濡傛澀
+/Lotus/Language/OstronCrafting/MeleeBalanceDamage -> 濡傛澀
+/Lotus/Language/OstronCrafting/MeleeBalanceDamageDesc -> 涓€鍏风敤浜?Zaw 绫绘鍣ㄧ殑鐜帴閮紝浠ラ檷浣庨€熷害涓轰唬浠锋潵澧炲姞浼ゅ銆?
+/Lotus/Language/OstronCrafting/MeleeBalanceDamageTwo -> 濡傛澀 II
+/Lotus/Language/OstronCrafting/MeleeBalanceDamageTwoDesc -> 鐢ㄤ簬 Zaw 绫绘鍣ㄧ殑鐜帴閮紝浠ラ檷浣庨€熷害涓轰唬浠锋潵澧炲姞浼ゅ銆?
+/Lotus/Language/OstronCrafting/MeleeBalanceDesc -> 杩欎簺鐜彲浠ユ彁鍗囨鍣ㄧ殑鏀诲嚮灞炴€с€?
+/Lotus/Language/OstronCrafting/MeleeBalanceOne -> 鍔皵
+/Lotus/Language/OstronCrafting/MeleeBalanceSix -> 鍏圭摝缃?
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeed -> 缈?
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedOneCritOne -> 鐡﹀悏鐗?缈?
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedOneCritOneDesc -> 鐢ㄤ簬 Zaw 绫绘鍣ㄧ殑鐜帴閮紝浠ラ檷浣庝激瀹炽€佽Е鍙戝嚑鐜囦负浠ｄ环鏉ュ鍔犻€熷害涓庢毚鍑诲嚑鐜囥€?
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedOneCritTwo -> 鐡﹀悏鐗?II 缈?
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedOneDesc -> 涓€鍏风敤浜?Zaw 绫绘鍣ㄧ殑鐜帴閮紝浠ラ檷浣庝激瀹充负浠ｄ环鏉ュ鍔犻€熷害銆?
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedOneStatusOne -> 浼婂厠鐡︾撼 缈?
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedOneStatusOneDesc -> 鐢ㄤ簬 Zaw 绫绘鍣ㄧ殑鐜帴閮紝浠ラ檷浣庝激瀹炽€佹毚鍑诲嚑鐜囦负浠ｄ环鏉ュ鍔犻€熷害涓庤Е鍙戝嚑鐜囥€?
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedOneStatusTwo -> 浼婂厠鐡︾撼 II 缈?
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedTwo -> 缈?II
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedTwoCritOne -> 鐡﹀悏鐗?缈?II
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedTwoDesc -> 鐢ㄤ簬 Zaw 绫绘鍣ㄧ殑鐜帴閮紝浠ラ檷浣庝激瀹充负浠ｄ环鏉ュ鍔犻€熷害銆?
+/Lotus/Language/OstronCrafting/MeleeBalanceSpeedTwoStatusOne -> 浼婂厠鐡︾撼 缈?II
+/Lotus/Language/OstronCrafting/MeleeBalanceStatus -> 浼婂厠鐡︾撼
+/Lotus/Language/OstronCrafting/MeleeBalanceStatusOneDamageOne -> 浼婂厠鐡︾撼 濡傛澀
+/Lotus/Language/OstronCrafting/MeleeBalanceStatusOneDamageOneDesc -> 鐢ㄤ簬 Zaw 绫绘鍣ㄧ殑鐜帴閮紝浠ラ檷浣庨€熷害銆佹毚鍑诲嚑鐜囦负浠ｄ环鏉ュ鍔犱激瀹充笌瑙﹀彂鍑犵巼銆?
+/Lotus/Language/OstronCrafting/MeleeBalanceStatusOneDamageTwo -> 浼婂厠鐡︾撼 濡傛澀 II
+/Lotus/Language/OstronCrafting/MeleeBalanceStatusTwo -> 浼婂厠鐡︾撼 II
+/Lotus/Language/OstronCrafting/MeleeBalanceStatusTwoDamageOne -> 浼婂厠鐡︾撼 II 濡傛澀
+/Lotus/Language/OstronCrafting/MeleeHandleDesc -> Ostron 鍐涚敤姝﹀櫒鐨勯暱鏉嗘垨鎵嬫焺銆?
+/Lotus/Language/OstronCrafting/MeleeHandleFive -> 鏌ヤ簹鏅?
+/Lotus/Language/OstronCrafting/MeleeHandleFiveDesc -> 鐢ㄤ簬闀挎鍜岄暱鏌勬鍣ㄧ殑鍙屾墜 Zaw 鎻℃焺閮ㄣ€?
+/Lotus/Language/OstronCrafting/MeleeHandleFour -> 鏂崱鎷?
+/Lotus/Language/OstronCrafting/MeleeHandleNine -> 绉戝竷
+/Lotus/Language/OstronCrafting/MeleeHandleNineDesc -> 涓€浠跺崟鎵嬬殑鎻℃焺锛屼负绮剧‘鐨勬敾鍑诲拰鐚涚儓鐨勫啿鍑昏€岄€犮€?
+/Lotus/Language/OstronCrafting/MeleeHandleOne -> 浣╄€?
+/Lotus/Language/OstronCrafting/MeleeHandleSix -> 鍏嬮瞾鏂煡
+/Lotus/Language/OstronCrafting/MeleeHandleTen -> 鐭冲綋
+/Lotus/Language/OstronCrafting/MeleeHandleTenDesc -> 涓€浠跺弻鎸佺殑鎻℃焺锛屼负绮剧‘鐨勬敾鍑诲拰鐚涚儓鐨勫啿鍑昏€岄€犮€?
+/Lotus/Language/OstronCrafting/MeleeHandleThree -> 搴撻樋鏂?
+/Lotus/Language/OstronCrafting/MeleeHandleTwo -> 鎷夊崱
+/Lotus/Language/OstronCrafting/MeleeHandleTwoDesc -> 鐢ㄤ簬鍓戙€佺爫鍒€銆佺粏鍓戙€佸拰鍖曢姝﹀櫒鐨?Zaw 鎻℃焺閮ㄣ€?
+/Lotus/Language/OstronCrafting/MeleeInfestedHandleOne -> 鐦熺柅 鑹惧厠鏂?
+/Lotus/Language/OstronCrafting/MeleeInfestedHandleOneDesc -> 涓€绉嶆劅鏌撳崟鎵嬫彙鏌勩€傚畠杞荤泩鐨勯噸閲忎互浼ゅ涓轰唬浠锋彁鍗囦簡閫熷害銆?
+/Lotus/Language/OstronCrafting/MeleeInfestedHandleTwo -> 鐦熺柅 鏌忓厠鏂?
+/Lotus/Language/OstronCrafting/MeleeInfestedHandleTwoDesc -> 涓€绉嶆劅鏌撳弻鎵嬫彙鏌勩€傚畠娌夐噸鐨勯噸閲忎互閫熷害涓轰唬浠锋彁鍗囦簡浼ゅ銆?
+/Lotus/Language/OstronCrafting/MeleeInfestedTipOne -> 鐦熺柅 鍏嬮噷甯曚笣
+/Lotus/Language/OstronCrafting/MeleeInfestedTipTwo -> 鐦熺柅 濂囨矁
+/Lotus/Language/OstronCrafting/MeleeTipDesc -> Ostron 鍐涚敤姝﹀櫒鐨勬敾鍑婚儴浠躲€?
+/Lotus/Language/OstronCrafting/MeleeTipEleven -> 澶氬厠鎷夊
+/Lotus/Language/OstronCrafting/MeleeTipElevenDesc -> 涓€缁勬瀬灏介€傚悎闀板垁鎴栭噸鍨嬪垉鍣ㄧ殑杞诲瀷 Zaw銆傝交閲忓寲锛岃拷姹傚垁鍏夐湇闇嶄笖鍜鏂倝銆?
+/Lotus/Language/OstronCrafting/MeleeTipFive -> 寰峰鐗?
+/Lotus/Language/OstronCrafting/MeleeTipFiveDesc -> 鐢ㄤ簬缁嗗墤鍜岄暱鏌勬鍣ㄧ殑 Zaw 鍑绘墦閮ㄣ€傚畠鐨勮交宸т互闄嶄綆浼ゅ浣滀负浠ｄ环鏉ュ鍔犻€熷害銆?
+/Lotus/Language/OstronCrafting/MeleeTipFour -> 瑗夸簹浠€
+/Lotus/Language/OstronCrafting/MeleeTipFourDesc -> 鐢ㄤ簬鐮嶅垁鍜岄暱鏌勬鍣ㄧ殑 Zaw 鍑绘墦閮?
+/Lotus/Language/OstronCrafting/MeleeTipNine -> 鐟熸櫘姊?
+/Lotus/Language/OstronCrafting/MeleeTipNineDesc -> 鐢ㄤ簬渚嶅垉鍜岄暱妫嶇殑 Zaw 鎵撳嚮閮ㄣ€傛矇绋充箣浜洪€傜敤鐨勬矇绋充箣鍒冦€?
+/Lotus/Language/OstronCrafting/MeleeTipOne -> 瀹濇媺
+/Lotus/Language/OstronCrafting/MeleeTipOneDesc -> 鐢ㄤ簬鍖曢鍜岄暱妫嶆鍣ㄧ殑 Zaw 鍑绘墦閮ㄣ€傚畠鐨勮交宸т互闄嶄綆浼ゅ浣滀负浠ｄ环鏉ュ鍔犻€熷害銆?
+/Lotus/Language/OstronCrafting/MeleeTipSix -> 瀹㈤殕浠€
+/Lotus/Language/OstronCrafting/MeleeTipTen -> 鎷夋瘮濞?
+/Lotus/Language/OstronCrafting/MeleeTipTenDesc -> 鐢ㄤ簬鐮嶅垁鍜岄噸閿ょ殑 Zaw 鎵撳嚮閮ㄣ€備笁鎬濊€岃锛岃鍒欒嚧鍛姐€?
+/Lotus/Language/OstronCrafting/MeleeTipThree -> 瀵嗕父
+/Lotus/Language/OstronCrafting/MeleeTipThreeDesc -> 鐢ㄤ簬鍓戝拰闀挎焺姝﹀櫒鐨?Zaw 鍑绘墦閮ㄣ€傚畠娌夐噸鐨勯噸閲忎互闄嶄綆閫熷害浣滀负浠ｄ环鏉ュ鍔犱激瀹炽€?
+/Lotus/Language/OstronCrafting/MeleeTipTwo -> 涔屽皵钀?
+/Lotus/Language/OstronCrafting/MeleeTipTwoDesc -> 鐢ㄤ簬鍓戝拰闀挎姝﹀櫒鐨?Zaw 鍑绘墦閮ㄣ€?
+/Lotus/Language/PersonalQuarters/AFCustArchwingSelect -> 閫夋嫨鏇茬考鈥︹€?
+/Lotus/Language/Pets/EmpyreanSentinelDefaultSkinDesc -> 楣﹂箟铻哄畧鎶ょ殑鏍囧噯澶栬閰嶇疆銆?
+/Lotus/Language/Pets/EmpyreanSentinelDefaultSkinName -> 楣﹂箟铻哄瑙?
+/Lotus/Language/Pets/EmpyreanSentinelDesc -> 浠ャ€屼竾鐢ㄨ嚜淇€嶅拰銆岄槻绾垮皝閿併€嶄负榛樿鎸囦护锛岃繖浠跺畧鎶ゆ槸鎼箻鑸亾鏄熻埌杩滆埅鐨勭悊鎯冲悓浼淬€?
+/Lotus/Language/Pets/EmpyreanSentinelName -> 楣﹂箟铻?
+/Lotus/Language/Pets/EmpyreanSentinelRecipeHelpText -> 楣﹂箟铻鸿摑鍥惧拰蹇呰鐨勫缓閫犺祫婧愬彲浠ュ湪娴风帇鏄熸瘮閭绘槦鍩熼檮杩戠殑鍐扮熆涓壘鍒般€?
+/Lotus/Language/Pets/KubrowMagneticEventMeleeModName -> 纾佸寲鍒╃埅
+/Lotus/Language/Pets/KubrowRadiationEventMeleeModName -> 杈愯兘鍒╃埅
+/Lotus/Language/Pets/ZanukaPetAntiMeleePreceptName -> 鍧囪　瀹¤
+/Lotus/Language/Pets/ZanukaPetMeleeWeaponIPName -> 宸存墭鑵?
+/Lotus/Language/Pets/ZanukaPetMeleeWeaponISName -> 鑾辨柉鑵?
+/Lotus/Language/Pets/ZanukaPetMeleeWeaponPSName -> 闃垮崱鑵?
+/Lotus/Language/PrimePacks/MPVHeimtPrimeSentinelDesc -> 缁欎綘鐨勫畧鎶や竴浠剁簿蹇冨埗浣滅殑楗板搧
+/Lotus/Language/PrimePacks/MPVHeimtPrimeSentinelName -> 楠囧讥 Prime 瀹堟姢閰嶄欢
+/Lotus/Language/PrimePacks/MPVIctusPrimeSentinelName -> 鎵煶 Prime 瀹堟姢閰嶄欢
+/Lotus/Language/PrimePacks/MPVOrcusPrimeSentinelName -> 浜＄ Prime 瀹堟姢閰嶄欢
+/Lotus/Language/PrimePacks/MPVVervSentrexSentinelName -> 鐑勘鍦ｅ鏂畧鎶ら厤浠?
+/Lotus/Language/PrimeStore/MPVPrimeSentinelName -> 鑴夋秾 Prime 瀹堟姢閰嶄欢
+/Lotus/Language/PrimeStore/MPVSummusPrimeSentinelName -> 鑷充笂 Prime 瀹堟姢閰嶄欢
+/Lotus/Language/Primes/DrifterBodySuitPrimeC -> 鍦ｆ楠戝＋ Prime 濂楁湇
+/Lotus/Language/Primes/DrifterBodySuitPrimeEName -> 娈佷笘 Prime 鑳哥敳
+/Lotus/Language/Primes/DrifterHoodPrimeC -> 鍦ｆ楠戝＋ Prime 澶寸僵
+/Lotus/Language/Primes/DrifterHoodPrimeEChinaName -> 娈佷笘 Prime 澶嶇敓澶寸僵
+/Lotus/Language/Primes/DrifterHoodPrimeEName -> 娈佷笘 Prime 澶寸僵
+/Lotus/Language/Primes/DrifterLeggingsPrimeC -> 鍦ｆ楠戝＋ Prime 缁戣吙
+/Lotus/Language/Primes/DrifterLeggingsPrimeEName -> 娈佷笘 Prime 鎶よ儷
+/Lotus/Language/Primes/DrifterPrimeDDesc -> 鍞湁鎺屾帶鐜板疄涔嬪姏锛屾柟鑳藉緱姝ょ唬缃楄。瑁炽€傞€傜敤浜庢紓娉婅€呫€?
+/Lotus/Language/Primes/DrifterPrimeDHoodName -> 鏄庤鑰?Prime 澶寸僵
+/Lotus/Language/Primes/DrifterPrimeDLeggingsName -> 鏄庤鑰?Prime 缁戣吙
+/Lotus/Language/Primes/DrifterPrimeDSleevesName -> 鏄庤鑰?Prime 琚栦欢
+/Lotus/Language/Primes/DrifterPrimeDSuitName -> 鏄庤鑰?Prime 濂楁湇
+/Lotus/Language/Primes/DrifterSkirtPrimeC -> 鍦ｆ楠戝＋ Prime 鏈嶉グ
+/Lotus/Language/Primes/DrifterSleevesPrimeC -> 鍦ｆ楠戝＋ Prime 琚栦欢
+/Lotus/Language/Primes/DrifterSleevesPrimeEName -> 娈佷笘 Prime 琚栦欢
+/Lotus/Language/Primes/HeimtPrimeSentinelDesc -> 缁欎綘鐨勫畧鎶や竴浠剁簿蹇冨埗浣滅殑楗板搧銆?
+/Lotus/Language/Primes/HeimtPrimeSentinelMask -> 楠囧讥 Prime 瀹堟姢闈㈠叿
+/Lotus/Language/Primes/HeimtPrimeSentinelTail -> 楠囧讥 Prime 瀹堟姢灏鹃儴
+/Lotus/Language/Primes/HeimtPrimeSentinelWings -> 楠囧讥 Prime 瀹堟姢椋炵考
+/Lotus/Language/Primes/NautilusPrimeSentinelMaskName -> 鏄熻埅 Prime 闈㈠叿
+/Lotus/Language/Primes/NautilusPrimeSentinelName -> 楣﹂箟铻?Prime
+/Lotus/Language/Primes/NautilusPrimeSentinelTailName -> 鏄熻埅 Prime 灏惧反
+/Lotus/Language/Primes/NautilusPrimeSentinelWingsName -> 鏄熻埅 Prime 鏈虹考
+/Lotus/Language/Primes/NikanaPrimeMeleeDangleDesc -> 涓€浠朵笓灞炰緧鍒?PRIME 鐨勮楗版€у潬楗?
+/Lotus/Language/Primes/NikanaPrimeMeleeDangleName -> 渚嶅垉 Prime 鍧犻グ
+/Lotus/Language/Primes/PrimeFlightPistolsName -> Dex 濡栫簿 Prime
+/Lotus/Language/Primes/PrimeSentinelBioWeaponName -> 姣掑埡 Prime
+/Lotus/Language/Primes/PrimeSlingerPistolsName -> 鐩戝療鑰呭弻鏋?Prime
+/Lotus/Language/Primes/PrimeVeloxPistolName -> 閫愮數 Prime
+/Lotus/Language/Primes/TitaniaPrimeArchwingSkinDesc -> Titania Prime 鐨勬爣蹇楁€ф洸缈煎瑙傘€?
+/Lotus/Language/Primes/TitaniaPrimeArchwingSkinName -> 閲戣潐 Prime 澶栬
+/Lotus/Language/Quests/ArchwingFindIntel -> 鎼滅储鎯呮姤
+/Lotus/Language/Quests/ArchwingQuestSegmentInboxTitle -> 鍐蹭笂浜戦渼
+/Lotus/Language/Quests/DragonSentinelRescue -> 瀹氫綅瀹堟姢
+/Lotus/Language/Railjack/ArchwingCannon -> 寮瑰皠鍣?
+/Lotus/Language/Railjack/GrineerBoardingDSMeleeName -> 閭冨煙寮鸿鍒囧壊鑰?
+/Lotus/Language/Railjack/GrineerBoardingMeleeName -> 娣辩┖寮鸿鍒囧壊鑰?
+/Lotus/Language/Railjack/GrineerBoardingSaturnMeleeName -> 鍥炴棆寮鸿鍒囧壊鑰?
+/Lotus/Language/Railjack/RJModsArchwingArmorAuraDesc -> 闄勮繎 |RANGE| 绫冲唴鍙嬪啗鏇茬考鎶ょ敳鎻愰珮 |VAL|%
+/Lotus/Language/Railjack/RJModsArchwingArmorAuraTitle -> 灞曠考閿嬪垉
+/Lotus/Language/Railjack/RJModsArchwingDamageAuraDesc -> 鎻愰珮闄勮繎 |RANGE| 绫冲唴鍙嬪啗鐨勬洸缈间激瀹?|VAL|%
+/Lotus/Language/Railjack/RJModsArchwingDamageAuraTitle -> 灞曠考鐚涙敾
+/Lotus/Language/Railjack/RJModsArchwingShieldAuraDesc -> |RANGE| 绫宠寖鍥村唴鐨勬洸缈兼姢鐩炬彁楂?|VAL|%
+/Lotus/Language/Railjack/RJModsArchwingShieldAuraTitle -> 灞曠考寮哄尽
+/Lotus/Language/Railjack/RJModsArchwingSpeedAuraDesc -> |RANGE| 绫宠寖鍥村唴鐨勬洸缈奸€熷害鎻愰珮 |VAL|%
+/Lotus/Language/Railjack/RJModsArchwingSpeedAuraTitle -> 灞曠考椋撻€?
+/Lotus/Language/Relics/Era_REQUIEM -> 瀹夐瓊
+/Lotus/Language/Seasonal/DOTD2025SentinelDesc -> 鑹插僵椴滆壋鐨勯楂呭拰鑺傛棩铚＄儧瑁呴グ鍦ㄨ繖濂楀畧鎶ゅ疇鐗╅厤楗颁笂銆?
+/Lotus/Language/Seasonal/DOTD2025SentinelMaskDesc -> 瀹堟姢瀹犵墿鑹插僵椴滆壋鐨勯楂呴潰鍏烽厤浠躲€?
+/Lotus/Language/Seasonal/DOTD2025SentinelMaskName -> 灏忛楂呭畧鎶ら潰鍏?
+/Lotus/Language/Seasonal/DOTD2025SentinelTailDesc -> 瀹堟姢瀹犵墿鑹插僵椴滆壋鐨勫熬缇姐€?
+/Lotus/Language/Seasonal/DOTD2025SentinelTailName -> 灏忛楂呭畧鎶ゅ熬閮?
+/Lotus/Language/Seasonal/DOTD2025SentinelWingName -> 灏忛楂呭畧鎶ら缈?
+/Lotus/Language/Seasonal/DOTD2025SentinelWingsDesc -> 瀹堟姢瀹犵墿鑹插僵椴滆壋鐨勪竴瀵归缈笺€?
+/Lotus/Language/Settings/Options_Controls_MeleeWithFire_Tip -> 浣跨敤灏勫嚮閿繘琛岃繎鎴樻敾鍑?
+/Lotus/Language/Settings/Options_Controls_UseMeleeAssist_Tip -> 鑷姩璋冩暣鐜╁鏂瑰悜浠ュ鍔犲嚮涓晫浜虹殑鍑犵巼銆?
+/Lotus/Language/ShipDecorations/ArchwingAFDesc -> 涓€涓洸缈奸厤缃殑鍙憜濮垮娍鐨勬瘮渚嬫ā鍨嬨€?
+/Lotus/Language/ShipDecorations/ArchwingAFName -> 鏇茬考鍙姩寮忔ā鍨?
+/Lotus/Language/ShipDecorations/ArchwingArmedPoseSetDesc -> 涓€缁勮澶囦簡鏇茬考鐨?Tenno 鐨勫姩浣溿€?
+/Lotus/Language/ShipDecorations/ArchwingArmedPoseSetName -> 鏇茬考鎸佹灙濮垮娍缁勫悎
+/Lotus/Language/ShipDecorations/ArchwingUnarmedPoseSetDesc -> 涓€缁勮澶囦簡鏇茬考鐨?Tenno 鐨勫姩浣溿€?
+/Lotus/Language/ShipDecorations/ArchwingUnarmedPoseSetName -> 鏇茬考鍙嶅簲鍔ㄤ綔缁勫悎
+/Lotus/Language/ShipDecorations/BobbleheadExcaliburArchwingDesc -> 涓€灏忓骇 Excalibur 瑁呭闄ㄨ湏鏇茬考鐨勬憞澶村▋濞冦€?
+/Lotus/Language/ShipDecorations/BobbleheadExcaliburArchwingName -> 瑁呭闄ㄨ湏鐨?Excalibur 鎽囧ご濞冨▋
+/Lotus/Language/ShipDecorations/BobbleheadItzalArchwingDesc -> 涓€灏忓骇 Mag 瑁呭鍒哄奖鏇茬考鐨勬憞澶村▋濞冦€?
+/Lotus/Language/ShipDecorations/BobbleheadItzalArchwingName -> 鎽囧ご濞冨▋锛嶈澶囧埡褰辩殑 Mag
+/Lotus/Language/ShipDecorations/BobbleheadSentientMeleeWarriorDesc -> 涓€灏忓骇鎭舵剰鍏疯薄鍖栨憞澶村▋濞冦€?
+/Lotus/Language/ShipDecorations/BobbleheadSentientMeleeWarriorName -> 闇囪崱浣挎憞澶村▋濞?
+/Lotus/Language/ShipDecorations/MeleeImpactAFDesc -> 涓€涓彲浠ユ斁缃簬杞ㄩ亾椋炶鍣ㄧ殑杩戞垬鍐插嚮瑁呴グ
+/Lotus/Language/ShipDecorations/MeleeImpactAFName -> 杩戞垬鍐插嚮瑁呴グ
+/Lotus/Language/ShipFeatureItems/ArsenalMeleeFeature -> 杩戞垬鍗囩骇妯″潡
+/Lotus/Language/ShipFeatureItems/ArsenalMeleeFeatureDesc -> 閫氳繃杩戞垬姝﹀櫒璧嬭兘寮哄寲浣犵殑鍐涙搴撱€傝繖涓ā鍧椾細涓轰綘鐨勮繎鎴樻鍣ㄨВ閿佺壒娈婂姛鑳芥Ы銆?
+/Lotus/Language/ShipFeatureItems/ShipFeatureEidolonArchwingFoundryUpgrade -> 鏇茬考鍙戝皠妯″潡
+/Lotus/Language/ShipFeatureItems/ShipFeatureEidolonArchwingFoundryUpgradeDesc -> 灏嗘洸缈煎彂灏勫櫒鍔犲叆閾搁€犲巶銆?
+/Lotus/Language/Sigils/ArchwingSigilDesc -> 杩滃彜涔嬫垬涓殑鑸亾鏄熻埌鑸板憳楠勫偛鍦颁僵鎴磋繃鍚屾牱鐨勭汗绔犮€?
+/Lotus/Language/Sigils/ArchwingSigilName -> 涔濋噸澶╃汗绔?
+/Lotus/Language/Skins/BillowingPistolSkinDesc -> 涓€娆句负浣犵殑鎵嬫灙甯︽潵婊氭粴浜戠儫鑸殑椋樻负澶栬銆?
+/Lotus/Language/Skins/BillowingPistolSkinName -> 浜戞捣鎵嬫灙澶栬
+/Lotus/Language/Skins/CeramicPistolDesc -> 椴滄槑鐨勭孩鑹插拰鐧借壊閲夊僵闂寒鍦ㄥ潥纭殑闄剁摲鎵嬮紦澶栬琛ㄩ潰銆?
+/Lotus/Language/Skins/CeramicPistolName -> 鎵嬮紦闄剁摲澶栬
+/Lotus/Language/Skins/DeimosSupporterPistolSkinDesc -> 閿よ惤绛掕浆锛屽懆鑰屽濮嬨€傛棤鐟曠殑鏈烘鍦ㄤ緷搴忚繍杞€?
+/Lotus/Language/Skins/DeimosSupporterPistolSkinName -> 缁炵洏鎵嬫灙澶栬
+/Lotus/Language/Skins/EmberDeluxeDualPistolName -> 鍔柉搴撳弻鎸佹墜鏋瑙?
+/Lotus/Language/Skins/EmberDeluxePistolDesc -> Ember 鏈辩孩鐨勬爣蹇楁€ф墜鏋瑙?
+/Lotus/Language/Skins/EmberDeluxePistolName -> 鍔柉搴撴墜鏋瑙?
+/Lotus/Language/Skins/GaussSentinelSkinName -> 闃垮皵鐗规媺瀹堟姢澶栬
+/Lotus/Language/Skins/LNYDragonSentinelArmourDesc -> 涓轰綘鐨勫畧鎶よ鎵笂鍞ら啋宸ㄩ緳鐨勬姢鐢诧紝鍏辫垶鏂版槬鍗庣珷銆?
+/Lotus/Language/Skins/LNYDragonSentinelMaskName -> 鑸為緳瀹堟姢闈㈠叿
+/Lotus/Language/Skins/LNYDragonSentinelSkinDesc -> 瑁呮壆瀹堟姢锛屽叡鑸炴柊鏄ュ崕绔犮€?
+/Lotus/Language/Skins/LNYDragonSentinelSkinName -> 鑸為緳瀹堟姢澶栬
+/Lotus/Language/Skins/LNYDragonSentinelTailName -> 鑸為緳瀹堟姢灏鹃儴
+/Lotus/Language/Skins/LNYDragonSentinelWingsName -> 鑸為緳瀹堟姢椋炵考
+/Lotus/Language/Skins/MesaDeluxeDualPistolDesc -> 灏嗕换鎰忓弻鎸佹墜鏋浆鎹负宸存礇鍏嬪紡鐨勫乏杞墜鏋瑙傘€?
+/Lotus/Language/Skins/MesaDeluxeDualPistolName -> 鐝嶇彔鍙屾寔鎵嬫灙澶栬
+/Lotus/Language/Skins/MesaDeluxePistolDesc -> 灏嗕换鎰忔墜鏋浆鎹负宸存礇鍏嬪紡鐨勫乏杞墜鏋瑙傘€?
+/Lotus/Language/Skins/MesaDeluxePistolName -> 鐝嶇彔鎵嬫灙澶栬
+/Lotus/Language/Skins/OwlSentinelSkinName -> Ordis 瀹堟姢澶栬
+/Lotus/Language/Skins/ThanotechSentinelSkinName -> 娲涘痉瀹堟姢澶栬
+/Lotus/Language/Skins/TitaniaDeluxeArchwingPistolsSkinDesc -> 鐢ㄨ繖娆炬湁鐫€灏婅吹澶栬鐨?Dex 濡栫簿鏉ユ瀬閫熼鑸炲惂銆?
+/Lotus/Language/Skins/TitaniaDeluxeArchwingPistolsSkinName -> Dex 濡栫簿澶╄浘澶栬
+/Lotus/Language/Skins/TitaniaDeluxeArchwingSwordSkinDesc -> Titania 鐨勯暱鍓戝瑙傗€斺€斾笌濂崇殗鐨勮韩浠藉崄鍒嗙浉绉般€?
+/Lotus/Language/Skins/TitaniaDeluxeArchwingSwordSkinName -> 浠欏コ鑾壒澶栬
+/Lotus/Language/Skins/TitaniaDeluxeIIArchwingPistolsSkinDesc -> 甯︾潃鍍忔祦鏄熼偅鏍烽棯闂彂鍏夌殑姝﹀櫒鍦ㄤ綘鐨勬晫浜轰箣涓婄勘缈斻€?
+/Lotus/Language/Skins/TitaniaDeluxeIIArchwingPistolsSkinName -> Dex 濡栫簿绌虹伒澶栬
+/Lotus/Language/Skins/TitaniaDeluxeIIArchwingSwordSkinDesc -> 鎵€鏈夊鎶楄繖鎶婂垁鐨勪汉姊︽兂閮戒細缁堢粨銆?
+/Lotus/Language/Skins/TitaniaDeluxeIIArchwingSwordSkinName -> 浠欏コ璧ょ埅澶栬
+/Lotus/Language/Skins/TnSubmachinegunDualPistolSkinName -> 灏婅皼鍙屾寔鎵嬫灙澶栬
+/Lotus/Language/Skins/TnSubmachinegunPistolSkinName -> 灏婅皼鎵嬫灙澶栬
+/Lotus/Language/Skins/VaubanDeluxeMeleeDangleDesc -> Vauban 鍩庡鐨勬爣蹇楁€у潬楗般€?
+/Lotus/Language/Skins/VaubanDeluxeMeleeDangleName -> 渚埖鍧犻グ
+/Lotus/Language/SolarisQuest/KDriveSecondaryWeaponTutorial_Controller -> 鎸変笅 <NEXT_INV> 浣跨敤娆¤姝﹀櫒
+/Lotus/Language/SolarisQuest/KDriveSecondaryWeaponTutorial_KBM -> 鎸変笅 <NEXT_INV> 浣跨敤娆¤姝﹀櫒
+/Lotus/Language/SolarisQuest/KDriveSecondaryWeaponTutorial_Touch -> 鎸変笅 <NEXT_INV> 浣跨敤娆¤姝﹀櫒
+/Lotus/Language/SolarisVenus/CrpSentExperiementPistol -> 瑙嗕娇涔嬭Е
+/Lotus/Language/SolarisVenus/MoaPetEngineMelee -> 鍘夋倣鏍稿績
+/Lotus/Language/SolarisVenus/MoaPetHeadMelee -> 灏间笜鏂亹楦?
+/Lotus/Language/SolarisVenus/MoaPetHeadMeleeDesc -> 杩欑鍨嬪彿鏄拡瀵硅繎璺濈鎴樻枟鑰屾墦閫犵殑锛屽彲浠ヤ娇鐢ㄣ€岀垎鐮存姢鐩俱€嶅拰銆屼互纭纭€嶆寚浠ゃ€?
+/Lotus/Language/SolarisVenus/MoaPetLegMelee -> 璞撼鑴氭灦
+/Lotus/Language/SolarisVenus/MoaPetLegMeleeDesc -> 涓€涓甫鏈?Naramon Mod 鏋佹€фЫ浣嶇殑閫氱敤鑴氭灦銆?
+/Lotus/Language/SolarisVenus/MoaPetPayloadMelee -> 娉板埄闄€铻轰华
+/Lotus/Language/SolarisVenus/RadarSentinelName -> 濂ュ厠缁綏鏂?
+/Lotus/Language/SolarisVenus/VenusHeavyMeleeEliteSpacemanName -> 澶у湴绮捐嫳鎺樻矡鑰?
+/Lotus/Language/Stats/TIP_FireRateMelee -> 杩戞垬鏀诲嚮閫熷害銆傛瘡绉掓敾鍑绘鏁颁細鍥犳鍣ㄧ被鍨嬪拰鏋跺紡鑰屽紓銆?
+/Lotus/Language/Stats/TIP_MeleeRange -> 杩戞垬鏀诲嚮鍦ㄦ璺濈鍐呰兘鍑讳腑鏁屼汉銆傛湁浜涙灦寮忓彲浠ヤ娇鐢ㄦ姇鎺锋垨鐚涘啿鏉ヨ幏寰楁洿澶х殑鑼冨洿銆?
+/Lotus/Language/Stickers/EnemyMeleeSticker -> 浠呴檺鍒€鍏?
+/Lotus/Language/Store/GiftFail_ArchwingNotEnabled -> |PLAYER_NAME| 鏃犳硶鏀跺埌鏇茬考鐩稿叧閬撳叿锛屼粬浠渶瑕佸厛瀹屾垚鏇茬考浠诲姟銆?
+/Lotus/Language/Subtitles/LotusBarks/DJailFoundMelee130Lotus -> 閭ｆ槸浣犵殑杩戞垬姝﹀櫒銆?
+/Lotus/Language/Subtitles/MissionObjectives/DArchwingDemo040VayHek -> 鍝堝搱鍝堝搱鍝堬紝浣犵湡鐨勪互涓猴紝鎴戞墍鏈夌殑宸ㄤ汉鎴樿埌閮借杩欏府 Tenno 鎽ф瘉浜嗭紵
+/Lotus/Language/Subtitles/MissionObjectives/DArchwingDemo050Lotus -> 鎴戜滑鏈夐夯鐑︿簡鈥︹€﹁繖搴旇鏄€︹€﹁櫄绌洪噷鐨勫彲鎬曠敓鍛戒綋锛?
+/Lotus/Language/Subtitles/MissionObjectives/DArchwingDemo060VayHek -> Bek锛佹潵浼氫細鎴戠殑"宸寸綏灏?鍚э紒浣犵殑姝绘湡鍒颁簡锛?
+/Lotus/Language/Subtitles/MissionObjectives/DArchwingDemo070FrohdBek -> 杩欎笉鍙兘鈥︹€︽墍鏈夊崟浣嶏紝鍏ㄩ潰璀︽垝锛屽噯澶囧ソ鐧昏埌鎴樻枟鈥︹€?
+/Lotus/Language/Subtitles/NinetyNineBoyBand/DArchwingJam0010RJCephalon -> 渚︽祴鍒板湪閫旇繘鏀汇€傝埅閬撴槦鑸板凡琚敾鍏ャ€傜伀鐐郴缁熺绾裤€傛懅姣佹劅鏌撳泭宸€?
+/Lotus/Language/Subtitles/NinetyNineBoyBand/DArchwingJam0020RJCephalon -> 鑸瑰憳銆傛娴嬪埌鏈粡鍏佽鐨勬潅闊炽€傜郴缁熸姉璁€傛懅姣侀偅涓壃澹板櫒銆?
+/Lotus/Language/Subtitles/NinetyNineBoyBand/DArchwingJam0030RJCephalon -> 绯荤粺鍔熻兘锛氭殏鍋溿€傚共鎵板櫔闊筹細鏉ヨ銆傝埞鍛橈紝鍏虫帀瀹冦€?
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00420OperatorVoiceA -> 鏇茬考鐫€瑁呭畬鎴愶紒
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00420OperatorVoiceB -> 鏇茬考鐫€瑁呭畬鎴愶紒
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00420OperatorVoiceC -> 鏇茬考鐫€瑁呭畬鎴愶紒
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00420OperatorVoiceD -> 鏇茬考鐫€瑁呭畬鎴愶紒
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00430OperatorVoiceA -> 鍝︹€︹€﹁繖鐪嬩笂鍘荤湡鏈夎叮锛?
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00430OperatorVoiceB -> 鍝︹€︹€﹁繖鐪嬩笂鍘荤湡鏈夎叮锛?
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00430OperatorVoiceC -> 鍝︹€︹€﹁繖鐪嬩笂鍘荤湡鏈夎叮锛?
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00430OperatorVoiceD -> 鍝︹€︹€﹁繖鐪嬩笂鍘荤湡鏈夎叮锛?
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00440OperatorVoiceA -> 濂界殑锛侀琛岀郴缁熺湅涓婂幓涓嶉敊銆?
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00440OperatorVoiceB -> 濂界殑锛侀琛岀郴缁熺湅涓婂幓涓嶉敊銆?
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00440OperatorVoiceC -> 濂界殑锛侀琛岀郴缁熺湅涓婂幓涓嶉敊銆?
+/Lotus/Language/Subtitles/OperatorMission/DArchwingMissionStart00440OperatorVoiceD -> 濂界殑锛侀琛岀郴缁熺湅涓婂幓涓嶉敊銆?
+/Lotus/Language/Suits/BardMeleeBuff -> 寮洪煶濂忛福鏇?
+/Lotus/Language/Suits/BardMeleeProgressBuff -> 寮洪煶濂忛福鏇茶繘搴?
+/Lotus/Language/Suits/BerserkerMeleePrimeDesc -> 褰?Valkyr Prime 閲婃斁鐙傚寲鐖嗗彂鏃惰繖浜涚埅瀛愬氨浼氬嚭鐜般€?
+/Lotus/Language/Suits/BerserkerMeleePrimeName -> Valkyr Prime 涔嬬埅
+/Lotus/Language/Suits/FairyArchwingPistolsDesc -> 锛堣嫳鏂囷細DEX PIXIA锛夐€氳繃鍓冨垁涔嬬考缈辩繑澶╅檯骞跺彫鍞よ繖瀵瑰己鍔茬殑鎵嬫灙銆?
+/Lotus/Language/Suits/KoumeiPassiveMeleeBuffDesc -> 杩戞垬鏀诲嚮浼氶€犳垚闅忔満寮傚父鐘舵€?
+/Lotus/Language/Suits/KoumeiPassiveMeleeBuffName -> 杩戞垬姝﹀櫒褰卞瓙涓夐噸濂?
+/Lotus/Language/Suits/ReaperMeleeDesc -> 杩欎簺鍑濊仛铏氱┖鑳介噺鐨勯攱鍒╀箣鍒冭兘閫犳垚浜嗘繁鍒囪€岀棝鑻︾殑浼ゅ彛銆?
+/Lotus/Language/Suits/ReaperMeleeName -> 骞藉奖涔嬬埅
+/Lotus/Language/Suits/SentientSummonMeleeAvatarName -> Caliban 鐨勯渿鑽′娇
+/Lotus/Language/Suits/SentientSummonMeleeSpinCooldownLabel -> 鏃嬮鍐峰嵈鏃堕棿
+/Lotus/Language/Suits/SentientSummonMeleeSpinDurationLabel -> 鏃嬮鎸佺画鏃堕棿
+/Lotus/Language/Suits/WraithReaperMeleeStanceName -> 璐┆鎬ㄧ伒
+/Lotus/Language/SyndicateRewards/MeleeRangeOnProcMod -> 绨у帇鍒€鍒?
+/Lotus/Language/SystemMessages/RelicBuffMelee -> 杩戞垬姝﹀櫒浼ゅ澧炲姞
+/Lotus/Language/Tutorial/Tu2MeleeObstacles -> 鎸変笅<MELEE> 鏉ョ敤杩戞垬鏀诲嚮鍙牬鍧忕殑鐩爣
+/Lotus/Language/Tutorial/TutorialChooseMeleeWeapon_Controller -> 閫夋嫨杩戞垬姝﹀櫒
+/Lotus/Language/Tutorial/TutorialChooseMeleeWeapon_KBM -> 閫夋嫨杩戞垬姝﹀櫒
+/Lotus/Language/Tutorial/TutorialChooseMeleeWeapon_PS4 -> 閫夋嫨杩戞垬姝﹀櫒
+/Lotus/Language/Tutorial/TutorialChooseMeleeWeapon_PS5 -> 閫夋嫨杩戞垬姝﹀櫒
+/Lotus/Language/Tutorial/TutorialChooseMeleeWeapon_Switch -> 閫夋嫨杩戞垬姝﹀櫒
+/Lotus/Language/Tutorial/TutorialChooseMeleeWeapon_Touch -> 鐐瑰嚮 <IOS_USE> 閫夋嫨姝﹀櫒
+/Lotus/Language/Tutorial/TutorialChooseMeleeWeapon_XBone -> 閫夋嫨杩戞垬姝﹀櫒
+/Lotus/Language/Tutorial/TutorialChooseMeleeWeapon_XSX -> 閫夋嫨杩戞垬姝﹀櫒
+/Lotus/Language/Tutorial/TutorialChoosePrimaryWeapon -> 閫夋嫨涓昏姝﹀櫒
+/Lotus/Language/Tutorial/TutorialChooseSecondaryWeapon -> 閫夋嫨娆¤姝﹀櫒
+/Lotus/Language/Tutorial/TutorialDrifterSlideHint_KBM -> 鎸変綇 <PRE_RUN> 鐨勫悓鏃堕暱鎸?<HOLD_CROUCH> 鏉ユ粦琛?
+/Lotus/Language/Tutorial/TutorialDrifterSlideHint_PS4 -> 鍐插埡鏃讹紙<RUN>锛夋寜浣?<PRE_CROUCH> 鏉ユ粦琛?
+/Lotus/Language/Tutorial/TutorialDrifterSlideHint_PS5 -> 鍐插埡鏃讹紙<RUN>锛夋寜浣?<PRE_CROUCH> 鏉ユ粦琛?
+/Lotus/Language/Tutorial/TutorialDrifterSlideHint_Switch -> 鍐插埡鏃讹紙<RUN>锛夋寜浣?<PRE_CROUCH> 鏉ユ粦琛?
+/Lotus/Language/Tutorial/TutorialDrifterSlideHint_Touch -> 鍐插埡鏃讹紙婊戝姩 <MOVE_Z_UP>锛夋寜浣?<IOS_CROUCH> 鏉ユ粦琛?
+/Lotus/Language/Tutorial/TutorialDrifterSlideHint_XBone -> 鍐插埡鏃讹紙<RUN>锛夋寜浣?<PRE_CROUCH> 鏉ユ粦琛?
+/Lotus/Language/Tutorial/TutorialMeleeAttack_Controller -> 鎸変綇 <MELEE> 浠ヨ繎鎴樻敾鍑?
+/Lotus/Language/Tutorial/TutorialMeleeAttack_KBM -> 鎸変綇 <MELEE> 浠ヨ繎鎴樻敾鍑?
+/Lotus/Language/Tutorial/TutorialMeleeAttack_PS4 -> 鎸変綇 <MELEE> 浠ヨ繎鎴樻敾鍑?
+/Lotus/Language/Tutorial/TutorialMeleeAttack_PS5 -> 鎸変綇 <MELEE> 浠ヨ繎鎴樻敾鍑?
+/Lotus/Language/Tutorial/TutorialMeleeAttack_Switch -> 鎸変綇 <MELEE> 浠ヨ繎鎴樻敾鍑?
+/Lotus/Language/Tutorial/TutorialMeleeAttack_Touch -> 绉诲姩鍒版晫浜烘梺杈规潵杩涜杩戞垬鏀诲嚮
+/Lotus/Language/Tutorial/TutorialMeleeAttack_XBone -> 鎸変綇 <MELEE> 浠ヨ繎鎴樻敾鍑?
+/Lotus/Language/Tutorial/TutorialMeleeAttack_XSX -> 鎸変綇 <MELEE> 浠ヨ繎鎴樻敾鍑?
+/Lotus/Language/Tutorial/TutorialMeleeChannel -> 鎸変綇 <MELEE_CHANNEL> 鏉ュ皢鑳介噺寮曞鑷宠繎鎴樻鍣ㄤ腑
+/Lotus/Language/Tutorial/TutorialMeleeHint -> <MELEE> 杩戞垬鏀诲嚮
+/Lotus/Language/Tutorial/TutorialMeleeSwitchHint -> <MELEE> 瑁呭杩戞垬姝﹀櫒
+/Lotus/Language/Tutorial/TutorialObjectiveGetMelee -> 鍦ㄦ爣璁扮殑鍌ㄨ棌绠变腑鎵惧埌涓€鎶婅繎鎴樻鍣?
+/Lotus/Language/Tutorial/TutorialObjectiveMeleeObtained -> 鏉€鍑洪噸鍥?
+/Lotus/Language/Tutorial/TutorialProgressMelee -> 杩戣韩鎴樻枟
+/Lotus/Language/Tutorial/TutorialQuickMelee -> 杞绘寜 <MELEE> 杩涜蹇€熻繎鎴?
+/Lotus/Language/Upgrades/ArchwingEventMagneticCritDamageMeleeMod -> 纾佹€ф牳蹇?
+/Lotus/Language/Upgrades/ArchwingEventMagneticFireRateRifleMod -> 纾佸満寰幆
+/Lotus/Language/Upgrades/ArchwingEventRadiationCritChanceMeleeMod -> 鍏抽敭鐔旀瘉
+/Lotus/Language/Upgrades/ArchwingEventRadiationFireIterationRifleMod -> 鏍告帶绐佺牬
+/Lotus/Language/Upgrades/ArchwingMeleeMagnetism -> [PH]|val|m Melee Magnetism
+/Lotus/Language/Upgrades/ArchwingSpeedModDesc -> |val|% 椋炶閫熷害
+/Lotus/Language/Upgrades/AvatarSentinelArmourLinkModDesc -> 鏈€澶ф姢鐢插鍔犳垬鐢叉姢鐢茬殑 |val|%
+/Lotus/Language/Upgrades/AvatarSentinelCritLinkModDesc -> 涓哄悓浼村鍔?|val|% 涓昏姝﹀櫒鐨勬毚鍑诲嚑鐜?
+/Lotus/Language/Upgrades/AvatarSentinelHealthLinkModDesc -> 鐢熷懡鍊煎鍔犳垬鐢叉渶澶х敓鍛藉€肩殑 |val|%
+/Lotus/Language/Upgrades/AvatarSentinelLifestealLinkModDesc -> 姣忔鍑讳腑鐢熷懡鍊兼仮澶?|val|
+/Lotus/Language/Upgrades/AvatarSentinelShieldLinkModDesc -> 鎶ょ浘澧炲姞鎴樼敳鏈€澶ф姢鐩剧殑 |val|%
+/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeProjectile -> |CONDITION|锛?
+椋炶韩鐬勫噯鏃惰繘琛岃繎鎴樹細灏勫嚭涓€涓姇灏勭墿锛屽苟鍦ㄦ挒鍑诲悗鐖嗙偢
+/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeProjectileDistanceDmg -> 琛岃繘 |DIST| 绫冲悗锛岀┖涓繎鎴樻敾鍑荤殑椋炲皠鐗╁皢澧炲姞 |MULT|% 鐨勪激瀹炽€?
+/Lotus/Language/Upgrades/CosmeticEnhancerDescriptionMeleeShockwaveStasisDuration -> 澧炲姞鏁屼汉琚偓鍋滃湪绌轰腑鐨勬椂闂磋嚦 |ADD| 绉掋€?
+/Lotus/Language/Upgrades/IncarnonEnemyProxMeleeAttackSpeedDesc -> 6 绫冲唴姣忎釜鏁屼汉澧炲姞鏀诲嚮閫熷害 |val|%锛屾渶澶氬彔鍔犲埌 5 灞?
+/Lotus/Language/Upgrades/IncarnonMeleeWeaponVoidModeAtSixDesc -> 杈惧埌 6x 杩炲嚮鍊嶇巼鍚庣敤閲嶅嚮鏉ユ縺娲荤伒鍖栧舰鎬併€?
+/Lotus/Language/Upgrades/IncarnonMovementSpeednMeleeMode -> 杩戞垬妯″紡鏃?|val|% 绉诲姩閫熷害
+/Lotus/Language/Upgrades/MagneticAttackSpeedMeleeMod -> 鍔辩鍔犻€?
+/Lotus/Language/Upgrades/MagneticCritDamagePistolMod -> 纾佸惛宸ㄥ姏
+/Lotus/Language/Upgrades/MeleeAmmoToComboDesc -> 鏀堕泦寮硅嵂鍙幏寰?|COMBO| 杩戞垬杩炲嚮鏁?
+/Lotus/Language/Upgrades/MeleeAttackSpeedBuffDesc -> |val|% 杩戞垬鏀诲嚮閫熷害
+/Lotus/Language/Upgrades/MeleeComboGainExtraChance -> |val|% 棰濆杩炲嚮鏁板嚑鐜?
+/Lotus/Language/Upgrades/MeleeComboGainExtraChanceOnLifted -> 瀵规诞绌烘晫浜烘湁 |val|% 棰濆杩炲嚮鏁板嚑鐜?
+/Lotus/Language/Upgrades/MeleeComboOnSlamDesc -> 瀵规瘡鍚嶈闇囧湴鑼冨洿鍑讳腑鐨勬晫浜猴紝鑾峰緱 |COMBO| 杩炲嚮鏁般€?
+/Lotus/Language/Upgrades/MeleeComboPointMissChance -> |val|% 杩炲嚮鏁板嚑鐜?
+/Lotus/Language/Upgrades/MeleeComboPointMissChanceBlocking -> 鏍兼尅鏃舵湁 |val|% 杩炲嚮鏁板嚑鐜?
+/Lotus/Language/Upgrades/MeleeComboPointMissChanceBlockingShield -> 浣跨敤鐩剧墝鏍兼尅鏃舵湁 |val|% 杩炲嚮鏁板嚑鐜?
+/Lotus/Language/Upgrades/MeleeCritChance -> |val|% 杩戞垬姝﹀櫒鏆村嚮鍑犵巼
+/Lotus/Language/Upgrades/MeleeCritDamage -> |val|% 杩戞垬姝﹀櫒鏆村嚮浼ゅ
+/Lotus/Language/Upgrades/MeleeDamageAuraModDesc -> 灏忛槦鑾峰緱 |val|% 杩戞垬浼ゅ
+/Lotus/Language/Upgrades/MeleeDamageBuffDesc -> |val|% 杩戞垬浼ゅ
+/Lotus/Language/Upgrades/MeleeDamageBuffOnHeavyDesc -> |val|% 鍦ㄩ噸鍑绘椂鐨勮繎鎴樹激瀹?
+/Lotus/Language/Upgrades/MeleeDamageLockedFireRateModDesc -> [PH]Attack Speed cannot be increased.
+/Lotus/Language/Upgrades/MeleeDamageLockedFireRateModName -> [PH]Ruthless Pressure
+/Lotus/Language/Upgrades/MeleeEquippedConditionDesc -> 瑁呭杩戞垬鏃讹細
+/Lotus/Language/Upgrades/MeleeFallOffDesc -> 琛板噺澧炲姞 |val|%
+/Lotus/Language/Upgrades/MeleeRangeOnProcModDesc -> 瑙﹀彂寮傚父鐘舵€佹椂锛寍BONUS|锛屾寔缁?|DURATION| 绉掋€?
+/Lotus/Language/Upgrades/MeleeRangeonProcModBonusDesc -> |val|% 姝﹀櫒鑼冨洿
+/Lotus/Language/Upgrades/MeleeShockwaveOnJump -> [PH] Slamwave
+/Lotus/Language/Upgrades/MeleeSlamDamage -> 澧炲姞杩戞垬闇囨尝 |val|% 浼ゅ
+/Lotus/Language/Upgrades/MeleeSlamRadiusDesc -> |val|% 闇囧湴鑼冨洿
+/Lotus/Language/Upgrades/MeleeStatusDamageDuoModName -> 杩戞垬鍏冪礌甯?
+/Lotus/Language/Upgrades/On10MeleeHits_Description -> 10 娆¤繎鎴樺嚮涓悗
+/Lotus/Language/Upgrades/OnAirborneMeleeKillCondition_Description -> 绌轰腑杩戞垬鍑绘潃鏃?
+/Lotus/Language/Upgrades/OnMeleeChannelKillConditionDesc -> 杩戞垬瀵煎紩鍑绘潃鏃讹細
+/Lotus/Language/Upgrades/OnMeleeEquippedCondition -> 瑁呭杩戞垬姝﹀櫒鏃?
+/Lotus/Language/Upgrades/OnMeleeHeavyAttackHitDesc -> 閲嶅嚮鍛戒腑鍚?
+/Lotus/Language/Upgrades/OnMeleeHeavyAttackKill_Description -> 閲嶅嚮鍑绘潃鏃?
+/Lotus/Language/Upgrades/OnMeleeHit_Description -> 杩戞垬鍑讳腑鍚?
+/Lotus/Language/Upgrades/OnMeleeKillCondition_Description -> 杩戞垬鍑绘潃鏃?
+/Lotus/Language/Upgrades/OnPistolHeadshotCondition_Description -> 鎵嬫灙鐖嗗ご鏃?
+/Lotus/Language/Upgrades/OnPistolHeadshotKillCondition_Description -> 鎵嬫灙鐖嗗ご鍑绘潃鏃?
+/Lotus/Language/Upgrades/OnSixMeleeKillsCondition_Description -> 6 绉掑唴鐢ㄨ繎鎴樻鍣ㄥ嚮鏉€ 6 娆?
+/Lotus/Language/Upgrades/OnSixMeleeKillsLongTimerCondition_Description -> 30 绉掑唴浣跨敤杩戞垬姝﹀櫒鍑绘潃 6 娆?
+/Lotus/Language/Upgrades/OperatorAmmoRegenDesc -> |val|% 鐨勫骞呭櫒鑳介噺鎭㈠閫熺巼
+/Lotus/Language/Upgrades/ParryMeleeDesc -> 鎴樼敳杩戞垬鏍兼尅鍚庯紝鏈?|val|% 鍑犵巼浣挎晫浜鸿繘鍏ュ彲琚鍐崇殑鐘舵€?
+/Lotus/Language/Upgrades/PistolAmmoAuraModDesc -> 灏忛槦鑾峰緱 |val|% 鎷捐捣鐨勬墜鏋脊鑽?
+/Lotus/Language/Upgrades/PistolDamageAuraModDesc -> 灏忛槦鑾峰緱 |val|% 鎵嬫灙浼ゅ
+/Lotus/Language/Upgrades/PistolModConvertAmmoModDesc -> 灏嗘湭浣跨敤鐨勫脊鑽嬀鍙栬浆鎹㈡垚鎵嬫灙寮硅嵂
+/Lotus/Language/Upgrades/PistolSemiAutoFantasyModName -> 鍗婅嚜鍔ㄦ墜鏋偖杞?
+/Lotus/Language/Upgrades/PistolStatusDamageDuoModName -> 鎵嬫灙鍏冪礌甯?
+/Lotus/Language/Upgrades/PlayerMeleeStartingComboAuraMod -> 纾ㄧ牶閿嬪垉
+/Lotus/Language/Upgrades/PlayerMeleeStartingComboAuraModDesc -> 灏忛槦鍦ㄤ换鍔″紑濮嬫椂鑾峰緱 |val| 鍒濆杩炲嚮
+/Lotus/Language/Upgrades/RadiationAmmoEfficiencyPistolModDesc -> |val|% 寮硅嵂鏁堢巼
+/Lotus/Language/Upgrades/RadiationEfficiencyMeleeMod -> 鑱氱劍姘℃皵
+/Lotus/Language/Upgrades/RadiationFireratePistolMod -> 杩呭彂鏍哥礌
+/Lotus/Language/Upgrades/SentinelAvatarLifestealLinkModDesc -> 鍚屼即閫犳垚鐨?|val|% 浼ゅ灏嗘不鎰堟垬鐢?
+/Lotus/Language/Upgrades/SentinelIncapacitationTimeModifierDesc -> |val| 绉掑悓浼存仮澶嶆椂闂?
+/Lotus/Language/Upgrades/StrainInfectionMeleeModDesc -> 姣忛鍖呭泭閮借兘璁╄繎鎴樻敾鍑昏幏寰?+|val|% 鏆村嚮浼ゅ銆?
+/Lotus/Language/Upgrades/SynthDeconstructSentinelModDesc -> 鍙楀埌鍚屼即鏀诲嚮鐨勬晫浜哄湪琚嚮鏉€鏃舵湁 |STAT1|% 鐨勫嚑鐜囦細鎺夎惤涓€涓敓鍛界悆銆?
+/Lotus/Language/Upgrades/SynthFiberSentinelModDesc -> 鐢熷懡鐞冨彲澧炲姞鍚屼即 |ARMOUR|% 鐨勬姢鐢诧紝鎸佺画 |DURATION| 绉掋€?
+/Lotus/Language/Upgrades/TekGravityMeleeModDesc -> 鍦ㄦ爣璁拌寖鍥翠腑闇囧湴鏀诲嚮浼氬皢 |STAT1| 绫冲唴鐨勬墍鏈夋晫浜烘媺杩囨潵銆?
+/Lotus/Language/Upgrades/WarframeModMeleeChargeSpeedDesc -> |val|% 杩戞垬钃勫姏鏀诲嚮鐜?
+/Lotus/Language/Upgrades/WeaponMeleeAttackSpeed -> |val|% 鏀诲嚮閫熷害
+/Lotus/Language/Upgrades/WeaponMeleeComboUsageEfficiency -> |val|% 閲嶅嚮鏁堢巼
+/Lotus/Language/Upgrades/WeaponMeleeFinisherDmgModDesc -> |val|% 澶勫喅浼ゅ
+/Lotus/Language/Upgrades/WeaponMeleeHeavyChargeSpeedDesc -> [PH] |val|% Melee Heavy Wind Up Speed
+/Lotus/Language/Upgrades/WeaponMeleeRangeModDesc -> |val| 杩戞垬鑼冨洿
+/Lotus/Language/Upgrades/WeaponMeleeSlamDmgBonusModDesc -> |val|% 闇囧湴鏀诲嚮浼ゅ
+/Lotus/Language/Upgrades/WeaponPressAdvantageMeleeModDesc -> 璁╂晫浜哄け鍘诲钩琛″彲鎻愰珮 |val|% 鏀诲嚮閫熷害
+/Lotus/Language/Upgrades/ZarimanMeleeWeaponVoidModeAtFiveDesc -> 杈惧埌 5x 杩炲嚮鍊嶇巼鍚庣敤閲嶅嚮鏉ユ縺娲荤伒鍖栧舰鎬?
+/Lotus/Language/Upgrades/ZarimanMeleeWeaponVoidModeAtThreeDesc -> 杈惧埌 3x 杩炲嚮鍊嶇巼鍚庣敤閲嶅嚮鏉ユ縺娲荤伒鍖栧舰鎬?
+/Lotus/Language/VoidEclipse/EclipseDuviriMeleeAgent -> 铏氳殌鍑堕瓊鐧惧か闀?
+/Lotus/Language/VoidEclipse/EclipseDuviriMeleeAgentDesc -> 瑁呭鐫€鏆柀闀板垁锛岃繖浜涘菇鐏佃埇闂叆鑰呯殑鏉ユ簮涓€鐩存槸涓皽锛屼絾铏氱┖鑱旂粨姣棤鐤戦棶鏄叾鏍规簮銆?
+/Lotus/Language/VoidEclipse/EclipseDuviriMeleeAgentEasy -> 绌烘礊鍑堕瓊鐧惧か闀?
+/Lotus/Language/VoidEclipse/EclipseDuviriMeleeAgentEasyDesc -> 瑁呭鐫€鏆柀闀板垁锛岃繖浜涜緝寮辩殑鍑堕瓊鏄惧寲鑰呰櫧鐒舵棤娉曞寲涓洪瓊浣撳舰鎬侊紝浣嗕粛鐒舵槸鑷村懡鐨勫鎵嬨€?
+/Lotus/Language/WeaponChallenges/MeleeOnlyFinishers_Description -> 浠呰澶囪繎鎴樻鍣ㄦ椂杩涜 |COUNT| 娆″鍐虫敾鍑汇€?
+/Lotus/Language/Weapons/1999EntHybridPistolName -> 鏆翠贡-848
+/Lotus/Language/Weapons/CraftingComponent_1999EntHybridPistolBarrel -> 鏆翠贡-848 鏋
+/Lotus/Language/Weapons/CraftingComponent_1999EntHybridPistolReceiver -> 鏆翠贡-848 鏋満
+/Lotus/Language/Weapons/CraftingComponent_1999EntHybridPistolStock -> 鏆翠贡-848 鏋墭
+/Lotus/Language/Weapons/CraftingComponent_LasGooPistolPlayerWeaponBarrel -> 鑹惧紬鏃?8 鐏槦 鏋
+/Lotus/Language/Weapons/CraftingComponent_LasGooPistolPlayerWeaponReceiver -> 鑹惧紬鏃?8 鐏槦 鏋満
+/Lotus/Language/Weapons/CraftingComponent_LasGooPistolPlayerWeaponStock -> 鑹惧紬鏃?8 鐏槦 鏋墭
+/Lotus/Language/Weapons/CrpBriefcaseAkimboPistolName -> 淇℃潯路绾垫í鍙屾灙
+/Lotus/Language/Weapons/CrpIgniterPistolName -> 淇℃潯路鏂淳鍏嬫柉
+/Lotus/Language/Weapons/CrpLaserPistolVandalName -> 鍏夎氨鍒囧壊鍣风牬鍧忚€?
+/Lotus/Language/Weapons/CrpSentAmlgPistolName -> 姘版瘨
+/Lotus/Language/Weapons/DaxDrifterSpear -> 闆风煶绁?
+/Lotus/Language/Weapons/DrifterFistsDesc -> [PH] Drifter Fists Description
+/Lotus/Language/Weapons/DrifterFistsName -> [PH] Drifter Fists
+/Lotus/Language/Weapons/DrifterPistolName -> 璧ら
+/Lotus/Language/Weapons/DrifterPistolSuperChargedMode -> 瓒呰浇鍏呰兘
+/Lotus/Language/Weapons/DrifterPistolSuperNormalMode -> [PH] Whisper Shot
+/Lotus/Language/Weapons/DrifterTazerName -> 鐢靛寱鎬澃
+/Lotus/Language/Weapons/GrnAmphisPistolName -> 澶稿吂
+/Lotus/Language/Weapons/GrnOrokinPistolName -> 鏉€鏍?Prime
+/Lotus/Language/Weapons/GrnQueenGuardDualPistolsName -> 鍙屽瓙缃楁牸
+/Lotus/Language/Weapons/InfBeamPistolName -> 寮傚寲鑰?
+/Lotus/Language/Weapons/LasGooPistolWeaponName -> 鑹惧紬鏃?8 鐏槦
+/Lotus/Language/Weapons/LasSilencedPistolWeaponName -> 澶滆鑰?77
+/Lotus/Language/Weapons/PrismaArchHeavyPistolsName -> 妫辨櫠路浠€闀垮弻鏋?
+/Lotus/Language/Weapons/SapientPistolName -> 闃垮埄涔屽弻鏋?
+/Lotus/Language/Weapons/SentPistolNewWarPistolDesc -> [PH] Description
+/Lotus/Language/Weapons/SentPistolNewWarPistolName -> [PH] Sentient Pistol
+/Lotus/Language/Weapons/SentinelFreezeRayRifleDesc -> 浣滀负楣﹂箟铻虹殑瀹岀編鍚屼即锛岃繖浠跺畧鎶ゆ鍣ㄥ彲鍚戦檮杩戠殑鐩爣鎶曞皠鍐板喕鍏夋潫銆?
+/Lotus/Language/Weapons/SentinelFreezeRayRifleName -> 鍐板噰
+/Lotus/Language/Weapons/SentinelGremlinDesc -> 锛堣嫳鏂囷細ARTAX锛変娇鐢ㄥ畧鎶よ鏈夌殑鍐板喎鍏夋潫灏嗙洰鏍囧湪琛屽姩璺嚎涓婂喕缁撱€?
+/Lotus/Language/Weapons/SentinelGremlinName -> 闃垮鍏嬫柉
+/Lotus/Language/Weapons/SybarisPistolName -> 甯皵鐏灙
+/Lotus/Language/Weapons/ThanoTechLongGunName -> 鎯╂垝鑰?
+/Lotus/Language/Weapons/ThanoTechPistolName -> 杩藉嚮鑰?
+/Lotus/Language/Weapons/TnBardPistolAltFire -> 鐖嗗彂灏勫嚮
+/Lotus/Language/Weapons/TnBardPistolInnateUpgrade -> 蹇澘
+/Lotus/Language/Weapons/TnBardPistolName -> 鎵嬮紦
+/Lotus/Language/Weapons/TnBayonetMeleeWeaponName -> 鍒惰儨鑰咃紙杩戞垬锛?
+/Lotus/Language/Weapons/TnBayonetPrimaryWeaponName -> 鍒惰儨鑰?
+/Lotus/Language/Weapons/TnGuandaoPistolName -> 姣掕娊
+/Lotus/Language/Weapons/TnJetTurbinePistolName -> 闃跨储浠?
+/Lotus/Language/Weapons/TnOdaliskSmgPistolName -> 閫愮數
+/Lotus/Language/Weapons/TnPriestPistolName -> 涓ч挓
+/Lotus/Language/Weapons/WeaponMeleeArcaneName -> 杩戞垬璧嬭兘
+/Lotus/Language/Weapons/WeaponMeleeArcaneUnlockerDesc -> 铻嶅叆涓€浠惰繎鎴樻鍣ㄦ潵瑙ｉ攣璧嬭兘妲戒綅銆?
+/Lotus/Language/Weapons/WeaponMeleeArcaneUnlockerName -> 杩戞垬姝﹀櫒璧嬭兘妲借繛鎺ュ櫒
+/Lotus/Language/Weapons/YareliPistolRecipeHelp -> 鍗″笗鍘嬪姏鏋殑姝﹀櫒鍜岄儴浠惰摑鍥惧彲浠ヤ粠绂忓皵鍥惧鐨勯€氶灏忓瓙澹版湜濂栧姳澶勮幏鍙栥€?
+/Lotus/Language/Weapons/ZarimanHeavyPistolName -> 濂忓嚡
+/Lotus/Language/Zariman/DuviriMeleeAgent -> 鍑堕瓊鐧惧か闀?
+/Weapons/Longguns -> rifles / shotguns
+/Weapons/ShotgunPistol -> SPECTER
+/Weapons/SocomPistol -> TEKNA 9MM
