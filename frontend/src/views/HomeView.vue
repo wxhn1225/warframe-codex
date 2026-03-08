@@ -11,7 +11,10 @@ const router = useRouter()
 const dataStore = useDataStore()
 const langStore = useLangStore()
 
+/** 实际用于搜索的关键词（按 Enter / 点按钮后才更新） */
 const query = ref((route.query.q as string) ?? '')
+/** 输入框的草稿值，不直接触发搜索 */
+const inputDraft = ref((route.query.q as string) ?? '')
 const activeCategory = ref<string | null>(null)
 const activeSubType = ref<string | null>(null)
 
@@ -55,10 +58,19 @@ const results = computed(() => {
 
 const isSearching = computed(() => query.value.trim().length > 0 || activeCategory.value !== null)
 
+function submitSearch() {
+  const q = inputDraft.value.trim()
+  if (!q) return
+  query.value = q
+  activeCategory.value = null
+  activeSubType.value = null
+}
+
 function selectCategory(key: string) {
   activeCategory.value = activeCategory.value === key ? null : key
   activeSubType.value = null
   query.value = ''
+  inputDraft.value = ''
   router.replace({ query: {} })
 }
 
@@ -67,10 +79,18 @@ function selectSubType(val: string) {
 }
 
 watch(() => route.query.q, (q) => {
-  if (q) { query.value = q as string; activeCategory.value = null; activeSubType.value = null }
+  if (q) {
+    query.value = q as string
+    inputDraft.value = q as string
+    activeCategory.value = null
+    activeSubType.value = null
+  }
 })
 onMounted(() => {
-  if (route.query.q) query.value = route.query.q as string
+  if (route.query.q) {
+    query.value = route.query.q as string
+    inputDraft.value = route.query.q as string
+  }
 })
 </script>
 
@@ -87,21 +107,29 @@ onMounted(() => {
       </p>
 
       <div class="max-w-lg mx-auto mb-10">
-        <div class="relative">
-          <svg
-            class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none"
-            style="color: var(--color-text-subtle);"
-            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-          >
-            <circle cx="11" cy="11" r="8"/><path stroke-linecap="round" d="M21 21l-4.35-4.35"/>
-          </svg>
-          <input
-            v-model="query"
-            class="input-search text-base"
-            style="padding-left: 2.75rem; font-size: 1rem;"
-            placeholder="搜索武器、战甲、敌人、Mod..."
-            autofocus
-          />
+        <div class="relative flex gap-2">
+          <div class="relative flex-1">
+            <svg
+              class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none"
+              style="color: var(--color-text-subtle);"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8"/><path stroke-linecap="round" d="M21 21l-4.35-4.35"/>
+            </svg>
+            <input
+              v-model="inputDraft"
+              class="input-search text-base"
+              style="padding-left: 2.75rem; padding-right: 1rem; font-size: 1rem;"
+              placeholder="搜索武器、战甲、敌人、Mod..."
+              autofocus
+              @keydown.enter="submitSearch"
+            />
+          </div>
+          <button
+            class="shrink-0 px-5 py-2 rounded-lg font-medium text-sm transition-colors"
+            style="background: var(--color-primary); color: #fff;"
+            @click="submitSearch"
+          >搜索</button>
         </div>
       </div>
 
@@ -136,7 +164,7 @@ onMounted(() => {
         <button
           class="flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg transition-colors shrink-0"
           style="background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text-muted);"
-          @click="query = ''; activeCategory = null; activeSubType = null; router.replace({ query: {} })"
+          @click="query = ''; inputDraft = ''; activeCategory = null; activeSubType = null; router.replace({ query: {} })"
         >
           <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
