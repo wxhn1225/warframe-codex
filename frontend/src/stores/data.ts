@@ -9,6 +9,9 @@ export const useDataStore = defineStore('data', () => {
   const exportCache = ref<Record<string, Record<string, unknown>>>({})
   const indexLoaded = ref(false)
   const indexLoading = ref(false)
+  /** 每次自增触发首页状态重置（供 AppHeader Logo 点击使用） */
+  const homeResetCount = ref(0)
+  function triggerHomeReset() { homeResetCount.value++ }
 
   async function loadSearchIndex() {
     if (indexLoaded.value || indexLoading.value) return
@@ -87,6 +90,8 @@ export const useDataStore = defineStore('data', () => {
     searchIndex,
     indexLoaded,
     indexLoading,
+    homeResetCount,
+    triggerHomeReset,
     loadSearchIndex,
     loadExport,
     getEntry,

@@ -1,14 +1,23 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import { useLangStore } from '@/stores/lang'
+import { useDataStore } from '@/stores/data'
 import { LANGUAGES } from '@/types'
 
+const router = useRouter()
 const langStore = useLangStore()
+const dataStore = useDataStore()
 const showLangMenu = ref(false)
 
 function selectLang(code: string) {
   langStore.setLang(code)
   showLangMenu.value = false
+}
+
+function goHome() {
+  dataStore.triggerHomeReset()
+  router.push('/')
 }
 </script>
 
@@ -18,10 +27,10 @@ function selectLang(code: string) {
     style="background: var(--color-surface); border-bottom: 1px solid var(--color-border); box-shadow: 0 1px 3px rgba(0,0,0,0.04);"
   >
     <!-- Logo -->
-    <RouterLink
-      to="/"
-      class="flex items-center gap-1.5 no-underline"
-      style="text-decoration: none;"
+    <button
+      class="flex items-center gap-1.5 cursor-pointer"
+      style="background: none; border: none; padding: 0; text-decoration: none;"
+      @click="goHome"
     >
       <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="var(--color-primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,7 +38,7 @@ function selectLang(code: string) {
       <span class="font-bold text-base" style="color: var(--color-text); letter-spacing: 0.04em;">
         Warframe <span style="color: var(--color-primary);">Codex</span>
       </span>
-    </RouterLink>
+    </button>
 
     <!-- 语言切换 -->
     <div class="relative shrink-0">

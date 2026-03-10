@@ -86,6 +86,14 @@ watch(() => route.query.q, (q) => {
     activeSubType.value = null
   }
 })
+
+watch(() => dataStore.homeResetCount, () => {
+  query.value = ''
+  inputDraft.value = ''
+  activeCategory.value = null
+  activeSubType.value = null
+  router.replace({ query: {} })
+})
 onMounted(() => {
   if (route.query.q) {
     query.value = route.query.q as string
