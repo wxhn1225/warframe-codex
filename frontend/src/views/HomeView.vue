@@ -97,97 +97,97 @@ onMounted(() => {
 <template>
   <div class="max-w-6xl mx-auto px-4 py-8">
 
-    <!-- Hero（未搜索时） -->
-    <div v-if="!isSearching" class="text-center mb-10">
+    <!-- Hero 标题（未搜索时才展示） -->
+    <div v-if="!isSearching" class="text-center mb-6">
       <h1 class="text-3xl font-bold mb-1.5" style="color: var(--color-text);">
         Warframe <span style="color: var(--color-primary);">Codex</span>
       </h1>
-      <p class="text-sm mb-8" style="color: var(--color-text-muted);">
+      <p class="text-sm" style="color: var(--color-text-muted);">
         全数据图鉴 · 15 种语言 · 44,000+ 条目
       </p>
+    </div>
 
-      <div class="max-w-lg mx-auto mb-10">
-        <div class="relative flex gap-2">
-          <div class="relative flex-1">
-            <svg
-              class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none"
-              style="color: var(--color-text-subtle);"
-              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-            >
-              <circle cx="11" cy="11" r="8"/><path stroke-linecap="round" d="M21 21l-4.35-4.35"/>
-            </svg>
-            <input
-              v-model="inputDraft"
-              class="input-search text-base"
-              style="padding-left: 2.75rem; padding-right: 1rem; font-size: 1rem;"
-              placeholder="搜索武器、战甲、敌人、Mod..."
-              autofocus
-              @keydown.enter="submitSearch"
-            />
-          </div>
-          <button
-            class="shrink-0 px-5 py-2 rounded-lg font-medium text-sm transition-colors"
-            style="background: var(--color-primary); color: #fff;"
-            @click="submitSearch"
-          >搜索</button>
-        </div>
-      </div>
-
-      <!-- 分类卡片 -->
-      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2.5">
-        <button
-          v-for="cat in CATEGORIES"
-          :key="cat.key"
-          class="card p-3.5 text-center cursor-pointer"
-          @click="selectCategory(cat.key)"
-        >
-          <div
-            class="w-8 h-8 rounded-lg mx-auto mb-2 flex items-center justify-center"
-            :style="{ background: cat.color + '15' }"
+    <!-- 搜索框（始终显示，未搜索时居中突出，有结果时靠左紧凑） -->
+    <div
+      class="mb-6 transition-all"
+      :class="isSearching ? '' : 'max-w-lg mx-auto'"
+    >
+      <div class="relative flex gap-2">
+        <div class="relative flex-1">
+          <svg
+            class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none"
+            style="color: var(--color-text-subtle);"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
           >
-            <div class="w-3.5 h-3.5 rounded-sm" :style="{ background: cat.color }"></div>
-          </div>
-          <p class="text-sm font-semibold leading-tight" :style="{ color: cat.color }">
-            {{ cat.label }}
-          </p>
-          <p class="text-xs mt-0.5 leading-tight" style="color: var(--color-text-subtle);">
-            {{ cat.labelEn }}
-          </p>
-        </button>
+            <circle cx="11" cy="11" r="8"/><path stroke-linecap="round" d="M21 21l-4.35-4.35"/>
+          </svg>
+          <input
+            v-model="inputDraft"
+            class="input-search"
+            :style="isSearching
+              ? 'padding-left: 2.75rem; padding-right: 1rem; font-size: 0.9375rem;'
+              : 'padding-left: 2.75rem; padding-right: 1rem; font-size: 1rem;'"
+            placeholder="搜索武器、战甲、敌人、Mod..."
+            :autofocus="!isSearching"
+            @keydown.enter="submitSearch"
+          />
+        </div>
+        <button
+          class="shrink-0 px-5 py-2 rounded-lg font-medium text-sm transition-colors"
+          style="background: var(--color-primary); color: #fff;"
+          @click="submitSearch"
+        >搜索</button>
+        <!-- 有结果时显示清除按钮 -->
+        <button
+          v-if="isSearching"
+          class="shrink-0 px-3 py-2 rounded-lg text-sm transition-colors"
+          style="background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text-muted);"
+          @click="query = ''; inputDraft = ''; activeCategory = null; activeSubType = null; router.replace({ query: {} })"
+        >清除</button>
       </div>
     </div>
 
-    <!-- 搜索/分类结果区 -->
-    <template v-else>
-      <!-- 顶部导航 -->
-      <div class="flex items-center gap-2 mb-4 flex-wrap">
-        <button
-          class="flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-lg transition-colors shrink-0"
-          style="background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text-muted);"
-          @click="query = ''; inputDraft = ''; activeCategory = null; activeSubType = null; router.replace({ query: {} })"
+    <!-- 分类卡片（未搜索时才展示） -->
+    <div v-if="!isSearching" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2.5 mb-4">
+      <button
+        v-for="cat in CATEGORIES"
+        :key="cat.key"
+        class="card p-3.5 text-center cursor-pointer"
+        @click="selectCategory(cat.key)"
+      >
+        <div
+          class="w-8 h-8 rounded-lg mx-auto mb-2 flex items-center justify-center"
+          :style="{ background: cat.color + '15' }"
         >
-          <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-          返回
-        </button>
-
-        <!-- 分类筛选 -->
-        <div class="flex gap-1.5 flex-wrap">
-          <button
-            v-for="cat in CATEGORIES"
-            :key="cat.key"
-            class="text-xs px-2.5 py-1 rounded-full font-medium transition-all"
-            :style="{
-              background: activeCategory === cat.key ? cat.color : 'var(--color-surface)',
-              color: activeCategory === cat.key ? '#fff' : 'var(--color-text-muted)',
-              border: activeCategory === cat.key ? `1px solid ${cat.color}` : '1px solid var(--color-border)',
-            }"
-            @click="selectCategory(cat.key)"
-          >
-            {{ cat.label }}
-          </button>
+          <div class="w-3.5 h-3.5 rounded-sm" :style="{ background: cat.color }"></div>
         </div>
+        <p class="text-sm font-semibold leading-tight" :style="{ color: cat.color }">
+          {{ cat.label }}
+        </p>
+        <p class="text-xs mt-0.5 leading-tight" style="color: var(--color-text-subtle);">
+          {{ cat.labelEn }}
+        </p>
+      </button>
+    </div>
+
+    <!-- 搜索/分类结果区 -->
+    <template v-if="isSearching">
+      <!-- 分类筛选条 -->
+      <div class="flex items-center gap-1.5 mb-3 flex-wrap">
+        <span class="text-xs shrink-0" style="color: var(--color-text-muted);">分类</span>
+        <button
+          v-for="cat in CATEGORIES"
+          :key="cat.key"
+          class="text-xs px-2.5 py-1 rounded-full font-medium transition-all"
+          :style="{
+            background: activeCategory === cat.key ? cat.color : 'var(--color-surface)',
+            color: activeCategory === cat.key ? '#fff' : 'var(--color-text-muted)',
+            border: activeCategory === cat.key ? `1px solid ${cat.color}` : '1px solid var(--color-border)',
+          }"
+          @click="selectCategory(cat.key)"
+        >
+          {{ cat.label }}
+        </button>
       </div>
 
       <!-- 子分类筛选 -->
