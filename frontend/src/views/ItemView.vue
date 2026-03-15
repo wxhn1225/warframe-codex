@@ -233,7 +233,7 @@ watch(() => props.path, load)
         </button>
         <div v-if="showRawJson" class="px-4 pb-4">
           <div class="rounded-lg overflow-auto p-3" style="background: var(--color-surface-2); border: 1px solid var(--color-border); max-height: 600px;">
-            <VueJsonPretty :data="entryData" :deep="3" :show-line="true" :show-icon="true" />
+            <VueJsonPretty :data="entryData" :deep="Infinity" :show-line="true" :show-icon="true" />
           </div>
         </div>
       </div>

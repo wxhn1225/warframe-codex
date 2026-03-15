@@ -206,7 +206,7 @@ watch(() => props.path, load)
         <div class="p-4 overflow-auto" style="max-height: 700px;">
           <VueJsonPretty
             :data="rawData"
-            :deep="3"
+            :deep="Infinity"
             :show-line="true"
             :show-icon="true"
             :show-line-number="true"
